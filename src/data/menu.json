@@ -1,0 +1,7 @@
+[
+  { "label": "¿Quiénes somos?", "target": "about" },
+  { "label": "Funeraria 24 horas", "target": "services" },
+  { "label": "Cremación", "target": "cremation" },
+  { "label": "Panteón de Cenizas", "target": "mausoleum" },
+  { "label": "Preguntas Frecuentes", "target": "faq" }
+]

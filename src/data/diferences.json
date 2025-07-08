@@ -1,0 +1,70 @@
+{
+  "title": [
+    "¿QUÉ NOS HACE ",
+    { "text": "DIFERENTES", "highlight": true },
+    " EN SERENIDAD?"
+  ],
+  "honeycomb": [
+    [
+      null,
+      {
+        "icon": "hands-praying",
+        "title": "Todos los servicios ofrecidos desde un mismo lugar:",
+        "highlight": "Tu parroquia."
+      },
+      null
+    ],
+    [
+      null,
+      {
+        "icon": "dollar",
+        "title": "Valores asequibles que sostienen la acción pastoral en tu comunidad.",
+        "highlight": null
+      },
+      {
+        "icon": "document",
+        "title": "Asesoría transparente, sencilla y confiable, con valores cristianos.",
+        "highlight": null
+      }
+    ],
+    [
+      null,
+      null,
+      {
+        "icon": "cube",
+        "title": "Diseño innovador, moderno y acogedor para el descanso de cenizas.",
+        "highlight": null
+      }
+    ]
+  ],
+  "honeycombMobile": [
+    [
+      {
+        "icon": "hands-praying",
+        "title": "Todos los servicios ofrecidos desde un mismo lugar:",
+        "highlight": "Tu parroquia."
+      },
+      null
+    ],
+    [
+      {
+        "icon": "dollar",
+        "title": "Valores asequibles que sostienen la acción pastoral en tu comunidad.",
+        "highlight": null
+      },
+      {
+        "icon": "document",
+        "title": "Asesoría transparente, sencilla y confiable, con valores cristianos.",
+        "highlight": null
+      }
+    ],
+    [
+      null,
+      {
+        "icon": "cube",
+        "title": "Diseño innovador, moderno y acogedor para el descanso de cenizas.",
+        "highlight": null
+      }
+    ]
+  ]
+}

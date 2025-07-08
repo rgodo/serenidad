@@ -1,0 +1,55 @@
+{
+  "header": {
+    "backgroundImage": "cremacion-background.png",
+    "title": "CREMACIÓN",
+    "intro": "ELIGE EN VIDA",
+    "description": "Ahórrate a ti y a tu familia preocupaciones futuras."
+  },
+  "info": {
+    "intro": "CREMACIÓN",
+    "sectionTitle": "UNA OPCION QUE UNE ESPIRITUALIDAD Y SOSTENIBILIDAD",
+    "description": "Una <strong>forma digna, sencilla y accesible</strong> de despedir a un ser querido frente a la sepultura tradicional. En Serenidad® sabemos que tomar decisiones en momentos de partida puede ser abrumador.<br> Por lo cual, ofrecemos soluciones tanto para emergencias como para quienes <strong>planifican con anticipación</strong>, permitiendo enfocarse en lo más importante: <strong>la despedida, la unión familiar y el proceso de duelo</strong>.<br><br><br>Incluye:",
+    "bullets": [
+      "<strong>Cineración</strong> en Crematorio en alianza.",
+      "<strong>Ánfora Estándar</strong> según disponibilidad, con posibilidad de “Mejorar Plan”*",
+      "<strong>Derecho a cámara de conservación</strong> por hasta 5 días.",
+      "<strong>Ceremonia de “manto blanco”</strong> para último adiós.",
+      "<strong>Derecho hasta 3 responsos</strong> en Parroquia durante un año.",
+      "<strong>Gestión ante SEREMI de Salud.</strong>"
+    ],
+    "buttonText": "Ver Ánforas para Mejorar Plan",
+    "gallery": [
+      {
+        "image": "gallery1-cenizas.png",
+        "title": "Urnas ecológicas",
+        "description": "Opciones biodegradables para un homenaje sustentable."
+      },
+      {
+        "image": "gallery2-cenizas.png",
+        "title": "Urnas de cerámica",
+        "description": "Diseños elegantes y tradicionales."
+      }
+    ]
+  },
+  "carousel": {
+    "title": "Urnas para integrar al plan",
+    "items": [
+      {
+        "image": "/images/urnas/urna1.jpg",
+        "title": "Urna de Madera",
+        "description": "Diseño cálido y natural, ideal para quienes buscan una opción clásica."
+      },
+      {
+        "image": "/images/urnas/urna2.jpg",
+        "title": "Urna Ecológica",
+        "description": "<b>Biodegradable</b>, recomendada para quienes buscan una alternativa sustentable."
+      },
+      {
+        "image": "/images/urnas/urna3.jpg",
+        "title": "Urna Metálica Color",
+        "description": "Elegancia y durabilidad en una amplia gama de colores."
+      }
+    ],
+    "buttonText": "Solicita asesoría sin costo"
+  }
+}

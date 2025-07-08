@@ -1,0 +1,52 @@
+/* components/services/ServicesPlans.module.css */
+.plans { margin: 42px auto; max-width: 1050px; }
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Make card fill the grid cell */
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  padding: 24px 18px;
+  text-align: left;
+  align-items: center;
+  max-width: 300px;
+  /* Optional: min-width, max-width as before */
+}
+.card h3,
+.card p {
+  margin-bottom: 18px;
+}
+.card p {
+  flex-grow: 1;
+  /* Make the description take all available space */
+  display: flex;
+  align-items: flex-start;
+}
+.image { max-width: 300px; margin-bottom: 10px; }
+.title {
+  text-align: center;
+}
+/* Button always at the bottom */
+.cta {
+  margin-top: auto;
+  background: #C49B57;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  min-width: 160px;
+  /* Keep width consistent */
+}
+@media (max-width: 700px) {
+  .grid { flex-direction: column; gap: 28px; }
+  .card { width: 100%; }
+}

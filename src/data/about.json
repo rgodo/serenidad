@@ -1,0 +1,54 @@
+{
+  "title": "QUIENES SOMOS",
+  "paragraph": [
+    { "text": "Serenidad", "fontWeight": 600 },
+    {
+      "text": "®",
+      "fontWeight": 600,
+      "verticalAlign": "super",
+      "fontSize": "1.1rem"
+    },
+    {
+      "text": " es una organización sin fines de lucro vinculada al ",
+      "fontWeight": 600
+    },
+    { "text": "Obispado de Rancagua", "fontWeight": 600 },
+    {
+      "text": ", fundada el 2025, que entrega servicios funerarios dignos, accesibles y confiables, en comunión con los valores cristianos.",
+      "fontWeight": 600
+    },
+    {
+      "text": "\n\nEn respuesta a la falta de espacio en algunos cementerios, promovemos la ",
+      "fontWeight": 600
+    },
+    { "text": "Cremación", "fontWeight": 700, "color": "#E1952D" },
+    {
+      "text": " y el resguardo de cenizas en Parroquias, como espacios sagrados de oración. Esto fortalece el vínculo espiritual con los seres queridos y responde al ",
+      "fontWeight": 600
+    },
+    {
+      "text": "llamado del Papa Francisco (2016) ",
+      "fontWeight": 600,
+      "textDecoration": "underline"
+    },
+    {
+      "text": "de evitar la dispersión de cenizas.\n\nPor ello diseñamos y construimos ",
+      "fontWeight": 600
+    },
+    { "text": "Panteones de Cenizas", "fontWeight": 700, "color": "#E1952D" },
+    {
+      "text": ", también llamados \"columbarios\", \"memoriales\" o \"descansos\", donde las ánforas se conservan con respeto, seguridad y dignidad.\n\nAdemás, ofrecemos una ",
+      "fontWeight": 600
+    },
+    {
+      "text": "Atención Funeraria Integral 24 horas",
+      "fontWeight": 700,
+      "color": "#E1952D"
+    },
+    {
+      "text": "—velatorios, urnas, carrozas y más— tanto para emergencias como planificación futura.\n\nLas utilidades apoyan el sostenimiento de las actividades parroquiales locales, fortaleciendo la comunidad en fe y solidaridad.",
+      "fontWeight": 600
+    }
+  ],
+  "ctaText": "Ver aqui las parroquias presentes en la región de O'Higgins."
+}

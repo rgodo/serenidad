@@ -1,0 +1,18 @@
+[
+  {
+    "icon": "feature1.svg",
+    "label": "Servicios Funerarios 24/7"
+  },
+  {
+    "icon": "feature2.svg",
+    "label": "Velatorios y Ceremonias Litúrgicas"
+  },
+  {
+    "icon": "feature3.svg",
+    "label": "Cremación y Sepulturas"
+  },
+  {
+    "icon": "feature4.svg",
+    "label": "Panteón de Cenizas"
+  }
+]

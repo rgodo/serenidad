@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "title": "FUNERARIA 24 HORAS",
+    "subtitle": "SERVICIOS FUNERARIOS INTEGRALES",
+    "description": "En Serenidad® brindamos una atención completa, cercana, profesional y <strong>24 horas  los 365 días del año</strong>, tanto para necesidad inmediata como para <strong>planificación futura</strong>. Enfrentar la partida de un ser querido es un momento difícil, por lo que ofrecemos todos los servicios necesarios <strong>desde un solo lugar –su parroquia más cercana-</strong> simplificando el proceso para que usted y su familia puedan vivir el duelo con mayor tranquilidad.",
+    "highlights": [
+      {
+        "icon": "cross",
+        "text": "Atención inmediata las 24 horas.",
+        "subtext": "¡Estamos contigo cuando más lo necesitas!"
+      },
+      {
+        "icon": "circum-dollar",
+        "text": "Derecho a couta mortuoria.",
+        "subtext": "Si cuentas con derecho a cuota mortuoria, se descontará del valor total del servicio."
+      }
+    ],
+    "cta": {
+      "text": "Contáctanos ahora",
+      "link": "/contacto"
+    },
+    "bgImage": "/services/hero-bg.png"
+  },
+  "gallery": {
+    "images": [
+      {
+        "src": "gallery1.png",
+        "alt": "Flores funerarias"
+      },
+      {
+        "src": "gallery2.png",
+        "alt": "Flores funerarias 2"
+      }
+    ],
+    "buttonText": "Ver más"
+  },
+  "additionals": {
+    "title": "Adicionales",
+    "description": "Solicite el catálogo de complementos, guías y todos los servicios extras disponibles para personalizar la despedida de su ser querido."
+  },
+  "plans": [
+    {
+      "id": "sereno",
+      "title": "Plan Sereno",
+      "subtitle": "SERVICIO FUNERARIO",
+      "image": "sereno.png",
+      "gallery": ["coffin1.png", "coffin1-b.png", "coffin1-c.png"],
+      "cta": "Cotizar servicios",
+      "urnDescription": "Urna plana, de madera terciado, acabado brillante, manillas tubulares.",
+      "urnMeasures": "Alto 0.50, Ancho 0.60 y Largo 1.90, para un peso máximo de 90 Kgs.",
+      "description": "Urna plana de madera terciada y servicios esenciales. Incluye sala velatoria, ceremonia religiosa y carroza. Cubierto por la Cuota Mortuoria IPS. Digno, simple y accesible.",
+      "includes": [
+        "Urna según Plan.",
+        "Sala velatoria en nuestra red de parroquias.",
+        "Ministro para oficiar ceremonia religiosa.",
+        "Carroza panorámica moderna para traslados.",
+        "Libro de condolencias para mensajes y recuerdos familiares.",
+        "Equipamiento completo para velatorio, incluyendo capilla ardiente (eléctrica), porta libro de condolencias.",
+        "Asistencia en trámites legales e inscripción de defunción en el Registro Civil."
+      ],
+      "boldIncludes": [0, 1, 2, 3, 4, 5, 6]
+    },
+    {
+      "id": "cereno",
+      "title": "Plan Cereno",
+      "subtitle": "SERVICIO FUNERARIO",
+      "image": "cereno.png",
+      "gallery": ["coffin1.png", "coffin1-b.png", "coffin1-c.png"],
+      "cta": "Cotizar servicios",
+      "urnDescription": "Urna plana, de madera terciado, acabado brillante, manillas tubulares.",
+      "urnMeasures": "Alto 0.50, Ancho 0.60 y Largo 1.90, para un peso máximo de 90 Kgs.",
+      "description": "Urna curva de fibromadera, ceremonia, traslado, cafetería y detalles litúrgicos. Una opción cercana y cálida para despedidas con sentido.",
+      "includes": [
+        "Urna según Plan.",
+        "Sala velatoria en nuestra red de parroquias.",
+        "Ministro para oficiar ceremonia religiosa.",
+        "Carroza panorámica moderna para traslados.",
+        "Libro de condolencias para mensajes y recuerdos familiares.",
+        "Equipamiento completo para velatorio, incluyendo capilla ardiente (eléctrica), porta libro de condolencias.",
+        "Asistencia en trámites legales e inscripción de defunción en el Registro Civil."
+      ],
+      "boldIncludes": [0, 1, 2, 3, 4, 5, 6]
+    },
+    {
+      "id": "eterno",
+      "title": "Plan Eterno",
+      "subtitle": "SERVICIO FUNERARIO",
+      "image": "eterno.png",
+      "gallery": ["coffin1.png", "coffin1-b.png", "coffin1-c.png"],
+      "cta": "Cotizar servicios",
+      "urnDescription": "Urna plana, de madera terciado, acabado brillante, manillas tubulares.",
+      "urnMeasures": "Alto 0.50, Ancho 0.60 y Largo 1.90, para un peso máximo de 90 Kgs.",
+      "description": "Urna curva de madera de pino, arreglo floral, retrato conmemorativo y acompañamiento. Una despedida solemne y completa, con todos los honores.",
+      "includes": [
+        "Urna según Plan.",
+        "Sala velatoria en nuestra red de parroquias.",
+        "Ministro para oficiar ceremonia religiosa.",
+        "Carroza panorámica moderna para traslados.",
+        "Libro de condolencias para mensajes y recuerdos familiares.",
+        "Equipamiento completo para velatorio, incluyendo capilla ardiente (eléctrica), porta libro de condolencias.",
+        "Asistencia en trámites legales e inscripción de defunción en el Registro Civil."
+      ],
+      "boldIncludes": [0, 1, 2, 3, 4, 5, 6]
+    }
+  ]
+}

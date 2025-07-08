@@ -1,0 +1,45 @@
+{
+  "headlineRows": [
+    [
+      {
+        "text": "SERENIDAD",
+        "fontWeight": 700,
+        "fontSize": "3rem",
+        "fontFamily": "EB Garamond, serif",
+        "color": "#fff"
+      },
+      {
+        "text": "®",
+        "fontWeight": 400,
+        "fontSize": "1.5rem",
+        "fontFamily": "EB Garamond, serif",
+        "color": "#fff",
+        "verticalAlign": "top"
+      }
+    ],
+    [
+      {
+        "text": " CONTIGO EN ",
+        "fontWeight": 400,
+        "fontSize": "2.2rem",
+        "fontFamily": "EB Garamond, serif",
+        "color": "#fff"
+      },
+      {
+        "text": "CADA ETAPA",
+        "fontWeight": 900,
+        "fontSize": "2.2rem",
+        "fontFamily": "EB Garamond, serif",
+        "color": "#fff"
+      },
+      {
+        "text": " DE LA DESPEDIDA!",
+        "fontWeight": 400,
+        "fontSize": "2.2rem",
+        "fontFamily": "EB Garamond, serif",
+        "color": "#fff"
+      }
+    ]
+  ],
+  "subheadline": "Ahora desde tu Parroquia puedes acceder a todos los servicios funerarios que necesitas, de forma más confiable, más cercana y más accesible."
+}

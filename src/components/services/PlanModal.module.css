@@ -1,0 +1,173 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(30, 30, 30, 0.25);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    overflow-y: scroll;
+  }
+  .modalDesktop {
+    background: #fff;
+    max-width: 1150px;
+    width: 120vw;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    padding: 32px 32px 28px 32px;
+    position: relative;
+  }
+  .modalMobile {
+    background: #fff;
+    width: 98vw;
+    min-width: 0;
+    max-width: 400px;
+    margin-top: 500px;
+    padding: 16px 0 12px 0;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.17);
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    background: #fff;
+    border: 1px solid #232222;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 1;
+    transition: background 0.13s;
+  }
+  .close:hover { background: #f7f5ef; }
+  
+  .bodyDesktop {
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    align-items: flex-start;
+  }
+  .bodyMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .galleryWrap {
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 550px;
+    min-width: 0;
+  }
+  .galleryImg {
+    max-width: 550px;
+    max-height: auto;
+    object-fit: cover;
+  }
+  .galleryDots {
+    display: flex;
+    gap: 7px;
+    margin-top: 9px;
+  }
+  .dot,
+  .dotActive {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #C49B57;
+    opacity: 0.45;
+    cursor: pointer;
+    display: inline-block;
+    transition: opacity 0.15s;
+  }
+  .dotActive {
+    opacity: 1;
+  }
+  .arrow {
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    color: #333;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.7;
+    transition: opacity 0.17s;
+  }
+  .arrowLeft { left: -18px; }
+  .arrowRight { right: -18px; }
+  .arrow:hover { opacity: 1; }
+  
+  .infoWrap {
+    flex: 2 1 350px;
+    min-width: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .subtitle {
+    color: #7D9256;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+  .title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 7px;
+  }
+  .urnBlock {
+    font-size: 1.07rem;
+    margin-top: 13px;
+    margin-bottom: 7px;
+  }
+  .divider {
+    height: 2px;
+    background: #d8c39c;
+    width: 120px;
+    margin: 15px 0;
+  }
+  .includes {
+    margin: 9px 0 18px 0;
+    padding-left: 22px;
+    font-size: 1.01rem;
+  }
+  .cta {
+    margin-top: 17px;
+    background: #C49B57;
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px 36px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.14s;
+  }
+  .cta:hover {
+    background: #ad874e;
+  }
+  
+  @media (max-width: 700px) {
+    .modalDesktop, .modalMobile {
+      max-width: 98vw !important;
+      padding: 12px 2vw 18px 2vw;
+    }
+    .galleryImg { max-width: 94vw; }
+  }
+  
