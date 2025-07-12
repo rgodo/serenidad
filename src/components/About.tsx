@@ -133,7 +133,7 @@ function Honeycomb({ isMobile }: HoneycombProps) {
         alignItems: "center",
         position: "relative",
         mb: 4,
-        bgcolor: {sx: 'white', md: 'transparent'}
+        bgcolor: isMobile? 'white' : 'transparent',
       }}
     >
       {rows.map((row, i) => (
@@ -143,6 +143,7 @@ function Honeycomb({ isMobile }: HoneycombProps) {
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
+            mt: isMobile && i=== 0? "-95px": 0,
             mb: getRowMarginBottom(i, rows, HEX_SIZE),
             ml: getRowMarginLeft(isMobile, row, i, HEX_SIZE),
           }}
