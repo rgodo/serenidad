@@ -8,7 +8,7 @@ import PanteonSection from "@/components/panteon/PanteonSection";
 
 export default function Home() {
   return (
-    <main>
+    <main style={{maxWidth: "1440px", margin: 'auto'}}>
       <Hero />
       <FeatureBar />
       <About />

@@ -196,6 +196,7 @@ export default function PanteonSection() {
         >
           {hexSection.hexagons.map((hx, i) => (
             <PanteonHexagon
+              key={i}
               icon={hx.icon}
               title={hx.title}
               content={hx.content}

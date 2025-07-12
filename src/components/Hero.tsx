@@ -108,10 +108,15 @@ const Hero = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          maxWidth: CONTENT_MAX_WIDTH,
-          ml: { xs: 2, md: 8 },
-          mt: { xs: 6, md: 0 },
-          mb: { xs: 4, md: 0 },
+          mx: { xs: 2, md: 0 },
+          ml: { md: 15 },
+          mt: { xs: 0, md: 0 },
+          mb: { xs: 0, md: 0 },
+          maxWidth: {
+            xs: 400,
+            sm: 550,
+            md: CONTENT_MAX_WIDTH
+          },
           px: 0,
           py: 0,
         }}
@@ -120,7 +125,7 @@ const Hero = () => {
         <Typography
           component="h1"
           sx={{
-            mb: { xs: 3, md: 4 },
+            mb: { xs: 0, sm: 2, md: 4 },
             lineHeight: 1.08,
             display: "flex",
             flexDirection: "column",
@@ -137,9 +142,9 @@ const Hero = () => {
                   display: "block",
                   width: "100%",
                   fontSize: {
-                    xs: lineIdx === 0 ? "2.2rem" : "1.3rem",
-                    sm: lineIdx === 0 ? "2.8rem" : "1.6rem",
-                    md: lineIdx === 0 ? "3rem" : "2.2rem",
+                    xs: "1.8rem",
+                    sm: "2.6rem",
+                    md: "3rem",
                   },
                   mb: lineIdx === 0 ? { xs: 0.5, md: 1 } : 0,
                 }}
@@ -172,7 +177,7 @@ const Hero = () => {
             fontFamily: "'Assistant', Arial, sans-serif",
             fontSize: { xs: "0.96rem", sm: "1.08rem", md: "1.16rem" },
             color: "#fff",
-            maxWidth: 420,
+            maxWidth: { xs: 350, sm: 450, md: 500 },
             mt: { xs: 2, md: 2.5 },
             lineHeight: 1.35,
             textShadow: "0 2px 8px rgba(0,0,0,0.35)",
