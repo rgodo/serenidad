@@ -29,25 +29,43 @@ const CremacionCarousel: React.FC<CremacionCarouselProps> = ({
     </Typography>
     <Swiper
       spaceBetween={24}
-      slidesPerView={1}
+      slidesPerView={4}
       navigation
       pagination={{ clickable: true }}
       modules={[Navigation, Pagination]}
-      style={{ maxWidth: 900, margin: "0 auto", marginBottom: 24 }}
+      style={{ maxWidth: 950, margin: "0 auto", marginBottom: 24 }}
+      breakpoints={{
+        0: { slidesPerView: 1 },
+        600: { slidesPerView: 2 },
+        900: { slidesPerView: 3 },
+        1200: { slidesPerView: 4 },
+      }}
     >
       {items.map((item, idx) => (
         <SwiperSlide key={idx}>
           <Box
             sx={{
-              px: 2,
+              height: "100%",
               display: "flex",
-              flexDirection: { xs: "column", md: "row" },
+              flexDirection: "column",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "flex-start",
+              p: 2,
+              background: "#fff",
+              borderRadius: 4,
+              boxShadow: 2,
+              minHeight: 420,
             }}
           >
             <Box
-              sx={{ flex: "0 0 160px", mr: { md: 4 }, mb: { xs: 2, md: 0 } }}
+              sx={{
+                mb: 2,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: 160,
+                height: 160,
+              }}
             >
               <img
                 src={item.image}
@@ -57,19 +75,25 @@ const CremacionCarousel: React.FC<CremacionCarouselProps> = ({
                   height: 160,
                   objectFit: "cover",
                   borderRadius: 16,
+                  boxShadow: "0 2px 8px 0 rgba(0,0,0,0.05)",
+                  background: "#fafafa",
                 }}
               />
             </Box>
-            <Box sx={{ textAlign: { xs: "center", md: "left" } }}>
-              <Typography variant="subtitle1" fontWeight={600}>
-                {item.title}
-              </Typography>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                dangerouslySetInnerHTML={{ __html: item.description }}
-              />
-            </Box>
+            <Typography
+              variant="subtitle1"
+              fontWeight={700}
+              mb={1.5}
+              sx={{ minHeight: 48, textAlign: "center" }}
+            >
+              {item.title}
+            </Typography>
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{ textAlign: "center", flex: 1 }}
+              dangerouslySetInnerHTML={{ __html: item.description }}
+            />
           </Box>
         </SwiperSlide>
       ))}

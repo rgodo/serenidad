@@ -4,6 +4,7 @@ import FeatureBar from "../components/FeatureBar";
 import Differences from "@/components/Differences";
 import Cremacion from "@/components/cremacion/Cremacion";
 import { Services } from "@/components/services";
+import PanteonSection from "@/components/panteon/PanteonSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Differences />
       <Services />
       <Cremacion />
+      <PanteonSection />
       {/* Add more sections as you build them */}
     </main>
   );

@@ -23,14 +23,13 @@ const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
-    const isDesktop = window.innerWidth > 768;
+    // Only hide video if prefers-reduced-motion is enabled
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
-    if (isDesktop && !prefersReducedMotion) setShowVideo(true);
+    setShowVideo(!prefersReducedMotion);
   }, []);
 
-  // Extract font families from JSON for DRY use
   const fontFamilies = getFontFamilies();
 
   return (
@@ -126,7 +125,7 @@ const Hero = () => {
             display: "flex",
             flexDirection: "column",
             flexWrap: "wrap",
-            fontFamily: fontFamilies, // DRY: all used fonts
+            fontFamily: fontFamilies,
           }}
         >
           {(heroContent.headlineRows as HeadlinePart[][]).map(

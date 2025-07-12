@@ -40,3 +40,45 @@ a {
     color-scheme: dark;
   }
 }
+
+.hexagon-flip {
+  perspective: 800px;
+  width: 180px;
+  height: 208px;
+  margin: 0 8px;
+  display: inline-block;
+}
+.hexagon-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(.34,1.56,.64,1);
+}
+.hexagon-flip:hover .hexagon-inner, .hexagon-flip:focus .hexagon-inner {
+  transform: rotateY(180deg);
+}
+.hexagon-face, .hexagon-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  clip-path: polygon(
+    25% 6.7%, 75% 6.7%,
+    100% 50%, 75% 93.3%,
+    25% 93.3%, 0% 50%
+  );
+  box-shadow: 0 4px 14px #0001;
+  background: #a48b74;
+  color: #fff;
+  padding: 16px 10px 8px 10px;
+  text-align: center;
+}
+.hexagon-back {
+  background: #6b513d;
+  transform: rotateY(180deg);
+}

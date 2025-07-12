@@ -1,0 +1,54 @@
+{
+  "header": {
+    "bgImage": "panteon-background.png",
+    "intro": "MEMORIALES",
+    "title": "PANTEÓN DE CENIZAS",
+    "description": "Precios especiales desde <b>15 UF</b>.",
+    "button": {
+      "text": "Conocer más",
+      "link": "#"
+    }
+  },
+  "infoSection": {
+    "intro": "PANTEÓN DE CENIZAS",
+    "title": "COLUMBARIOS EN PARROQUIAS",
+    "description": "Espacios exclusivos para cenizas en parroquias aliadas. <b>Resguardo seguro</b> y <i>cercano a la comunidad</i>.<br/>Solicita información personalizada.",
+    "button": {
+      "text": "Solicitar información",
+      "link": "#"
+    },
+    "image": "/images/columbario-church.jpg"
+  },
+  "hexSection": {
+    "title": "Ventajas de nuestros Columbarios",
+    "hexagons": [
+      {
+        "icon": "/icons/urn.svg",
+        "title": "Acceso Seguro",
+        "content": "Ubicados en recintos sagrados, protegidos y siempre disponibles para visitas."
+      },
+      {
+        "icon": "/icons/flower.svg",
+        "title": "Cercanía y Comunidad",
+        "content": "En lugares accesibles para las familias y en el corazón de la comunidad."
+      },
+      {
+        "icon": "/icons/support.svg",
+        "title": "Apoyo Espiritual",
+        "content": "Acompañamiento pastoral y servicios religiosos a disposición."
+      },
+      {
+        "icon": "/icons/price.svg",
+        "title": "Precios Accesibles",
+        "content": "Opciones económicas y facilidades de pago pensadas para todos."
+      }
+    ],
+    "footer": {
+      "text": "<b>En Serenidad</b> te acompañamos en todo momento. Consulta nuestros planes y promociones especiales.",
+      "button": {
+        "text": "Solicitar Cotización",
+        "link": "#"
+      }
+    }
+  }
+}

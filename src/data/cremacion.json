@@ -32,24 +32,29 @@
     ]
   },
   "carousel": {
-    "title": "Urnas para integrar al plan",
+    "title": "Ánforas para Mejorar Plan",
     "items": [
       {
-        "image": "/images/urnas/urna1.jpg",
-        "title": "Urna de Madera",
-        "description": "Diseño cálido y natural, ideal para quienes buscan una opción clásica."
+        "image": "carousel-ashes1.png",
+        "title": "Ánfora Artesanal en Combarbalita",
+        "description": "Memoria eterna en piedra chilena. Elaborada cuidadosamente a mano en piedra Combarbalita, cada pieza es única, reflejando la belleza natural y tradicional chilena para perpetuar la memoria de quienes más amas."
       },
       {
-        "image": "/images/urnas/urna2.jpg",
-        "title": "Urna Ecológica",
-        "description": "<b>Biodegradable</b>, recomendada para quienes buscan una alternativa sustentable."
+        "image": "carousel-ashes2.png",
+        "title": "Ánfora Espíritu de Paz",
+        "description": "Serenidad y esperanza. Diseño sobrio en tono oscuro decorado con una paloma blanca, símbolo universal de paz y tranquilidad espiritual."
       },
       {
-        "image": "/images/urnas/urna3.jpg",
-        "title": "Urna Metálica Color",
-        "description": "Elegancia y durabilidad en una amplia gama de colores."
+        "image": "carousel-ashes3.png",
+        "title": "Ánfora Clásica de Cobre",
+        "description": "Tradición chilena en cobre. Urna fabricada en cobre con acabado brillante, elegante y duradera, representando solemnidad y respeto para honrar y preservar la memoria del ser querido."
+      },
+      {
+        "image": "carousel-ashes4.png",
+        "title": "Ánfora Mosaico Celeste",
+        "description": "Armonía y delicadeza. Diseño moderno de textura suave con delicados detalles en <strong>mosaico multicolor</strong>, transmitiendo serenidad y un homenaje contemporáneo."
       }
     ],
-    "buttonText": "Solicita asesoría sin costo"
+    "buttonText": "¡Contáctanos Ahora!"
   }
 }
