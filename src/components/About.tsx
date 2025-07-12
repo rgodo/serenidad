@@ -34,6 +34,7 @@ function TextContent({ content }: { content: typeof aboutContent }) {
       sx={{
         flex: 1,
         maxWidth: { xs: "100%", md: "100%" },
+        pt: { xs: 0, md: 3 },
         mr: { md: 2 },
         ml: { xs: 0, md: 2 },
         px: { xs: 2, md: 0 },
@@ -49,6 +50,8 @@ function TextContent({ content }: { content: typeof aboutContent }) {
           color: "#383838",
           fontSize: { xs: "2rem", md: "2.3rem" },
           letterSpacing: "-1.2px",
+          paddingBottom: 2,
+          borderBottom: "2px solid #E1952D"
         }}
       >
         {content.title}
@@ -83,8 +86,8 @@ function TextContent({ content }: { content: typeof aboutContent }) {
       <Button
         variant="outlined"
         sx={{
-          borderColor: "#c6c6b0",
-          color: "#575544",
+          borderColor: "#8B7669",
+          color: "#8B7669",
           background: "#fff",
           fontWeight: 400,
           fontFamily: "'Assistant', Arial, sans-serif",
@@ -104,7 +107,7 @@ function TextContent({ content }: { content: typeof aboutContent }) {
           mx: { xs: "auto", md: 0 },
         }}
       >
-        {content.ctaText}
+        <strong>Ver aqui</strong> las parroquias presentes en la región de O&#39;Higgins.
       </Button>
     </Box>
   );
@@ -123,12 +126,14 @@ function Honeycomb({ isMobile }: HoneycombProps) {
       sx={{
         flex: 1,
         minWidth: isMobile ? HEX_SIZE * 2 : HEX_SIZE * 3,
-        maxWidth: isMobile ? HEX_SIZE * 2.4 : HEX_SIZE * 3.4,
+        width: '100%',
         mt: isMobile ? 0 : -7,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         position: "relative",
+        mb: 4,
+        bgcolor: {sx: 'white', md: 'transparent'}
       }}
     >
       {rows.map((row, i) => (
@@ -186,7 +191,7 @@ const About = () => {
         py: { xs: 0, md: 3 },
         px: { xs: 0, md: 3 },
         background: "#efefef",
-        gap: { xs: 6, md: 0 },
+        gap: { xs: 0, md: 0 },
         minHeight: { md: 540 },
         position: "relative",
         overflow: "hidden",

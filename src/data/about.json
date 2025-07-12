@@ -1,11 +1,10 @@
 {
-  "title": "QUIENES SOMOS",
+  "title": "QUIÉNES SOMOS",
   "paragraph": [
     { "text": "Serenidad", "fontWeight": 600 },
     {
       "text": "®",
       "fontWeight": 600,
-      "verticalAlign": "super",
       "fontSize": "1.1rem"
     },
     {
@@ -49,6 +48,5 @@
       "text": "—velatorios, urnas, carrozas y más— tanto para emergencias como planificación futura.\n\nLas utilidades apoyan el sostenimiento de las actividades parroquiales locales, fortaleciendo la comunidad en fe y solidaridad.",
       "fontWeight": 600
     }
-  ],
-  "ctaText": "Ver aqui las parroquias presentes en la región de O'Higgins."
+  ]
 }
