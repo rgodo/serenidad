@@ -30,15 +30,16 @@ const Navbar = () => {
 
   return (
     <AppBar
-      position="fixed"
+      position="sticky"
       color="default"
       elevation={1}
       sx={{
+        top: 0,
         background: "#fff",
         boxShadow: "0 2px 8px rgba(0,0,0,0.07)",
       }}
     >
-      <Toolbar sx={{ justifyContent: "space-between" }}>
+      <Toolbar sx={{ justifyContent: "space-between", px: 2, py: 1.5, maxWidth: '1440px', margin: 'auto', width: '100%' }} >
         {/* Logo */}
         <Box
           sx={{

@@ -39,7 +39,6 @@ const Hero = () => {
         width: "100%",
         height: { xs: HERO_HEIGHT_MOBILE, md: HERO_HEIGHT_DESKTOP },
         minHeight: 340,
-        marginTop: 8,
         display: "flex",
         alignItems: "center",
         justifyContent: "start",
