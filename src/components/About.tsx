@@ -143,7 +143,7 @@ function Honeycomb({ isMobile }: HoneycombProps) {
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
-            mt: isMobile && i=== 0? "-95px": 0,
+            mt: isMobile && i === 0 ? `-${(HEX_SIZE/2)-20}px`: 0,
             mb: getRowMarginBottom(i, rows, HEX_SIZE),
             ml: getRowMarginLeft(isMobile, row, i, HEX_SIZE),
           }}

@@ -31,11 +31,11 @@ function DifferencesTitle({
       sx={{
         color: "#fff",
         fontWeight: 400,
-        fontSize: "3rem",
+        fontSize: "2.5rem",
         mb: 2,
         lineHeight: 1.15,
         letterSpacing: "0.02em",
-        maxWidth: 420,
+        maxWidth: 320,
         position: "relative",
         zIndex: 2,
       }}
@@ -84,7 +84,7 @@ type HoneycombProps = {
 };
 
 function Honeycomb({ isMobile, renderCell }: HoneycombProps) {
-  const HEX_SIZE = isMobile ? 220 : 220;
+  const HEX_SIZE = 220;
   const honeycombRowsDesktop = differencesData.honeycomb;
   const honeycombRowsMobile = differencesData.honeycombMobile;
   const rows = isMobile ? honeycombRowsMobile : honeycombRowsDesktop;
@@ -111,6 +111,7 @@ function Honeycomb({ isMobile, renderCell }: HoneycombProps) {
             alignItems: "center",
             mb: getRowMarginBottom(i, rows, HEX_SIZE),
             ml: getRowMarginLeft(isMobile, row, i, HEX_SIZE),
+            marginTop: isMobile && i === 0 ? `-${HEX_SIZE/2}px`: 0
           }}
         >
           {row.map((cell, j) => {
@@ -157,7 +158,7 @@ function Differences() {
   return (
     <Box
       sx={{
-        width: "100vw",
+        width: "100%",
         minHeight: "100vh",
         backgroundImage: `url(${backgroundUrl})`,
         backgroundPosition: "center center",
@@ -180,7 +181,7 @@ function Differences() {
           zIndex: 2,
           alignItems: isMobile ? "center" : "flex-start",
           mt: isMobile ? 10 : -40,
-          ml: 4,
+          mx: 4,
         }}
       >
         <DifferencesTitle titleParts={differencesData.title} />
