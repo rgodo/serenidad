@@ -38,6 +38,7 @@
   .controlButton {
     color: #756157;
     font-size: 1.5rem;
+    border: 0;
     width: auto;
   }
 }

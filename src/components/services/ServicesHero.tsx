@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./ServicesHero.module.css"; // (see below)
 import { IconStar, IconUser } from "./Icons";
 import { HeroData } from "../../data/types";
+import { Typography } from "@mui/material";
 
 type Props = { data: HeroData, isMobile: boolean };
 
@@ -18,14 +19,14 @@ export const ServicesHero: React.FC<Props> = ({ data, isMobile }) => (
   >
     <div className={styles.content}>
       <span style={{ color: "#768837", marginBottom: "5px", fontWeight: 700 }}>{data.title}</span>
-      <h1
-        style={{
-          fontSize: isMobile? "1.875rem": '3rem',
+      <Typography
+        sx={{
+          fontSize: { xs: '1.875rem', md: '3rem' },
           fontWeight: 300,
           marginTop: "10px",
-          maxWidth: isMobile ? '100%' : "250px",
+          maxWidth: { xs: '100%', md: "510px" },
           marginBottom: "5px",
-          lineHeight: isMobile? 1.2: 1,
+          lineHeight: { xs: 1.2, md: 1 },
           paddingBottom: '1rem',
           borderBottom: "solid",
           borderColor: "#E1952D",
@@ -33,8 +34,8 @@ export const ServicesHero: React.FC<Props> = ({ data, isMobile }) => (
         }}
       >
         {data.subtitle}
-      </h1>
-      <p
+      </Typography>
+      <Typography
         style={{
           fontFamily: "Assistant, serif",
           paddingTop: 15,

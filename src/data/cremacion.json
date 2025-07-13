@@ -1,6 +1,7 @@
 {
   "header": {
     "backgroundImage": "cremacion-background.png",
+    "backgroundMobileImage": "cremacion-bg-mobile.jpg",
     "title": "CREMACIÓN",
     "intro": "ELIGE EN VIDA",
     "description": "Ahórrate a ti y a tu familia preocupaciones futuras."
@@ -8,7 +9,7 @@
   "info": {
     "intro": "CREMACIÓN",
     "sectionTitle": "UNA OPCION QUE UNE ESPIRITUALIDAD Y SOSTENIBILIDAD",
-    "description": "Una <strong>forma digna, sencilla y accesible</strong> de despedir a un ser querido frente a la sepultura tradicional. En Serenidad® sabemos que tomar decisiones en momentos de partida puede ser abrumador.<br> Por lo cual, ofrecemos soluciones tanto para emergencias como para quienes <strong>planifican con anticipación</strong>, permitiendo enfocarse en lo más importante: <strong>la despedida, la unión familiar y el proceso de duelo</strong>.<br><br><br>Incluye:",
+    "description": "Una <strong>forma digna, sencilla y accesible</strong> de despedir a un ser querido frente a la sepultura tradicional. En Serenidad® sabemos que tomar decisiones en momentos de partida puede ser abrumador.<br> Por lo cual, ofrecemos soluciones tanto para emergencias como para quienes <strong>planifican con anticipación</strong>, permitiendo enfocarse en lo más importante: <strong>la despedida, la unión familiar y el proceso de duelo</strong>.<br><br><strong>Incluye</strong>:",
     "bullets": [
       "<strong>Cineración</strong> en Crematorio en alianza.",
       "<strong>Ánfora Estándar</strong> según disponibilidad, con posibilidad de “Mejorar Plan”*",
@@ -18,18 +19,22 @@
       "<strong>Gestión ante SEREMI de Salud.</strong>"
     ],
     "buttonText": "Ver Ánforas para Mejorar Plan",
-    "gallery": [
-      {
-        "image": "gallery1-cenizas.png",
-        "title": "Urnas ecológicas",
-        "description": "Opciones biodegradables para un homenaje sustentable."
-      },
-      {
-        "image": "gallery2-cenizas.png",
-        "title": "Urnas de cerámica",
-        "description": "Diseños elegantes y tradicionales."
-      }
-    ]
+    "gallery": {
+      "images": [
+        {
+          "src": "gallery1-cenizas.png",
+          "alt": "Urnas ecológicas",
+          "title": "Urnas ecológicas",
+          "description": "Opciones biodegradables para un homenaje sustentable."
+        },
+        {
+          "src": "gallery2-cenizas.png",
+          "alt": "Urnas de cerámica",
+          "title": "Urnas de cerámica",
+          "description": "Diseños elegantes y tradicionales."
+        }
+      ]
+    }
   },
   "carousel": {
     "title": "Ánforas para Mejorar Plan",
@@ -37,22 +42,22 @@
       {
         "image": "carousel-ashes1.png",
         "title": "Ánfora Artesanal en Combarbalita",
-        "description": "Memoria eterna en piedra chilena. Elaborada cuidadosamente a mano en piedra Combarbalita, cada pieza es única, reflejando la belleza natural y tradicional chilena para perpetuar la memoria de quienes más amas."
+        "description": "<strong style='font-size:1rem;'>Memoria eterna en piedra chilena.</strong></br> Elaborada cuidadosamente a mano en piedra Combarbalita, cada pieza es única, reflejando la belleza natural y tradicional chilena para perpetuar la memoria de quienes más amas."
       },
       {
         "image": "carousel-ashes2.png",
         "title": "Ánfora Espíritu de Paz",
-        "description": "Serenidad y esperanza. Diseño sobrio en tono oscuro decorado con una paloma blanca, símbolo universal de paz y tranquilidad espiritual."
+        "description": "<strong style='font-size:1rem;'>Serenidad y esperanza.</strong></br> Diseño sobrio en tono oscuro decorado con una paloma blanca, símbolo universal de paz y tranquilidad espiritual."
       },
       {
         "image": "carousel-ashes3.png",
         "title": "Ánfora Clásica de Cobre",
-        "description": "Tradición chilena en cobre. Urna fabricada en cobre con acabado brillante, elegante y duradera, representando solemnidad y respeto para honrar y preservar la memoria del ser querido."
+        "description": "<strong style='font-size:1rem;'>Tradición chilena en cobre.</strong></br> Urna fabricada en cobre con acabado brillante, elegante y duradera, representando solemnidad y respeto para honrar y preservar la memoria del ser querido."
       },
       {
         "image": "carousel-ashes4.png",
         "title": "Ánfora Mosaico Celeste",
-        "description": "Armonía y delicadeza. Diseño moderno de textura suave con delicados detalles en <strong>mosaico multicolor</strong>, transmitiendo serenidad y un homenaje contemporáneo."
+        "description": "<strong style='font-size:1rem;'>Armonía y delicadeza.</strong></br> Diseño moderno de textura suave con delicados detalles en <strong>mosaico multicolor</strong>, transmitiendo serenidad y un homenaje contemporáneo."
       }
     ],
     "buttonText": "¡Contáctanos Ahora!"

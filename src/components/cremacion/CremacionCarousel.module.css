@@ -1,0 +1,21 @@
+.controlContainer {
+  position: absolute;
+  z-index: 5;
+  top: calc(50% - 15px);
+  height: 0px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.controlButton {
+  background: transparent;
+  border: 2px solid #6e8348;
+  color: #6e8348;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  width: 30px;
+  cursor: pointer;
+}

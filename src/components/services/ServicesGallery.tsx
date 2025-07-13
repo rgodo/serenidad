@@ -7,9 +7,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Box } from '@mui/material';
 import { Navigation } from 'swiper/modules';
 
-type Props = { data: GalleryData, isMobile?: boolean };
+type Props = { data: GalleryData, isMobile?: boolean, children?: React.ReactNode };
 
-export const ServicesGallery: React.FC<Props> = ({ data, isMobile }) => {
+export const ServicesGallery: React.FC<Props> = ({ data, isMobile, children }) => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
@@ -36,6 +36,7 @@ export const ServicesGallery: React.FC<Props> = ({ data, isMobile }) => {
       onSwiper={(swiper) => {
         swiperRef.current = swiper;
       }}
+      autoHeight={false}
     >
       {
         data.images.map( ({src, alt}, idx) => (
@@ -46,18 +47,7 @@ export const ServicesGallery: React.FC<Props> = ({ data, isMobile }) => {
           </SwiperSlide>
         ))
       }
-      <Box
-        sx={{
-          bgcolor: '#E1952D',
-          textAlign: 'center',
-          paddingY: '0.5rem',
-          color: 'white'
-        }}
-      >
-        <span style={{
-          fontWeight: 700,
-        }}> ¡Ver Planes! </span>
-      </Box>
+      {children}
       <Box className={styles.controlContainer}>
         <button ref={prevRef} className={styles.controlButton} dangerouslySetInnerHTML={{ __html: isMobile ? "&#10094;" : "&#8592;" }}></button>
         <button ref={nextRef} className={styles.controlButton} dangerouslySetInnerHTML={{ __html: isMobile ? "&#10095;" : "&#8594;" }}></button>

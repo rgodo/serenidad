@@ -23,8 +23,8 @@ export interface HeroData {
   bgImage: string;
 }
 export interface GalleryData {
-  images: { src: string; alt: string }[];
-  buttonText: string;
+  images: { src: string; alt: string, title?: string, description?: string }[];
+  buttonText?: string;
 }
 export interface PlanData {
   id: string;

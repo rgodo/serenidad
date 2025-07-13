@@ -39,7 +39,20 @@ export const Services: React.FC = () => {
             gridArea: { md: 'second' }
           }}
         >
-          <ServicesGallery data={data.gallery} isMobile={isMobile} />
+          <ServicesGallery data={data.gallery} isMobile={isMobile}>
+            <Box
+              sx={{
+                bgcolor: '#E1952D',
+                textAlign: 'center',
+                paddingY: '0.5rem',
+                color: 'white'
+              }}
+            >
+              <span style={{
+                fontWeight: 700,
+              }}> ¡Ver Planes! </span>
+            </Box>
+          </ServicesGallery>
           <div
             style={{
               marginTop: 18,
