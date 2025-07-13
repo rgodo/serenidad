@@ -3,8 +3,12 @@
 .grid {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 980px;
+  margin: auto;
 }
 .card {
   display: flex;
@@ -47,6 +51,5 @@
   /* Keep width consistent */
 }
 @media (max-width: 700px) {
-  .grid { flex-direction: column; gap: 28px; }
   .card { width: 100%; }
 }

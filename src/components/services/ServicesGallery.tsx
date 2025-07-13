@@ -3,13 +3,13 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./ServicesGallery.module.css";
 import { GalleryData } from "../../data/types";
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Box } from '@mui/material';
 import { Navigation } from 'swiper/modules';
 
 type Props = { data: GalleryData, isMobile?: boolean };
 
-export const ServicesGallery: React.FC<Props> = ({ data }) => {
+export const ServicesGallery: React.FC<Props> = ({ data, isMobile }) => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
@@ -46,10 +46,6 @@ export const ServicesGallery: React.FC<Props> = ({ data }) => {
           </SwiperSlide>
         ))
       }
-      <Box className={styles.controlContainer}>
-        <button ref={prevRef} className={styles.controlButton}>&#10094;</button>
-        <button ref={nextRef} className={styles.controlButton}>&#10095;</button>
-      </Box>
       <Box
         sx={{
           bgcolor: '#E1952D',
@@ -61,6 +57,10 @@ export const ServicesGallery: React.FC<Props> = ({ data }) => {
         <span style={{
           fontWeight: 700,
         }}> ¡Ver Planes! </span>
+      </Box>
+      <Box className={styles.controlContainer}>
+        <button ref={prevRef} className={styles.controlButton} dangerouslySetInnerHTML={{ __html: isMobile ? "&#10094;" : "&#8592;" }}></button>
+        <button ref={nextRef} className={styles.controlButton} dangerouslySetInnerHTML={{ __html: isMobile ? "&#10095;" : "&#8594;" }}></button>
       </Box>
     </Swiper>
   );
