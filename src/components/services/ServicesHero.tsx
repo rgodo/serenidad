@@ -4,27 +4,32 @@ import styles from "./ServicesHero.module.css"; // (see below)
 import { IconStar, IconUser } from "./Icons";
 import { HeroData } from "../../data/types";
 
-type Props = { data: HeroData };
+type Props = { data: HeroData, isMobile: boolean };
 
 const ICONS: Record<string, React.ReactNode> = {
   star: <IconStar />,
   user: <IconUser />,
 };
 
-export const ServicesHero: React.FC<Props> = ({ data }) => (
+export const ServicesHero: React.FC<Props> = ({ data, isMobile }) => (
   <section
     className={styles.hero}
     style={{ backgroundImage: `url(${data.bgImage})` }}
   >
     <div className={styles.content}>
-      <h4 style={{ color: "#768837", marginBottom: "5px" }}>{data.title}</h4>
+      <span style={{ color: "#768837", marginBottom: "5px", fontWeight: 700 }}>{data.title}</span>
       <h1
         style={{
-          fontSize: "3rem",
+          fontSize: isMobile? "1.875rem": '3rem',
           fontWeight: 300,
           marginTop: "10px",
-          maxWidth: "250px",
+          maxWidth: isMobile ? '100%' : "250px",
           marginBottom: "5px",
+          lineHeight: isMobile? 1.2: 1,
+          paddingBottom: '1rem',
+          borderBottom: "solid",
+          borderColor: "#E1952D",
+          borderWidth: 0.8,
         }}
       >
         {data.subtitle}
@@ -32,9 +37,6 @@ export const ServicesHero: React.FC<Props> = ({ data }) => (
       <p
         style={{
           fontFamily: "Assistant, serif",
-          borderTop: "solid",
-          borderColor: "#E1952D",
-          borderWidth: 0.8,
           paddingTop: 15,
           marginTop: 5,
         }}

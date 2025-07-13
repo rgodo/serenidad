@@ -6,81 +6,56 @@ import { ServicesHero } from "./ServicesHero";
 import { ServicesGallery } from "./ServicesGallery";
 import { ServicesPlans } from "./ServicesPlans";
 import { useIsMobile } from "./useIsMobile";
+import { Box } from "@mui/material";
 
 export const Services: React.FC = () => {
   const data = getServicesData();
   const isMobile = useIsMobile();
 
-  if (isMobile) {
-    // Mobile layout: Hero top, then centered Gallery
-    return (
-      <main>
-        <section style={{ margin: "32px auto", maxWidth: 600 }}>
-          <ServicesHero data={data.hero} />
-        </section>
-        <section
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            margin: "24px 0",
+  return (
+    <section>
+      <Box
+        sx={{
+          width: '100%',
+          paddingY: '2rem',
+          position: 'relative',
+          display: { md: 'grid' },
+          alignItems: { md: 'center' },
+          gridTemplateColumns: { md: '1fr 1fr'},
+          gridTemplateAreas: { md: '"second first"' }
+        }}
+      >
+        <Box sx={{
+          margin: "32px auto", maxWidth: 600, 
+          gridArea: { md: 'first'}
+        }}>
+          <ServicesHero data={data.hero} isMobile={isMobile} />
+        </Box>
+        <Box
+          sx={{
+            paddingLeft: '1rem',
+            paddingRight: '1rem',
+            maxWidth: {md: '40rem'},
+            gridArea: { md: 'second' }
           }}
         >
-          <ServicesGallery data={data.gallery} />
+          <ServicesGallery data={data.gallery} isMobile={isMobile} />
           <div
             style={{
               marginTop: 18,
-              textAlign: "center",
-              maxWidth: 350,
+              maxWidth: '100%',
             }}
           >
-            <h4 style={{ fontFamily: "Assistant, serif" }}>
+            <h4 style={{ fontFamily: "Assistant, serif", marginBottom: '0.5rem', marginTop: 0, fontWeight: 700, color: '#484846' }}>
               {data.additionals.title}
             </h4>
-            <p style={{ fontFamily: "Assistant, serif" }}>
+            <p style={{ fontFamily: "Assistant, serif", marginTop: 0, fontWeight: 600, lineHeight: 1.1, fontSize: "0.98rem", color: '#484846' }}>
               {data.additionals.description}
             </p>
           </div>
-        </section>
-        <ServicesPlans plans={data.plans} />
-      </main>
-    );
-  }
-
-  // Desktop layout: side-by-side
-  return (
-    <main>
-      <section
-        style={{
-          display: "flex",
-          gap: "32px",
-          maxWidth: 1200,
-          margin: "40px auto",
-          alignItems: "flex-start",
-          flexWrap: "wrap",
-        }}
-      >
-        <div
-          style={{
-            flex: "1 1 320px",
-            minWidth: 300,
-            maxWidth: 420,
-            fontFamily: "Assistant, serif",
-          }}
-        >
-          <ServicesGallery data={data.gallery} />
-          <section style={{ marginLeft: 35, maxWidth: 850 }}>
-            <div style={{ marginTop: 0 }}>
-              <h4>{data.additionals.title}</h4>
-              <p>{data.additionals.description}</p>
-            </div>
-          </section>
-        </div>
-        <div style={{ flex: "2 1 400px", minWidth: 300 }}>
-          <ServicesHero data={data.hero} />
-        </div>
-      </section>
+        </Box>
+      </Box>
       <ServicesPlans plans={data.plans} />
-    </main>
+    </section>
   );
 };
