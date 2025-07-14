@@ -15,6 +15,7 @@ const Cremacion: React.FC = () => {
         paddingBottom: "2rem",
         backgroundImage: "url('bg-sheet.png')",
       }}
+      id='cremation'
     >
       <CremacionHeader {...cremacionData.header} />
       <CremacionInfo {...cremacionData.info} isMobile={isMobile} />

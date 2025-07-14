@@ -13,7 +13,7 @@ export const Services: React.FC = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section style={{ backgroundImage: "url('bg-sheet.png')" }}>
+    <section style={{ backgroundImage: "url('bg-sheet.png')" }} id="services">
       <Box
         sx={{
           width: "100%",

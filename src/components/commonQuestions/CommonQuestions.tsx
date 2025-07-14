@@ -12,11 +12,7 @@ import SearchIcon from '@mui/icons-material/Search';
 const CommonQuestions = () => {
   const [sectionSelected, setSectionSelected] = useState(questions[0]);
   const isMobile = useIsMobile();
-  return <Box
-    sx={{
-      // backgroundImage: "url('bg-sheet.png')",
-    }}
-  >
+  return <Box component={'section'} id="faq">
     {/* Hero */}
     <Box
       sx={{

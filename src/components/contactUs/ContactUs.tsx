@@ -9,7 +9,7 @@ const ContactUs = () => {
       display: 'grid',
       gridTemplateColumns: { xs: '1fr', md: '1fr 1fr'},
       gap: '2rem'
-    }}>
+    }} id="contacto">
       <Box sx={{
         color: '#616161',
         maxWidth: {md: '30rem'},

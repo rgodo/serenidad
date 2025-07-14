@@ -22,7 +22,7 @@ export default function PanteonSection() {
 
   // Header section with background
   return (
-    <section style={{ backgroundImage: "url('bg-sheet.png')" }}>
+    <section style={{ backgroundImage: "url('bg-sheet.png')" }} id="mausoleum">
       <Box>
         {/* Header */}
         <Box
