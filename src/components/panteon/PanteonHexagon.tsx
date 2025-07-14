@@ -5,13 +5,13 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
 const hexagonStyles = {
-  width: 220,
-  height: 220,
+  width: 270,
+  height: 270,
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  background: "#E7DED7",
+  background: "linear-gradient(#c1ad97, #756157)",
   clipPath: "polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%)",
   transition: "0.5s",
   boxShadow: "0 2px 16px rgba(0,0,0,0.1)",
@@ -20,6 +20,8 @@ const hexagonStyles = {
   mx: -2,
   my: 2,
   overflow: "hidden",
+  color: "#fff",
+  fontFamily: "Assistant, serif",
 };
 
 const hexagonHoverStyles = {
@@ -63,7 +65,14 @@ export default function PanteonHexagon({ icon, title, content, index }) {
         }}
       >
         <img src={icon} alt={title} style={{ width: 44, marginBottom: 12 }} />
-        <Typography variant="h6" sx={{ fontWeight: 700 }}>
+        <Typography
+          variant="h6"
+          sx={{
+            fontWeight: 800,
+            fontFamily: "Assistant, serif",
+            paddingX: "40px",
+          }}
+        >
           {title}
         </Typography>
       </Box>
@@ -81,12 +90,18 @@ export default function PanteonHexagon({ icon, title, content, index }) {
         }}
       >
         <img src={icon} alt={title} style={{ width: 36, marginBottom: 8 }} />
-        <Typography variant="subtitle1" sx={{ fontWeight: 700, mb: 1 }}>
+        <Typography
+          variant="subtitle1"
+          sx={{ fontWeight: 700, mb: 1, fontFamily: "Assistant, serif" }}
+        >
           {title}
         </Typography>
         <Typography
           variant="body2"
-          sx={{ fontWeight: 400 }}
+          sx={{
+            fontWeight: 400,
+            fontFamily: "Assistant, serif",
+          }}
           dangerouslySetInnerHTML={{ __html: content }}
         />
       </Box>

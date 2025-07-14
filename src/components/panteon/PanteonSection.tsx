@@ -22,209 +22,213 @@ export default function PanteonSection() {
 
   // Header section with background
   return (
-    <Box>
-      {/* Header */}
-      <Box
-        sx={{
-          background: `url('${header.bgImage}') center/cover no-repeat`,
-          minHeight: isMobile ? 250 : 350,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "flex-end",
-          px: isMobile ? 2 : 8,
-          py: isMobile ? 4 : 7,
-          color: "#fff",
-          position: "relative",
-        }}
-      >
+    <section style={{ backgroundImage: "url('bg-sheet.png')" }}>
+      <Box>
+        {/* Header */}
         <Box
           sx={{
-            p: isMobile ? 2 : 4,
-            maxWidth: "100%",
+            background: `url('${header.bgImage}') center/cover no-repeat`,
+            minHeight: isMobile ? 250 : 350,
             display: "flex",
-            flexDirection: isMobile ? "column" : "row",
-            alignItems: isMobile ? "flex-start" : "center",
-            justifyContent: "space-between",
-            gap: 2,
+            flexDirection: "column",
+            justifyContent: "flex-end",
+            px: isMobile ? 2 : 8,
+            py: isMobile ? 4 : 7,
+            color: "#fff",
+            position: "relative",
           }}
         >
-          {/* Texts at the left */}
-          <Box sx={{ flex: 1 }}>
-            <Typography variant="caption" sx={{ letterSpacing: 2 }}>
-              {header.intro}
-            </Typography>
-            <Typography
-              variant={isMobile ? "h5" : "h4"}
-              sx={{ fontWeight: 800, mb: 2 }}
-            >
-              {header.title}
-            </Typography>
-            <Typography variant="body1" sx={{ mb: 0 }}>
-              <RichText html={header.description} />
-            </Typography>
-          </Box>
-
-          {/* Button at the right */}
           <Box
             sx={{
-              mt: isMobile ? 2 : 0,
-              ml: isMobile ? 0 : 4,
+              p: isMobile ? 2 : 4,
+              maxWidth: "100%",
               display: "flex",
-              alignItems: "center",
+              flexDirection: isMobile ? "column" : "row",
+              alignItems: isMobile ? "flex-start" : "center",
+              justifyContent: "space-between",
+              gap: 2,
             }}
           >
-            <Button
-              variant="contained"
-              color="primary"
-              href={header.button.link}
+            {/* Texts at the left */}
+            <Box sx={{ flex: 1 }}>
+              <Typography variant="caption" sx={{ letterSpacing: 2 }}>
+                {header.intro}
+              </Typography>
+              <Typography
+                variant={isMobile ? "h5" : "h4"}
+                sx={{ fontWeight: 800, mb: 2 }}
+              >
+                {header.title}
+              </Typography>
+              <Typography variant="body1" sx={{ mb: 0 }}>
+                <RichText html={header.description} />
+              </Typography>
+            </Box>
+
+            {/* Button at the right */}
+            <Box
               sx={{
-                background: "#AF9983",
-                fontWeight: 700,
-                borderRadius: 6,
-                px: 4,
-                py: 1.5,
-                ":hover": { background: "#8d735a" },
-                whiteSpace: "nowrap",
+                mt: isMobile ? 2 : 0,
+                ml: isMobile ? 0 : 4,
+                display: "flex",
+                alignItems: "center",
               }}
             >
-              {header.button.text}
+              <Button
+                variant="contained"
+                color="primary"
+                href={header.button.link}
+                sx={{
+                  background: "#AF9983",
+                  fontWeight: 700,
+                  px: 4,
+                  py: 1.5,
+                  ":hover": { background: "#8d735a" },
+                  whiteSpace: "nowrap",
+                  textTransform: "none",
+                }}
+              >
+                {header.button.text}
+              </Button>
+            </Box>
+          </Box>
+        </Box>
+
+        {/* Info Section */}
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: isMobile ? "column" : "row",
+            width: "100%",
+            py: isMobile ? 4 : 8,
+            px: isMobile ? 2 : 12,
+            gap: isMobile ? 4 : 8,
+            alignItems: "center",
+          }}
+        >
+          {/* Left */}
+          <Box
+            sx={{
+              flex: 1,
+              maxWidth: isMobile ? "100%" : 460,
+              pr: isMobile ? 0 : 8,
+            }}
+          >
+            <Typography
+              variant="caption"
+              sx={{ color: "#6e8348", letterSpacing: 1, fontSize: "1.2rem" }}
+            >
+              {infoSection.intro}
+            </Typography>
+            <Typography
+              variant={isMobile ? "h6" : "h4"}
+              sx={{ fontWeight: 800, mb: 2, borderBottom: "1px solid #E1952D" }}
+            >
+              {infoSection.title}
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{ mb: 2, fontFamily: "Assistant, serif" }}
+            >
+              <RichText html={infoSection.description} />
+            </Typography>
+            <Button
+              href={infoSection.button.link}
+              sx={{
+                fontWeight: 700,
+                px: 4,
+                py: 1.5,
+                border: "1px solid",
+                fontFamily: "Assistant, serif",
+              }}
+            >
+              {infoSection.button.text}
+            </Button>
+          </Box>
+          {/* Right */}
+          <Box
+            sx={{
+              flex: 1,
+              width: isMobile ? "100%" : "auto",
+              minHeight: 280,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              mt: isMobile ? 2 : 0,
+            }}
+          >
+            <img
+              src={infoSection.image}
+              alt="Columbario"
+              style={{
+                width: isMobile ? "100%" : "420px",
+                objectFit: "cover",
+              }}
+            />
+          </Box>
+        </Box>
+
+        {/* Hexagon Section */}
+        <Box
+          sx={{
+            pt: isMobile ? 4 : 8,
+            pb: isMobile ? 4 : 8,
+            px: isMobile ? 2 : 8,
+          }}
+        >
+          <Typography
+            variant={isMobile ? "h6" : "h4"}
+            sx={{
+              fontWeight: 800,
+              mb: 15,
+              textAlign: "center",
+              fontFamily: "Assistant, serif",
+            }}
+          >
+            {hexSection.title}
+          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: isMobile ? "column" : "row",
+              justifyContent: "center",
+              alignItems: "center",
+              mb: 6,
+            }}
+          >
+            {hexSection.hexagons.map((hx, i) => (
+              <PanteonHexagon
+                key={i}
+                icon={hx.icon}
+                title={hx.title}
+                content={hx.content}
+                index={i}
+              />
+            ))}
+          </Box>
+          <Box sx={{ textAlign: "center", maxWidth: 950, mx: "auto", mb: 4 }}>
+            <Typography
+              variant="body1"
+              sx={{ mb: 2, fontFamily: "Assistant, serif" }}
+            >
+              <RichText html={hexSection.footer.text} />
+            </Typography>
+            <Button
+              href={hexSection.footer.button.link}
+              sx={{
+                fontWeight: 700,
+                px: 4,
+                py: 1.5,
+                border: "1px solid",
+                fontFamily: "Assistant, serif",
+                textTransform: "none",
+              }}
+            >
+              {hexSection.footer.button.text}
             </Button>
           </Box>
         </Box>
       </Box>
-
-      {/* Info Section */}
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: isMobile ? "column" : "row",
-          width: "100%",
-          background: "#fff",
-          py: isMobile ? 4 : 8,
-          px: isMobile ? 2 : 12,
-          gap: isMobile ? 4 : 8,
-          alignItems: "center",
-        }}
-      >
-        {/* Left */}
-        <Box
-          sx={{
-            flex: 1,
-            maxWidth: isMobile ? "100%" : 460,
-            pr: isMobile ? 0 : 8,
-          }}
-        >
-          <Typography
-            variant="caption"
-            sx={{ color: "#AF9983", letterSpacing: 1 }}
-          >
-            {infoSection.intro}
-          </Typography>
-          <Typography
-            variant={isMobile ? "h6" : "h4"}
-            sx={{ fontWeight: 800, mb: 2 }}
-          >
-            {infoSection.title}
-          </Typography>
-          <Typography variant="body1" sx={{ mb: 2 }}>
-            <RichText html={infoSection.description} />
-          </Typography>
-          <Button
-            variant="contained"
-            color="primary"
-            href={infoSection.button.link}
-            sx={{
-              background: "#AF9983",
-              fontWeight: 700,
-              borderRadius: 6,
-              px: 4,
-              py: 1.5,
-              ":hover": { background: "#8d735a" },
-            }}
-          >
-            {infoSection.button.text}
-          </Button>
-        </Box>
-        {/* Right */}
-        <Box
-          sx={{
-            flex: 1,
-            width: isMobile ? "100%" : "auto",
-            minHeight: 280,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            mt: isMobile ? 2 : 0,
-          }}
-        >
-          <img
-            src={infoSection.image}
-            alt="Columbario"
-            style={{
-              width: isMobile ? "100%" : "420px",
-              borderRadius: 18,
-              boxShadow: "0 4px 28px rgba(0,0,0,0.13)",
-              objectFit: "cover",
-            }}
-          />
-        </Box>
-      </Box>
-
-      {/* Hexagon Section */}
-      <Box
-        sx={{
-          background: "#F8F6F4",
-          pt: isMobile ? 4 : 8,
-          pb: isMobile ? 4 : 8,
-          px: isMobile ? 2 : 8,
-        }}
-      >
-        <Typography
-          variant={isMobile ? "h6" : "h4"}
-          sx={{ fontWeight: 800, mb: 5, textAlign: "center" }}
-        >
-          {hexSection.title}
-        </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: isMobile ? "column" : "row",
-            justifyContent: "center",
-            alignItems: "center",
-            mb: 6,
-          }}
-        >
-          {hexSection.hexagons.map((hx, i) => (
-            <PanteonHexagon
-              key={i}
-              icon={hx.icon}
-              title={hx.title}
-              content={hx.content}
-              index={i}
-            />
-          ))}
-        </Box>
-        <Box sx={{ textAlign: "center", maxWidth: 580, mx: "auto", mb: 4 }}>
-          <Typography variant="body1" sx={{ mb: 2 }}>
-            <RichText html={hexSection.footer.text} />
-          </Typography>
-          <Button
-            variant="contained"
-            color="primary"
-            href={hexSection.footer.button.link}
-            sx={{
-              background: "#AF9983",
-              fontWeight: 700,
-              borderRadius: 6,
-              px: 4,
-              py: 1.5,
-              ":hover": { background: "#8d735a" },
-            }}
-          >
-            {hexSection.footer.button.text}
-          </Button>
-        </Box>
-      </Box>
-    </Box>
+    </section>
   );
 }

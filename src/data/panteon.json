@@ -12,41 +12,41 @@
   "infoSection": {
     "intro": "PANTEÓN DE CENIZAS",
     "title": "COLUMBARIOS EN PARROQUIAS",
-    "description": "Espacios exclusivos para cenizas en parroquias aliadas. <b>Resguardo seguro</b> y <i>cercano a la comunidad</i>.<br/>Solicita información personalizada.",
+    "description": "<strong>Espacios sagrados</strong> ubicados en <strong>templos parroquiales o cementerios</strong> de la región de O’Higgins, especialmente diseñados para custodiar con dignidad las ánforas con cenizas de nuestros seres queridos. Son lugares accesibles, cercanos y propicios para la oración y el recuerdo.<br> Inspirados en una tradición que nace en la Antigua Roma, donde los “columbarios” eran utilizados para conservar las cenizas en nichos familiares, en Serenidad® retomamos este legado con un sentido cristiano y comunitario. Esto fortalece el vínculo espiritual con los seres queridos y responde al llamado del Papa Francisco (2016) de evitar la dispersión de cenizas, como se establece en el siguiente link: <a href target='_blank'>Documento Ad Resurgendum cum Christo del Vaticano</a>.",
     "button": {
-      "text": "Solicitar información",
+      "text": "Ver Localidades Disponibles",
       "link": "#"
     },
-    "image": "/images/columbario-church.jpg"
+    "image": "divino-maestro.png"
   },
   "hexSection": {
     "title": "Ventajas de nuestros Columbarios",
     "hexagons": [
       {
-        "icon": "/icons/urn.svg",
-        "title": "Acceso Seguro",
-        "content": "Ubicados en recintos sagrados, protegidos y siempre disponibles para visitas."
+        "icon": "hex-cenizas1.svg",
+        "title": "Paz, oración y espiritualidad",
+        "content": "<strong>Lugares consagrados</strong> donde los restos descansan en armonía, invitando a la oración constante, la reflexión y la cercanía con la comunidad."
       },
       {
-        "icon": "/icons/flower.svg",
-        "title": "Cercanía y Comunidad",
-        "content": "En lugares accesibles para las familias y en el corazón de la comunidad."
+        "icon": "hex-cenizas2.svg",
+        "title": "Diseño Innovador",
+        "content": "Módulos <strong>modernos con un estilo único</strong>, tapas de mármol y personalización en acero inoxidable, con capacidad hasta para 4 ánforas por espacio."
       },
       {
-        "icon": "/icons/support.svg",
-        "title": "Apoyo Espiritual",
-        "content": "Acompañamiento pastoral y servicios religiosos a disposición."
+        "icon": "hex-cenizas3.svg",
+        "title": "Incorporación Tecnológica",
+        "content": "Cada espacio cuenta con un <strong>código QR</strong> que permite acceder a contenido audiovisual alojado en un espacio digital seguro, para revivir los mejores recuerdos de nuestros seres queridos."
       },
       {
-        "icon": "/icons/price.svg",
-        "title": "Precios Accesibles",
-        "content": "Opciones económicas y facilidades de pago pensadas para todos."
+        "icon": "hex-cenizas4.svg",
+        "title": "Cercanía y fácil acceso",
+        "content": "Nuestros columbarios están ubicados estratégicamente en <strong>parroquias cercanas</strong> a tu hogar, facilitando visitas frecuentes en un ambiente acogedor y manteniendo una conexión permanente con tu ser querido."
       }
     ],
     "footer": {
-      "text": "<b>En Serenidad</b> te acompañamos en todo momento. Consulta nuestros planes y promociones especiales.",
+      "text": "<strong>En Serenidad®</strong>, ofrecemos esta alternativa para apoyar a las familias, fomentar la espiritualidad y generar un espacio sagrado donde las cenizas puedan permanecer por períodos de 10, 20 años o de forma perpetua.<br>Puedes acceder a nuestro papel digital desde aqui: <a href='' target='_blank' >Ver Reglamento Interno</a>.",
       "button": {
-        "text": "Solicitar Cotización",
+        "text": "Contáctanos Ahora",
         "link": "#"
       }
     }
