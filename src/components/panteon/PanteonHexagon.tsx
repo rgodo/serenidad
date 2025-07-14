@@ -3,10 +3,13 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import { AspectRatio } from "@mui/icons-material";
 
 const hexagonStyles = {
-  width: 270,
-  height: 270,
+  width: '270px',
+  minWidth: '270px',
+  height: '270px',
+  AspectRatio: 1/1,
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -17,9 +20,6 @@ const hexagonStyles = {
   boxShadow: "0 2px 16px rgba(0,0,0,0.1)",
   cursor: "pointer",
   position: "relative",
-  mx: -2,
-  my: 2,
-  overflow: "hidden",
   color: "#fff",
   fontFamily: "Assistant, serif",
 };
@@ -46,7 +46,8 @@ export default function PanteonHexagon({ icon, title, content, index }) {
         ...hexagonStyles,
         ...(hover ? hexagonHoverStyles : {}),
         transition: "all 0.4s cubic-bezier(.79,.14,.15,.86)",
-        marginTop: index % 2 === 0 ? "-150px" : "auto",
+        marginTop: { xs: '0', md: index % 2 !== 0 ? "250px" : "0" },
+        marginLeft: { md: index !== 0 ? "-5rem" : "0" },
       }}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
@@ -71,6 +72,7 @@ export default function PanteonHexagon({ icon, title, content, index }) {
             fontWeight: 800,
             fontFamily: "Assistant, serif",
             paddingX: "40px",
+            textAlign: 'center'
           }}
         >
           {title}

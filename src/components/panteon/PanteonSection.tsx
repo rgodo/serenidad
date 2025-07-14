@@ -180,9 +180,11 @@ export default function PanteonSection() {
             variant={isMobile ? "h6" : "h4"}
             sx={{
               fontWeight: 800,
-              mb: 15,
+              mb: { xs: '1rem'},
+              color: '#616161',
               textAlign: "center",
               fontFamily: "Assistant, serif",
+              fontSize: { sx: '1.25rem', md: '1.875rem' }
             }}
           >
             {hexSection.title}
@@ -190,10 +192,13 @@ export default function PanteonSection() {
           <Box
             sx={{
               display: "flex",
-              flexDirection: isMobile ? "column" : "row",
-              justifyContent: "center",
+              flexDirection: "row",
+              justifyContent: { md: "center" },
               alignItems: "center",
-              mb: 6,
+              gap: {xs:'1rem'},
+              mb: '3rem',
+              overflowY: 'auto',
+              marginTop: {md: '-6rem'}
             }}
           >
             {hexSection.hexagons.map((hx, i) => (
@@ -219,7 +224,8 @@ export default function PanteonSection() {
                 fontWeight: 700,
                 px: 4,
                 py: 1.5,
-                border: "1px solid",
+                border: "1px solid #8B7669",
+                color: '#8B7669',
                 fontFamily: "Assistant, serif",
                 textTransform: "none",
               }}
