@@ -82,7 +82,7 @@ const Navbar = () => {
                 fontFamily: "Assistant, Arial, sans-serif",
                 color: "#434343",
                 transition: "color 0.2s",
-                "&:hover": { color: CONTACT_BUTTON_COLOR },
+                "&:hover": { color: '#E1952D' },
               }}
               onClick={() => scrollToSection(item.target)}
             >
