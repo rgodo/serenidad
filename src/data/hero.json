@@ -4,14 +4,14 @@
       {
         "text": "¡SERENIDAD",
         "fontWeight": 500,
-        "fontSize": "1em",
+        "fontSize": "50px",
         "fontFamily": "EB Garamond, serif",
         "color": "#fff"
       },
       {
         "text": "®",
         "fontWeight": 400,
-        "fontSize": "0.5em",
+        "fontSize": "25px",
         "fontFamily": "EB Garamond, serif",
         "color": "#fff",
         "verticalAlign": "top"
@@ -21,21 +21,21 @@
       {
         "text": " CONTIGO EN ",
         "fontWeight": 400,
-        "fontSize": "1em",
+        "fontSize": "50px",
         "fontFamily": "EB Garamond, serif",
         "color": "#fff"
       },
       {
         "text": "CADA ETAPA",
         "fontWeight": 700,
-        "fontSize": "1em",
+        "fontSize": "50px",
         "fontFamily": "EB Garamond, serif",
         "color": "#fff"
       },
       {
         "text": " DE LA DESPEDIDA!",
         "fontWeight": 400,
-        "fontSize": "1em",
+        "fontSize": "50px",
         "fontFamily": "EB Garamond, serif",
         "color": "#fff"
       }

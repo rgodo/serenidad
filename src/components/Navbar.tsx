@@ -70,7 +70,9 @@ const Navbar = () => {
             height={61}
             priority
             style={{
-              marginRight: 12,
+              marginLeft: 30,
+              marginTop: 10,
+              marginBottom: 10,
               height: 61,
               width: 163,
               maxWidth: "100%",
