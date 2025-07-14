@@ -43,14 +43,17 @@ const CremacionCarousel: React.FC<CremacionCarouselProps> = ({
     }
   }, []);
   return (
-    <Box sx={{ my: { xs: 4, md: 8 }, px: { xs: 1, md: 6 }, textAlign: "center" }}>
-      <Typography fontWeight={700}
+    <Box
+      sx={{ my: { xs: 4, md: 8 }, px: { xs: 1, md: 6 }, textAlign: "center" }}
+    >
+      <Typography
+        fontWeight={700}
         sx={{
           fontSize: {
-            xs: '1.25rem'
+            xs: "1.25rem",
           },
           fontFamily: "Assistant, serif",
-          mb: "1.5rem"
+          mb: "1.5rem",
         }}
       >
         {title}
@@ -101,8 +104,6 @@ const CremacionCarousel: React.FC<CremacionCarouselProps> = ({
                     width: 160,
                     height: 160,
                     objectFit: "cover",
-                    borderRadius: 16,
-                    background: "#fafafa",
                   }}
                 />
               </Box>
@@ -110,7 +111,9 @@ const CremacionCarousel: React.FC<CremacionCarouselProps> = ({
                 fontWeight={700}
                 mb={0}
                 sx={{
-                  minHeight: 48, textAlign: "center", fontSize: "1.25rem",
+                  minHeight: 48,
+                  textAlign: "center",
+                  fontSize: "1.25rem",
                   fontFamily: "Assistant, serif",
                 }}
               >
@@ -130,24 +133,30 @@ const CremacionCarousel: React.FC<CremacionCarouselProps> = ({
           </SwiperSlide>
         ))}
         <Box className={styles.controlContainer}>
-          <button ref={prevRef} className={styles.controlButton}>&#10094;</button>
-          <button ref={nextRef} className={styles.controlButton}>&#10095;</button>
+          <button ref={prevRef} className={styles.controlButton}>
+            &#10094;
+          </button>
+          <button ref={nextRef} className={styles.controlButton}>
+            &#10095;
+          </button>
         </Box>
       </Swiper>
       <Box>
-        <Button sx={{
-          color: "#8B7669",
-          border: "2px solid #8B7669",
-          paddingX: "1rem",
-          paddingY: "0.5rem",
-          fontFamily: "Assistant, serif",
-          textTransform: 'none'
-        }}>
+        <Button
+          sx={{
+            color: "#8B7669",
+            border: "2px solid #8B7669",
+            paddingX: "1rem",
+            paddingY: "0.5rem",
+            fontFamily: "Assistant, serif",
+            textTransform: "none",
+          }}
+        >
           {buttonText}
         </Button>
       </Box>
     </Box>
-  )
+  );
 };
 
 export default CremacionCarousel;
