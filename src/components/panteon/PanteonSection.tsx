@@ -52,16 +52,26 @@ export default function PanteonSection() {
           >
             {/* Texts at the left */}
             <Box sx={{ flex: 1 }}>
-              <Typography variant="caption" sx={{ letterSpacing: 2 }}>
+              <Typography
+                variant="caption"
+                sx={{ fontSize: "20px", fontWeight: 700 }}
+              >
                 {header.intro}
               </Typography>
               <Typography
                 variant={isMobile ? "h5" : "h4"}
-                sx={{ fontWeight: 800, mb: 2 }}
+                sx={{
+                  fontWeight: 800,
+                  mb: 2,
+                  fontSize: isMobile ? "40px" : "50px",
+                }}
               >
                 {header.title}
               </Typography>
-              <Typography variant="body1" sx={{ mb: 0 }}>
+              <Typography
+                variant="body1"
+                sx={{ mb: 0, fontSize: "35px", fontWeight: 400 }}
+              >
                 <RichText html={header.description} />
               </Typography>
             </Box>
@@ -79,15 +89,17 @@ export default function PanteonSection() {
                 variant="contained"
                 color="primary"
                 sx={{
-                  background: "#AF9983",
+                  background: "#background: #768837",
                   fontWeight: 700,
                   px: 4,
                   py: 1.5,
-                  ":hover": { background: "#8d735a" },
                   whiteSpace: "nowrap",
                   textTransform: "none",
+                  fontFamily: "Assistant, serif",
                 }}
-                onClick={() => { scrollToSection('panteonInfo')}}
+                onClick={() => {
+                  scrollToSection("panteonInfo");
+                }}
               >
                 {header.button.text}
               </Button>
@@ -118,13 +130,18 @@ export default function PanteonSection() {
           >
             <Typography
               variant="caption"
-              sx={{ color: "#6e8348", letterSpacing: 1, fontSize: "1.2rem" }}
+              sx={{ color: "#6e8348", letterSpacing: 1, fontSize: "24px" }}
             >
               {infoSection.intro}
             </Typography>
             <Typography
               variant={isMobile ? "h6" : "h4"}
-              sx={{ fontWeight: 800, mb: 2, borderBottom: "1px solid #E1952D" }}
+              sx={{
+                fontWeight: 400,
+                mb: 2,
+                borderBottom: "1px solid #E1952D",
+                fontSize: "50px",
+              }}
             >
               {infoSection.title}
             </Typography>
@@ -135,7 +152,9 @@ export default function PanteonSection() {
               <RichText html={infoSection.description} />
             </Typography>
             <Button
-              onClick={() => { scrollToSection('locations')}}
+              onClick={() => {
+                scrollToSection("locations");
+              }}
               sx={{
                 fontWeight: 700,
                 px: 4,
@@ -182,11 +201,11 @@ export default function PanteonSection() {
             variant={isMobile ? "h6" : "h4"}
             sx={{
               fontWeight: 800,
-              mb: { xs: '1rem'},
-              color: '#616161',
+              mb: { xs: "1rem" },
+              color: "#616161",
               textAlign: "center",
               fontFamily: "Assistant, serif",
-              fontSize: { sx: '1.25rem', md: '1.875rem' }
+              fontSize: { sx: "1.25rem", md: "1.875rem" },
             }}
           >
             {hexSection.title}
@@ -197,10 +216,10 @@ export default function PanteonSection() {
               flexDirection: "row",
               justifyContent: { md: "center" },
               alignItems: "center",
-              gap: {xs:'1rem'},
-              mb: '3rem',
-              overflowY: 'auto',
-              marginTop: {md: '-6rem'}
+              gap: { xs: "1rem" },
+              mb: "3rem",
+              overflowY: "auto",
+              marginTop: { md: "-6rem" },
             }}
           >
             {hexSection.hexagons.map((hx, i) => (
@@ -221,13 +240,15 @@ export default function PanteonSection() {
               <RichText html={hexSection.footer.text} />
             </Typography>
             <Button
-              onClick={() => { scrollToSection('contacto')}}
+              onClick={() => {
+                scrollToSection("contacto");
+              }}
               sx={{
                 fontWeight: 700,
                 px: 4,
                 py: 1.5,
                 border: "1px solid #8B7669",
-                color: '#8B7669',
+                color: "#8B7669",
                 fontFamily: "Assistant, serif",
                 textTransform: "none",
               }}

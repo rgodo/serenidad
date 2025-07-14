@@ -9,7 +9,7 @@ import theme from "../theme/theme";
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="es">
-      <head>
+      <head title="Serenidad | Donde la paz se convierte en memoria">
         <link
           href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&display=swap"
           rel="stylesheet"

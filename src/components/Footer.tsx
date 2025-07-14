@@ -29,68 +29,78 @@ const Footer = () => {
     <footer>
       <Box
         sx={{
-          padding: '2rem',
-          paddingX: { sm: '4rem' },
-          display: 'grid',
-          gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr', md: 'repeat(3, 1fr)' },
-          gap: '2rem',
+          padding: "2rem",
+          paddingX: { sm: "4rem" },
+          display: "grid",
+          gridTemplateColumns: {
+            xs: "1fr",
+            sm: "1fr 1fr",
+            md: "repeat(3, 1fr)",
+          },
+          gap: "2rem",
         }}
       >
         <Box
           sx={{
-            fontFamily: 'Assistant, sans-serif',
-            color: '#484846',
+            fontFamily: "Assistant, sans-serif",
+            color: "#484846",
             fontWeight: 600,
           }}
         >
-          <img src="/logo-serenidad.svg" alt="Logo Serenidad" style={{ marginBottom: '1rem' }}></img>
+          <img
+            src="/logo-serenidad.svg"
+            alt="Logo Serenidad"
+            style={{ marginBottom: "1rem" }}
+          ></img>
           <br />
           <span>
-            Organización sin fines de lucro vinculada al Obispado de Rancagua, fundada el 2025, que entrega servicios funerarios dignos, accesibles y confiables, en comunión con los valores cristianos.
+            Organización sin fines de lucro vinculada al Obispado de Rancagua,
+            fundada el 2025, que entrega servicios funerarios dignos, accesibles
+            y confiables, en comunión con los valores cristianos.
           </span>
         </Box>
         <Box
           sx={{
-            marginX: {sm: 'auto'}
+            marginX: { sm: "auto" },
           }}
         >
           <Typography
             sx={{
-              fontFamily: 'EB Garamond, sans-serif',
-              color: '#768837',
+              fontFamily: "EB Garamond, serif",
+              color: "#768837",
               fontWeight: 600,
-              marginBottom: '2rem',
-              fontSize: '1.125rem',
-              textTransform: 'uppercase',
+              marginBottom: "2rem",
+              fontSize: "1.125rem",
+              textTransform: "uppercase",
             }}
           >
             Servicios disponibles
           </Typography>
           <Typography
             sx={{
-              fontFamily: 'Assistant, sans-serif',
-              color: '#484846',
+              fontFamily: "Assistant, serif",
+              color: "#484846",
               fontWeight: 600,
-              marginBottom: '1.5rem',
+              marginBottom: "1.5rem",
             }}
           >
             Funeraria 24 horas
           </Typography>
           <Typography
             sx={{
-              fontFamily: 'Assistant, sans-serif',
-              color: '#484846',
+              fontFamily: "Assistant, serif",
+              color: "#484846",
               fontWeight: 600,
-              marginBottom: '1.5rem',
+              marginBottom: "1.5rem",
             }}
           >
             Cremación
           </Typography>
           <Typography
             sx={{
-              fontFamily: 'Assistant, sans-serif',
-              color: '#484846',
-              fontWeight: 600
+              fontFamily: "Assistant, serif",
+              color: "#484846",
+              fontWeight: 600,
             }}
           >
             Panteón de Cenizas
@@ -98,78 +108,105 @@ const Footer = () => {
         </Box>
         <Box
           sx={{
-            marginX: {sm: 'auto'}
+            marginX: { sm: "auto" },
           }}
         >
           <Typography
             sx={{
-              fontFamily: 'EB Garamond, sans-serif',
-              color: '#768837',
+              fontFamily: "EB Garamond, serif",
+              color: "#768837",
               fontWeight: 600,
-              marginBottom: '1rem',
-              fontSize: '1.125rem',
-              textTransform: 'uppercase',
+              marginBottom: "1rem",
+              fontSize: "1.125rem",
+              textTransform: "uppercase",
             }}
           >
             Canales de atención
           </Typography>
-          {
-            contactChannel.map((channel, index) => (
-              <Box key={index} sx={{ display: 'grid', gridTemplateColumns: 'auto 1fr', alignItems: 'center', marginTop: '1rem', gap: '1.5rem' }}>
-                <Box
-                  sx={{ width: '3rem', textAlign: 'center'}}
-                >
-                  <img src={`/icons/${channel.icon}`} alt={channel.title} style={{ width: channel.iconSize.width, height: channel.iconSize.height }} />
-                </Box>
-                <Box>
-                  <Typography sx={{ fontFamily: 'Assistant, sans-serif' }}>{channel.title}</Typography>
-                  <Typography sx={{ fontWeight: 600, fontFamily: 'Assistant, sans-serif' }}>{channel.description}</Typography>
-                </Box>
+          {contactChannel.map((channel, index) => (
+            <Box
+              key={index}
+              sx={{
+                display: "grid",
+                gridTemplateColumns: "auto 1fr",
+                alignItems: "center",
+                marginTop: "1rem",
+                gap: "1.5rem",
+              }}
+            >
+              <Box sx={{ width: "3rem", textAlign: "center" }}>
+                <img
+                  src={`/icons/${channel.icon}`}
+                  alt={channel.title}
+                  style={{
+                    width: channel.iconSize.width,
+                    height: channel.iconSize.height,
+                  }}
+                />
               </Box>
-            ))
-          }
+              <Box>
+                <Typography sx={{ fontFamily: "Assistant, serif" }}>
+                  {channel.title}
+                </Typography>
+                <Typography
+                  sx={{ fontWeight: 600, fontFamily: "Assistant, serif" }}
+                >
+                  {channel.description}
+                </Typography>
+              </Box>
+            </Box>
+          ))}
         </Box>
       </Box>
       <Box
         sx={{
-          bgcolor: '#E1952D',
-          color: 'white',
-          textAlign: { xs: 'center' },
-          padding: '1rem',
-          fontFamily: 'Assistant, sans-serif',
+          bgcolor: "#E1952D",
+          color: "white",
+          textAlign: { xs: "center" },
+          padding: "1rem",
+          fontFamily: "Assistant, serif",
           fontWeight: 600,
-          display: 'flex',
-          flexDirection: { xs: 'column', md: 'row' },
-          gap: { xs: '0rem', md: '1rem' },
-          justifyContent: 'center',
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          gap: { xs: "0rem", md: "1rem" },
+          justifyContent: "center",
         }}
       >
         <Typography
           sx={{
-            borderRight: { xs: 'none', md: '1px solid white' },
-            paddingRight: { xs: '0', md: '1rem' },
-            fontSize: '1rem',
+            borderRight: { xs: "none", md: "1px solid white" },
+            paddingRight: { xs: "0", md: "1rem" },
+            fontSize: "1rem",
             fontWeight: 600,
-            fontFamily: 'Assistant, sans-serif',
+            fontFamily: "Assistant, serif",
           }}
         >
           ©Serenidad, todos los derechos reservados
         </Typography>
-        <Link href='/files/reglamento-uso-panteon.pdf' target="_blank" sx={{
-          color: 'white',
-          paddingRight: { xs: '0', md: '1rem' },
-          borderRight: { xs: 'none', md: '1px solid white' },
-          fontSize: '1rem',
-          fontWeight: 600,
-        }}>
+        <Link
+          href="/files/reglamento-uso-panteon.pdf"
+          target="_blank"
+          sx={{
+            color: "white",
+            paddingRight: { xs: "0", md: "1rem" },
+            borderRight: { xs: "none", md: "1px solid white" },
+            fontSize: "1rem",
+            fontWeight: 600,
+          }}
+        >
           Reglamento Interno para Panteón de Cenizas
         </Link>
-        <Box onClick={() => { scrollToSection('faq') }} sx={{
-          color: 'white',
-          fontSize: '1rem',
-          fontWeight: 600,
-          cursor: 'pointer'
-        }}>
+        <Box
+          onClick={() => {
+            scrollToSection("faq");
+          }}
+          sx={{
+            color: "white",
+            fontSize: "1rem",
+            fontWeight: 600,
+            cursor: "pointer",
+          }}
+        >
           Preguntas frecuentes
         </Box>
       </Box>

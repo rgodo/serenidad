@@ -43,7 +43,16 @@ const Navbar = () => {
         boxShadow: "0 2px 8px rgba(0,0,0,0.07)",
       }}
     >
-      <Toolbar sx={{ justifyContent: "space-between", px: 2, py: 1.5, maxWidth: '1440px', margin: 'auto', width: '100%' }} >
+      <Toolbar
+        sx={{
+          justifyContent: "space-between",
+          px: 2,
+          py: 1.5,
+          maxWidth: "1440px",
+          margin: "auto",
+          width: "100%",
+        }}
+      >
         {/* Logo */}
         <Box
           sx={{
@@ -78,11 +87,11 @@ const Navbar = () => {
               sx={{
                 ml: 4,
                 cursor: "pointer",
-                fontWeight: 500,
-                fontFamily: "Assistant, Arial, sans-serif",
+                fontWeight: 600,
+                fontFamily: "Assistant, serif",
                 color: "#434343",
                 transition: "color 0.2s",
-                "&:hover": { color: '#E1952D' },
+                "&:hover": { color: "#E1952D" },
               }}
               onClick={() => scrollToSection(item.target)}
             >
@@ -96,7 +105,7 @@ const Navbar = () => {
               bgcolor: CONTACT_BUTTON_COLOR,
               color: "#fff",
               fontWeight: 700,
-              fontFamily: "Assistant, Arial, sans-serif",
+              fontFamily: "Assistant, serif",
               textTransform: "none",
               borderRadius: 0,
               px: 3,
@@ -117,7 +126,7 @@ const Navbar = () => {
               bgcolor: CONTACT_BUTTON_COLOR,
               color: "#fff",
               fontWeight: 500,
-              fontFamily: "Assistant, Arial, sans-serif",
+              fontFamily: "Assistant, serif",
               textTransform: "none",
               borderRadius: 0,
               px: 2,
@@ -163,7 +172,7 @@ const Navbar = () => {
             }}
           >
             <Image
-              src="/logo-serenidad.png"
+              src="/logo-serenidad.svg"
               alt="Serenidad Logo"
               width={125}
               height={60}
@@ -182,7 +191,7 @@ const Navbar = () => {
                 textTransform: "none",
                 fontWeight: 500,
                 fontSize: 8,
-                fontFamily: "Assistant, Arial, sans-serif",
+                fontFamily: "Assistant, serif",
                 borderRadius: 0,
                 px: 1,
                 py: 1,
@@ -226,7 +235,7 @@ const Navbar = () => {
                         color: "#fff",
                         fontWeight: 500,
                         fontSize: 18,
-                        fontFamily: "Assistant, Arial, sans-serif",
+                        fontFamily: "Assistant, serif",
                       },
                     }}
                   />
