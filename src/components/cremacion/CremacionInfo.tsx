@@ -16,6 +16,7 @@ import styles from "./CremacionInfo.module.css";
 // import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 // import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { ServicesGallery } from "../services/ServicesGallery";
+import { scrollToSection } from "../utils/functions/scroll";
 
 // interface GalleryItem {
 //   image: string;
@@ -97,7 +98,8 @@ const CremacionInfo: React.FC<CremacionInfoProps> = ({
             <a
               // href={data.cta.link}
               className={styles.cta}
-              style={{ fontFamily: "Assistant, serif" }}
+              style={{ fontFamily: "Assistant, serif", cursor: 'pointer' }}
+              onClick={() => { scrollToSection('anforas')}}
             >
               {buttonText}
             </a>

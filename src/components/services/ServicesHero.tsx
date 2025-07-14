@@ -1,9 +1,11 @@
+'use client';
 // components/services/ServicesHero.tsx
 import React from "react";
 import styles from "./ServicesHero.module.css"; // (see below)
 import { IconStar, IconUser } from "./Icons";
 import { HeroData } from "../../data/types";
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
+import { scrollToSection } from "../utils/functions/scroll";
 
 type Props = { data: HeroData, isMobile: boolean };
 
@@ -79,13 +81,18 @@ export const ServicesHero: React.FC<Props> = ({ data, isMobile }) => (
           </li>
         ))}
       </ul>
-      <a
-        href={data.cta.link}
+      <Button
+        // href={data.cta.link}
+        sx={{
+          color: '#8B7669',
+          border: '2px solid #8B7669',
+        }}
+        onClick={() => { scrollToSection('contacto')}}
         className={styles.cta}
         style={{ fontFamily: "Assistant, serif" }}
       >
         {data.cta.text}
-      </a>
+      </Button>
     </div>
   </section>
 );

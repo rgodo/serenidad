@@ -17,7 +17,7 @@
     ],
     "cta": {
       "text": "Contáctanos ahora",
-      "link": "/contacto"
+      "link": "#contacto"
     },
     "bgImage": "/services/hero-bg.png"
   },

@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
+import { scrollToSection } from "../utils/functions/scroll";
 
 interface CremacionHeaderProps {
   backgroundImage: string;
@@ -64,6 +65,7 @@ const CremacionHeader: React.FC<CremacionHeaderProps> = ({
           borderRadius: 0,
           padding: "1rem"
         }}
+        onClick={() => { scrollToSection('anforas')}}
       >
         Ver Ánforas
       </Button>

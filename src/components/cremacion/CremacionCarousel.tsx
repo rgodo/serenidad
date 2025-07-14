@@ -7,6 +7,7 @@ import styles from "./CremacionCarousel.module.css";
 import { Navigation, Pagination } from "swiper/modules";
 import { Box, Typography, Button } from "@mui/material";
 import { useEffect, useRef } from "react";
+import { scrollToSection } from "../utils/functions/scroll";
 
 interface CarouselItem {
   image: string;
@@ -45,6 +46,7 @@ const CremacionCarousel: React.FC<CremacionCarouselProps> = ({
   return (
     <Box
       sx={{ my: { xs: 4, md: 8 }, px: { xs: 1, md: 6 }, textAlign: "center" }}
+      id='anforas'
     >
       <Typography
         fontWeight={700}
@@ -151,6 +153,7 @@ const CremacionCarousel: React.FC<CremacionCarouselProps> = ({
             fontFamily: "Assistant, serif",
             textTransform: "none",
           }}
+          onClick={() => { scrollToSection('contacto')}}
         >
           {buttonText}
         </Button>

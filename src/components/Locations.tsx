@@ -16,7 +16,7 @@ const Locations = () => {
     <Box component={'section'} sx={{
       backgroundImage: "url('bg-sheet.png')",
       p: '2rem'
-    }}>
+    }} id="locations">
       <Box
         sx={{
           margin: 'auto',

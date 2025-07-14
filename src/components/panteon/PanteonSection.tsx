@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import PanteonHexagon from "./PanteonHexagon";
 import content from "../../data/panteon.json";
+import { scrollToSection } from "../utils/functions/scroll";
 
 function RichText({ html, ...props }) {
   return <span dangerouslySetInnerHTML={{ __html: html }} {...props} />;
@@ -77,7 +78,6 @@ export default function PanteonSection() {
               <Button
                 variant="contained"
                 color="primary"
-                href={header.button.link}
                 sx={{
                   background: "#AF9983",
                   fontWeight: 700,
@@ -87,6 +87,7 @@ export default function PanteonSection() {
                   whiteSpace: "nowrap",
                   textTransform: "none",
                 }}
+                onClick={() => { scrollToSection('panteonInfo')}}
               >
                 {header.button.text}
               </Button>
@@ -105,6 +106,7 @@ export default function PanteonSection() {
             gap: isMobile ? 4 : 8,
             alignItems: "center",
           }}
+          id="panteonInfo"
         >
           {/* Left */}
           <Box
@@ -133,7 +135,7 @@ export default function PanteonSection() {
               <RichText html={infoSection.description} />
             </Typography>
             <Button
-              href={infoSection.button.link}
+              onClick={() => { scrollToSection('locations')}}
               sx={{
                 fontWeight: 700,
                 px: 4,
@@ -219,7 +221,7 @@ export default function PanteonSection() {
               <RichText html={hexSection.footer.text} />
             </Typography>
             <Button
-              href={hexSection.footer.button.link}
+              onClick={() => { scrollToSection('contacto')}}
               sx={{
                 fontWeight: 700,
                 px: 4,

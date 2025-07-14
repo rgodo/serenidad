@@ -8,6 +8,7 @@ import CommonQuestionList from "./CommonQuestionSection";
 import ExpandCircleDownOutlinedIcon from '@mui/icons-material/ExpandCircleDownOutlined';
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 import SearchIcon from '@mui/icons-material/Search';
+import { scrollToSection } from "../utils/functions/scroll";
 
 const CommonQuestions = () => {
   const [sectionSelected, setSectionSelected] = useState(questions[0]);
@@ -86,6 +87,7 @@ const CommonQuestions = () => {
             textTransform: 'none',
             fontSize: '0.875rem'
           }}
+          onClick={() => { scrollToSection('contacto')}}
         >
           ¡Contáctanos Ahora!
         </Button>

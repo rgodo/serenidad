@@ -13,6 +13,7 @@ import {
   getRowMarginLeft,
   hexImageOrEmpty,
 } from "./utils/honeycombUtils";
+import { scrollToSection } from "./utils/functions/scroll";
 
 const HEX_SIZE_DESKTOP = 220;
 const HEX_SIZE_MOBILE = 220;
@@ -106,6 +107,7 @@ function TextContent({ content }: { content: typeof aboutContent }) {
           display: "block",
           mx: { xs: "auto", md: 0 },
         }}
+        onClick={() => { scrollToSection('locations') }}
       >
         <strong>Ver aqui</strong> las parroquias presentes en la región de O&#39;Higgins.
       </Button>
