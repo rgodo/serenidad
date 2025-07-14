@@ -5,23 +5,23 @@
     "questions": [
       {
         "title": "¿Qué relación tiene Serenidad® con la Iglesia Católica?",
-        "answer": ""
+        "answer": "Serenidad® es una organización sin fines de lucro que trabaja en alianza exclusiva con el Obispado de Rancagua. Esto significa que sus servicios están orientados a las comunidades parroquiales de la región, en total respeto a los valores y principios de la fe católica. Además, los ingresos generados contribuirán directamente a sostener las obras pastorales y sociales de las parroquias, fortaleciendo su misión de servicio a la comunidad."
       },
       {
-        "title": "¿Qué servicios ofrecen?",
-        "answer": ""
+        "title": "¿Qué servicios ofrece Serenidad®?",
+        "answer": "Ofrecemos servicios funerarios integrales 24 horas, Cremación, Panteón de Cenizas (columbarios en parroquias o cementerios) en las principales comunas de la región de O’Higgins para acompañar a las familias con respeto en momentos difíciles."
       },
       {
-        "title": "¿Serenidad es lo mismo que el Cinerario de la región de O'Higgins?",
-        "answer": ""
+        "title": "¿Serenidad es lo mismo que el Cinerario de la región de O’Higgins?",
+        "answer": "No. Los Panteones de Cenizas de Serenidad® son memoriales o columbarios ubicados en espacios sagrados dentro de las instalaciones parroquiales o cementerios, con diseño propio, moderno y modular, que cuenta con código QR para homenajes digitales y posibilidad de reserva anticipada. Representan una opción espiritual y cercana, distinta de un cinerario tradicional, asegurando el descanso eterno en un lugar de oración."
       },
       {
         "title": "¿Por qué las parroquias están ofreciendo estos servicios ahora?",
-        "answer": ""
+        "answer": "Las parroquias están respondiendo al llamado de crear espacios sagrados y fortalecer el vínculo espiritual con los seres queridos al fomentar el resguardo de las cenizas en columbarios parroquiales. Esto se alinea con la enseñanza del Papa Francisco, quien insta a evitar la dispersión de cenizas y a preservar su descanso en un espacio sagrado y digno. Al mismo tiempo, muchos feligreses confían en que la parroquia puede ofrecer un servicio integral, de calidad y a un precio justo, facilitando todo el proceso funerario desde un solo lugar y brindando acompañamiento en momentos de profundo dolor."
       },
       {
         "title": "¿En qué se inspira el logo de Serenidad® y qué significa el Árbol de la Vida?",
-        "answer": ""
+        "answer": "El símbolo de Serenidad® se inspira en el Árbol de la Vida, presente en la tradición cristiana como signo de vida eterna, esperanza y comunión entre el cielo y la tierra. Aparece en el Génesis como uno de los árboles del Paraíso, y en el Apocalipsis como emblema de resurrección y sanación. Nuestro árbol estilizado representa esta promesa de trascendencia: sus ramas abiertas evocan memoria, fe y descanso, acompañando con dignidad a quienes han partido. Es un símbolo profundamente enraizado en la espiritualidad católica, que nos recuerda que la muerte no es el final, sino el inicio de la vida en plenitud."
       }
     ]
   },
@@ -30,24 +30,36 @@
     "description": "Conoce la inspiración, valores y alianzas que dan origen a Serenidad®, así como nuestra relación con la Iglesia y el sentido cristiano de nuestros servicios.",
     "questions": [
       {
-        "title": "¿Qué relación tiene Serenidad® con la Iglesia Católica?",
-        "answer": ""
+        "title": "¿Dónde puedo cotizar o contratar un servicio?",
+        "answer": "Puede hacerlo directamente en las oficinas ubicadas en su parroquia, a través de nuestro sitio web www.serenidad.cl o escribiéndonos por WhatsApp al +569 5691 8 927 o por mail a contacto@serenidad.cl. También atendemos urgencias funerarias las 24 horas."
       },
       {
-        "title": "¿Qué servicios ofrecen?",
-        "answer": ""
+        "title": "¿Puedo contratar los servicios si no soy católico?",
+        "answer": "Sí. Serenidad® está inspirado en los valores cristianos y en colaboración con parroquias católicas, nuestros servicios están disponibles para todas las personas que deseen una despedida respetuosa y espiritual y con altos estándares de calidad, contando con un equipo de profesional y humano que asegura una despedida digna y de calidad."
       },
       {
-        "title": "¿Serenidad es lo mismo que el Cinerario de la región de O'Higgins?",
-        "answer": ""
+        "title": "¿Puedo dejar contratado mi servicio por anticipado?",
+        "answer": "Sí. Serenidad® permite planificar en vida, ofreciendo la posibilidad de resolver todo con un contrato anticipado. Esto brinda paz y seguridad tanto a usted como a sus seres queridos, garantizando que todo esté dispuesto según sus deseos, sin preocupaciones por sobrecargos futuros."
       },
       {
-        "title": "¿Por qué las parroquias están ofreciendo estos servicios ahora?",
-        "answer": ""
+        "title": "¿Puedo transferir mi espacio si ya no lo necesito?",
+        "answer": "Sí. El uso del espacio puede ser transferido a un familiar o persona autorizada por contrato, según las condiciones establecidas en el mismo. Además, son sin restricción de uso, no tienen fecha de expiración para activación, ni costo de activación, ni período de carencia. Para ver las condiciones, se deber revisar el Reglamento de Uso del Panteón de Cenizas."
       },
       {
-        "title": "¿En qué se inspira el logo de Serenidad® y qué significa el Árbol de la Vida?",
-        "answer": ""
+        "title": "¿Cuáles son los precios y descuentos?",
+        "answer": "Todos nuestros precios están expresados en UF. A modo de referencia, y dependiendo de las promociones vigentes: • Cremación (incluye ánfora estándar): desde 34 UF. • Panteón de Cenizas: desde 17 UF, con capacidad para 2 ánforas y uso por 10 años. • Servicio funerario completo: desde 16 UF, compatible con el uso de la Cuota Mortuoria. La opción más conveniente es acceder a nuestros paquetes integrales, que incluyen servicio funerario, cremación y espacio en el Panteón de Cenizas, desde aproximadamente $2.500.000 CLP."
+      },
+      {
+        "title": "¿Cuáles son las formas de pago?",
+        "answer": "El valor de los servicios es en UF, que se calculará en pesos al día de la contratación de los servicios. Aceptamos pagos en efectivo, tarjeta de crédito o débito, transferencia electrónica y para Necesidad Futura, hasta 12 cuotas iguales sin interés, que serán pactadas en pesos, con un pie mínimo del 25%. También podrá acceder a descuentos por pago al contado. Las facilidades en cuotas aplican únicamente para la contratación anticipada en vida. En caso de que el servicio deba utilizarse antes de completar el pago total, se deberá prepagar el saldo pendiente calculado con la UF al día del evento."
+      },
+      {
+        "title": "¿Cómo se calcula el valor de cada cuota para Necesidad Futura y dónde se deben cancelar?",
+        "answer": "El valor de cada cuota se calcula tomando el valor total en UF vigente al momento de la contratación y convirtiéndolo en pesos. Luego, se descuenta el pie de al menos un 25% del total, y el saldo restante se divide en hasta 12 cuotas mensuales de igual valor en pesos. Las cuotas deben pagarse en la parroquia donde se contrató el servicio o enviar a dicha parroquia el comprobante de transferencia, la cual entregará un comprobante nominativo y numerado por cada abono."
+      },
+      {
+        "title": "¿Qué requisitos debo cumplir para optar al pago en cuotas?",
+        "answer": "Debe ser mayor de edad y contar con plena capacidad legal para celebrar contratos u obligaciones comerciales. No obstante, recomendamos optar por el pago al contado, ya que incluye un descuento promocional."
       }
     ]
   },
@@ -56,24 +68,24 @@
     "description": "Conoce la inspiración, valores y alianzas que dan origen a Serenidad®, así como nuestra relación con la Iglesia y el sentido cristiano de nuestros servicios.",
     "questions": [
       {
-        "title": "¿Qué relación tiene Serenidad® con la Iglesia Católica?",
-        "answer": ""
+        "title": "¿Qué funeraria presta los servicios o trabaja con Serenidad®?",
+        "answer": "Serenidad® trabaja con funerarias afiliadas por comuna, pero el servicio no es provisto directamente por ellas, ni es equivalente a los planes que ofrecen por su cuenta. El servicio debe ser contratado directamente con Serenidad®, quien se encargará de coordinar cada detalle y asegurar una atención integral, cercana y de excelencia, en línea con nuestros valores y estándares."
       },
       {
-        "title": "¿Qué servicios ofrecen?",
-        "answer": ""
+        "title": "¿Qué incluye el Servicio Funerario?",
+        "answer": "El Servicio funerario completo incluye esencialmente: o Urna (3 tipos diferentes según plan a elegir) o Carroza panorámica o Salón velatorio en Parroquias u otro espacio similar o Equipo de capilla ardiente, luces o cirios según plan o Libro de condolencias Algunos servicios adicionales podrán ser incluidos, dependiendo del plan, como cafetería, Cirios Naturales, Retrato Conmemorativo, Auto de acompañamiento, entre otros."
       },
       {
-        "title": "¿Serenidad es lo mismo que el Cinerario de la región de O'Higgins?",
-        "answer": ""
+        "title": "¿Cuál es el precio del Servicio Funerario?",
+        "answer": "Todos nuestros precios están expresados en UF, los que pueden comenzar aproximadamente desde las 16 UF pagando en efectivo o con Cuota Mortuoria. Consulta por promociones vigentes, alternativas de pago y beneficios por planificación anticipada con descuento."
       },
       {
-        "title": "¿Por qué las parroquias están ofreciendo estos servicios ahora?",
-        "answer": ""
+        "title": "¿Puedo hacer efectiva la cuota mortuoria al contratar un servicio funerario?",
+        "answer": "Sí. Al momento de activar el servicio funerario, se puede descontar del valor total el monto de la cuota mortuoria otorgada por el IPS o AFP u otro beneficio complementario como Compañía de seguro u otra entidad."
       },
       {
-        "title": "¿En qué se inspira el logo de Serenidad® y qué significa el Árbol de la Vida?",
-        "answer": ""
+        "title": "¿Existe un costo adicional si el fallecimiento ocurre fuera de la región y el servicio ya está cancelado?",
+        "answer": "Sí. El servicio funerario contratado incluye el traslado dentro de la región correspondiente. Si el fallecimiento ocurre fuera de ella, podría aplicarse un cobro adicional por traslado, el cual deberá ser pagado al momento de activar el servicio."
       }
     ]
   },
@@ -82,24 +94,28 @@
     "description": "Conoce la inspiración, valores y alianzas que dan origen a Serenidad®, así como nuestra relación con la Iglesia y el sentido cristiano de nuestros servicios.",
     "questions": [
       {
-        "title": "¿Qué relación tiene Serenidad® con la Iglesia Católica?",
-        "answer": ""
+        "title": "¿Por qué optar por la cremación?",
+        "answer": "La cremación permite simplificar los procesos funerarios, reducir costos asociados a sepulturas tradicionales, contar con un espacio permanente de memoria y oración para las cenizas, en columbarios ubicados en parroquias. Además, es una práctica respetuosa con el medio ambiente y facilita a las familias mantener un vínculo espiritual cercano con sus seres queridos."
       },
       {
-        "title": "¿Qué servicios ofrecen?",
-        "answer": ""
+        "title": "¿La Iglesia Católica acepta la cremación?",
+        "answer": "Sí. La Iglesia Católica permite la cremación desde 1963, siempre que se mantenga la creencia de que, al final de los tiempos, los difuntos resucitarán con un cuerpo glorificado. Esta enseñanza fue reafirmada en la carta “Ad resurgendum cum Christo” (2016), que también indica que las cenizas deben conservarse en un lugar sagrado, como una parroquia o cementerio, y no ser esparcidas, distribuidas ni guardadas permanentemente en casa. Por eso, en Serenidad® promovemos conservar las cenizas en nuestros Panteones de Cenizas, en plena sintonía con la fe Católica."
       },
       {
-        "title": "¿Serenidad es lo mismo que el Cinerario de la región de O'Higgins?",
-        "answer": ""
+        "title": "¿Cuál es el precio de la Cremación con Serenidad®?",
+        "answer": "El valor de la cremación con ánfora estándar incluida comienza desde 34 UF. Todos nuestros precios están expresados en Unidades de Fomento (UF) para mayor estabilidad y transparencia. Le invitamos a consultar por nuestras promociones vigentes, opciones de pago flexibles y los descuentos especiales por planificación anticipada."
       },
       {
-        "title": "¿Por qué las parroquias están ofreciendo estos servicios ahora?",
-        "answer": ""
+        "title": "¿Puedo contratar solo el servicio de cremación y llevarme el ánfora a mi casa?",
+        "answer": "Sí. Puede contratar únicamente la cremación y conservar el ánfora en tu hogar. Sin embargo, la Iglesia Católica recomienda que las cenizas sean resguardadas en un lugar sagrado, como una parroquia o cementerio. Si lo desea, puede traer el ánfora más adelante y contratar el servicio de Panteón de Cenizas cuando lo estimes conveniente."
       },
       {
-        "title": "¿En qué se inspira el logo de Serenidad® y qué significa el Árbol de la Vida?",
-        "answer": ""
+        "title": "¿Cómo puedo estar seguro que las cenizas que me entregarán son realmente de mi ser querido?",
+        "answer": "Garantizamos que las cenizas entregadas son exclusivamente de su ser querido. La cremación que ofrecemos es individual, lo que asegura que cada proceso de cremación se realice de manera separada y única para cada difunto. Este procedimiento cumple rigurosamente con las normativas sanitarias, ambientales y de seguridad vigentes. Las cenizas se depositan en un ánfora identificada de manera única, que será entregada a la familia en una ceremonia conmemorativa, diseñada para ser un momento de respeto, reflexión y recuerdo. Este acto se lleva a cabo con el mayor cuidado y dignidad, en una de nuestras parroquias, garantizando que el proceso se realice con la sensibilidad y el compromiso que su ser querido merece."
+      },
+      {
+        "title": "¿Puedo dejar el ánfora con las cenizas de mi mascota en el Panteón de Cenizas?",
+        "answer": "Sí. Para este propósito, el ánfora con las cenizas de su mascota se considerará como uno de los espacios adquiridos. Sin embargo, es importante destacar que Serenidad® actualmente no ofrece el servicio de cremación para mascotas ni proporciona ánforas específicamente diseñadas para ellas. La única restricción es que el ánfora debe estar sellada y ajustarse al espacio disponible en el Panteón de Cenizas. Para ver las condiciones, se deber revisar el Reglamento de Uso del Panteón de Cenizas."
       }
     ]
   },
@@ -108,24 +124,44 @@
     "description": "Conoce la inspiración, valores y alianzas que dan origen a Serenidad®, así como nuestra relación con la Iglesia y el sentido cristiano de nuestros servicios.",
     "questions": [
       {
-        "title": "¿Qué relación tiene Serenidad® con la Iglesia Católica?",
-        "answer": ""
+        "title": "¿Qué diferencia hay entre un columbario y una sepultura tradicional?",
+        "answer": "El columbario es un espacio diseñado para conservar ánforas con cenizas en un muro o estructura vertical, mientras que la sepultura tradicional implica entierro en tierra. El columbario es una opción más accesible, sin costos de mantención en un inicio, ecológica y cercana a la comunidad parroquial."
       },
       {
-        "title": "¿Qué servicios ofrecen?",
-        "answer": ""
+        "title": "¿Dónde estarán ubicados los Panteones de Cenizas o columbarios definitivos?",
+        "answer": "Nuestros columbarios están siendo instalados inicialmente como exhibiciones piloto, con venta en verde en parroquias seleccionadas de la región de O’Higgins. Para conocer las ubicaciones disponibles o futuras fechas de instalación, puede consultar directamente en su parroquia o contactarnos por teléfono, vía Whatsapp al +569 5691 8927 o por mail a contacto@serenidad.cl."
       },
       {
-        "title": "¿Serenidad es lo mismo que el Cinerario de la región de O'Higgins?",
-        "answer": ""
+        "title": "¿Cuál es la capacidad de un Columbario?",
+        "answer": "Cada columbario individual tiene capacidad para 2 o 4 ánforas. Sin embargo, los columbarios pueden estar ubicados dentro de un Panteón de Cenizas familiar, que puede tener capacidades para 8, 10, 12, 14 o 16 ánforas, dependiendo de las necesidades de la familia."
       },
       {
-        "title": "¿Por qué las parroquias están ofreciendo estos servicios ahora?",
-        "answer": ""
+        "title": "¿Cuál es el precio de un Columbario?",
+        "answer": "El valor de un columbario en el Panteón de Cenizas comienza desde aproximadamente 17 UF, con una duración de 10 años y capacidad para 2 ánforas. Sin embargo, la opción más conveniente es acceder a nuestros paquetes integrales, que incluyen cremación, espacio en el columbario y servicio funerario completo, desde aproximadamente $2.500.000 CLP. Le invitamos a consultar por nuestras promociones vigentes, opciones de pago en cuotas y beneficios por planificación anticipada con descuento."
       },
       {
-        "title": "¿En qué se inspira el logo de Serenidad® y qué significa el Árbol de la Vida?",
-        "answer": ""
+        "title": "¿Puedo traer mi propia ánfora o contratar solo el servicio del columbario?",
+        "answer": "Sí. Si ya cuentas con un ánfora sellada, puede contratar solo el uso del espacio en el Panteón de Cenizas. También ofrecemos una selección de ánforas con diseños exclusivos para quienes deseen una opción integral. Para ver las condiciones, se deber revisar el Reglamento de Uso del Panteón de Cenizas."
+      },
+      {
+        "title": "¿Qué es el código QR en los columbarios?",
+        "answer": "Cada espacio en el Panteón de Cenizas incluye un código QR personalizado que dirige a un homenaje digital con fotos, videos, mensajes y una breve biografía del ser querido. Es una forma moderna, cercana y significativa de mantener viva su memoria. Solo debe enviarnos oportunamente las fotografías y los mensajes que deseas compartir; nosotros nos encargamos del resto."
+      },
+      {
+        "title": "¿Las ánforas del Panteón de Cenizas piloto contienen cenizas reales?",
+        "answer": "No. Las ánforas y las placas con nombres visibles en los Panteones de Cenizas piloto son totalmente referenciales. Fueron instaladas únicamente para mostrar cómo será la estructura definitiva y no contienen restos reales."
+      },
+      {
+        "title": "¿El Panteón de Cenizas tiene costo de mantención?",
+        "answer": "Actualmente, y como promoción de lanzamiento, no existe costo de mantención. Sin embargo, esta condición podría cambiar en el futuro para nuevas contrataciones. Este cobro no será retroactivo para quienes ya hayan contratado su espacio."
+      },
+      {
+        "title": "¿Puedo compartir el espacio del Panteón de Cenizas con otro familiar?",
+        "answer": "Sí. Siempre y cuando el espacio contratado permita el depósito de más de un ánfora, y puede ser compartido entre familiares directos. Esto además debe ser informado y autorizado por el titular del derecho o su representante designado. Cualquier uso adicional fuera de ese vínculo deberá contar con la autorización escrita de Serenidad®, y estará sujeto a evaluación y disponibilidad."
+      },
+      {
+        "title": "¿Los espacios en El Panteón de Cenizas, una vez adquirido su derecho, son libres de disposición de uso o el cambio tiene algún costo?",
+        "answer": "Las ánforas con cenizas entregadas pueden ser dispuestas y utilizadas de acuerdo con los deseos de la familia, siempre y cuando se respete la capacidad de ánforas contratada. Sin embargo, cualquier cambio en la disposición de las ánforas dentro del Panteón de Cenizas, así como la solicitud de servicios adicionales -como el traslado a otro espacio o el uso de ánforas personalizadas- podría conllevar un costo adicional. Este costo será debidamente informado a la familia con antelación, garantizando así la transparencia y claridad en todo el proceso."
       }
     ]
   },
@@ -134,24 +170,36 @@
     "description": "Conoce la inspiración, valores y alianzas que dan origen a Serenidad®, así como nuestra relación con la Iglesia y el sentido cristiano de nuestros servicios.",
     "questions": [
       {
-        "title": "¿Qué relación tiene Serenidad® con la Iglesia Católica?",
-        "answer": ""
+        "title": "¿Qué es un certificado médico de defunción?",
+        "answer": "Es un documento legal y foliado emitido por un médico que certifica el fallecimiento de una persona y sus causas. Es imprescindible para registrar la defunción en el Registro Civil de la comuna en la cual falleció, y así obtener de forma inmediata pase de sepultación y certificado de defunción ya que este es indispensable para iniciar los servicios funerarios, cremación, sepultación o repatriación si es que lo fuera necesario."
       },
       {
-        "title": "¿Qué servicios ofrecen?",
-        "answer": ""
+        "title": "¿Qué es el permiso de inhumación o cremación?",
+        "answer": "El documento de inhumación es el pase de Sepultación que es entregado por el Registro Civil al momento de la inscripción de la defunción que autoriza la sepultación o cremación. Previo a obtener este documento se debe acercar al Cementerio o Parroquia para la coordinación de la Sepultación (inhumación) o Cremación. En el caso de la Cremación, se necesita la tramitación de una resolución sanitaria que debe autorizar el SEREMI de Salud. Para los cuales se necesitan algunos datos como la cédula de identidad del difunto y de quien la autoriza, certificado médico de defunción en la cual aparecen la causa y fecha de muerte. Además de los certificados correspondientes para la filiación con el fallecido y una Declaración Jurada que nuestro equipo de gestión lo asesorara en todo el proceso (Artículo N° 50 del Reglamento General de Cementerios)."
       },
       {
-        "title": "¿Serenidad es lo mismo que el Cinerario de la región de O'Higgins?",
-        "answer": ""
+        "title": "¿Qué debo hacer si una persona fallece en el domicilio?",
+        "answer": "Si el fallecido estaba bajo control médico en casa, debe contactar al profesional tratante para que confirme el deceso y emita el certificado médico de defunción. Si no hay médico tratante se debe llamar al SAMU o concurrir al Servicio de Salud donde era atendido el fallecido."
       },
       {
-        "title": "¿Por qué las parroquias están ofreciendo estos servicios ahora?",
-        "answer": ""
+        "title": "¿Qué debo hacer si el fallecimiento ocurre en un hospital, clínica o residencia de adultos mayores?",
+        "answer": "En esos casos, el médico de guardia o del recinto es quien debe confirmar el fallecimiento y emitir el certificado de defunción correspondiente. Una vez recibido este documento, la familia puede contactar a Serenidad® para iniciar los servicios funerarios o de cremación."
       },
       {
-        "title": "¿En qué se inspira el logo de Serenidad® y qué significa el Árbol de la Vida?",
-        "answer": ""
+        "title": "¿Qué sucede si el fallecido es derivado al Servicio Médico Legal?",
+        "answer": "Cuando la causa de muerte debe ser investigada, el cuerpo es enviado al Servicio Médico Legal. Allí se realiza la autopsia y se envía un informe a la Fiscalía, quien a su vez según los antecedentes remitidos del Servicio Médico Legal es quien determina si es factible la Cremación del cuerpo. La Fiscalía procede a entregar a la Familia dos Oficios, uno que es exclusivo para Solicitar la Cremación del cuerpo y otro para la inscripción de la Defunción."
+      },
+      {
+        "title": "¿Quién debe registrar el fallecimiento en el Registro Civil?",
+        "answer": "Esta gestión corresponde a los familiares del difunto. No obstante, si contrata los servicios funerarios a través de Serenidad®, nuestro equipo podrá realizar este trámite por usted ante el Registro Civil de la comuna de la región de O'higgins, sin costo adicional. Si es que el deceso se produce dentro de la región de O'higgins."
+      },
+      {
+        "title": "¿Qué documentos se requieren para inscribir una defunción?",
+        "answer": "Se necesita el certificado médico de defunción original y la cédula de identidad del fallecido. Además, se debe proporcionar información como estado civil, ocupación, nivel educacional, domicilio y cementerio o lugar donde descansarán sus restos. Si desea registrar el fallecimiento en la Libreta de Familia, debe presentarla en original."
+      },
+      {
+        "title": "¿Tengo derecho a permiso laboral por el fallecimiento de un familiar?",
+        "answer": "Sí. Según la legislación chilena: • Por fallecimiento del cónyuge o conviviente civil: 7 días corridos de permiso pagado. • Por fallecimiento de un hijo o hija: 10 días corridos de permiso pagado. • Por fallecimiento del padre, madre o hermanos: 4 días hábiles de permiso pagado. Estos días son adicionales a las vacaciones y no pueden compensarse en dinero."
       }
     ]
   }

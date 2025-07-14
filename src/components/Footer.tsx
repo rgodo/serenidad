@@ -1,4 +1,7 @@
+'use client';
+
 import { Box, Link, Typography } from "@mui/material";
+import { scrollToSection } from "./utils/functions/scroll";
 const contactChannel = [
   {
     icon: 'footer-location-map.svg',
@@ -152,7 +155,7 @@ const Footer = () => {
         >
           ©Serenidad, todos los derechos reservados
         </Typography>
-        <Link href="" sx={{
+        <Link href='/files/reglamento-uso-panteon.pdf' target="_blank" sx={{
           color: 'white',
           paddingRight: { xs: '0', md: '1rem' },
           borderRight: { xs: 'none', md: '1px solid white' },
@@ -161,13 +164,14 @@ const Footer = () => {
         }}>
           Reglamento Interno para Panteón de Cenizas
         </Link>
-        <Link href="" sx={{
+        <Box onClick={() => { scrollToSection('faq') }} sx={{
           color: 'white',
           fontSize: '1rem',
           fontWeight: 600,
+          cursor: 'pointer'
         }}>
           Preguntas frecuentes
-        </Link>
+        </Box>
       </Box>
     </footer>
   );

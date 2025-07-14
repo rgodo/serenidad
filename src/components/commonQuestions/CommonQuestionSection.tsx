@@ -65,7 +65,7 @@ const CommonQuestionList: React.FC<Props> = ({ data }) => {
             color: '#616161'
           }}
         >
-          {answerTextTemplate}
+          {question.answer}
         </AccordionDetails>
       </Accordion>
     ))}
@@ -73,5 +73,3 @@ const CommonQuestionList: React.FC<Props> = ({ data }) => {
 }
 
 export default CommonQuestionList;
-
-const answerTextTemplate = 'Lorem ipsum dolor sit amet consectetur. In diam aliquet a non dictumst platea pulvinar ultricies quis. Enim et nisi amet proin. Aliquet maecenas fermentum et venenatis ut. Leo nibh semper augue sapien.Lorem ipsum dolor sit amet consectetur. In diam aliquet a non dictumst platea pulvinar ultricies quis. Enim et nisi amet proin. Aliquet maecenas fermentum et venenatis ut. Leo nibh semper augue sapien.Lorem ipsum dolor sit amet consectetur. In diam aliquet a non dictumst platea pulvinar ultricies quis. Enim et nisi amet proin. Aliquet maecenas fermentum et venenatis ut. Leo nibh semper augue sapien.Lorem ipsum dolor sit amet consectetur. In diam aliquet a non dictumst platea pulvinar ultricies quis. Enim et nisi amet proin. Aliquet maecenas fermentum et venenatis ut. Leo nibh semper augue sapien.Lorem ipsum dolor sit amet consectetur. In diam aliquet a non dictumst platea pulvinar ultricies quis. Enim et nisi amet proin. Aliquet maecenas fermentum et venenatis ut. Leo nibh semper augue sapien.';
