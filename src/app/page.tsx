@@ -8,6 +8,7 @@ import PanteonSection from "@/components/panteon/PanteonSection";
 import Footer from "@/components/Footer";
 import ContactUs from "@/components/contactUs/ContactUs";
 import Locations from "@/components/Locations";
+import CommonQuestions from "@/components/commonQuestions/CommonQuestions";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Cremacion />
       <PanteonSection />
       <Locations />
+      <CommonQuestions />
       <ContactUs />
       <Footer />
       {/* Add more sections as you build them */}
