@@ -70,7 +70,9 @@ const Navbar = () => {
             height={61}
             priority
             style={{
-              marginRight: 12,
+              marginLeft: 20,
+              marginTop: 5,
+              marginBottom: 5,
               height: 61,
               width: 163,
               maxWidth: "100%",
@@ -164,7 +166,7 @@ const Navbar = () => {
                 width: 125,
               }}
             />
-            <Button
+            {/* <Button
               variant="contained"
               sx={{
                 bgcolor: "#8b9b42",
@@ -185,7 +187,7 @@ const Navbar = () => {
               onClick={() => scrollToSection("contacto")}
             >
               ¡Contáctanos Ahora!
-            </Button>
+            </Button> */}
             <IconButton
               onClick={() => setDrawerOpen(false)}
               sx={{
@@ -225,16 +227,16 @@ const Navbar = () => {
             ))}
             <ListItem>
               <ListItemButton
-                onClick={() => scrollToSection('contacto')}
+                onClick={() => scrollToSection("contacto")}
                 sx={{
                   justifyContent: "center",
                   py: 2,
-                  bgcolor: 'white',
-                  "&:hover": { bgcolor: "#7e8a38", color: 'white' }
+                  bgcolor: "white",
+                  "&:hover": { bgcolor: "#7e8a38", color: "white" },
                 }}
               >
                 <ListItemText
-                  primary={'¡Contáctanos Ahora!'}
+                  primary={"¡Contáctanos Ahora!"}
                   slotProps={{
                     primary: {
                       align: "center",
@@ -244,7 +246,7 @@ const Navbar = () => {
                         fontSize: 18,
                         fontFamily: "Assistant, serif",
                       },
-                    }
+                    },
                   }}
                 />
               </ListItemButton>

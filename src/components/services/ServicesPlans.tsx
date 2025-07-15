@@ -25,23 +25,27 @@ export const ServicesPlans: React.FC<Props> = ({ plans }) => {
             <Typography
               sx={{
                 fontWeight: 700,
-                fontFamily: 'Assistant, sans-serif',
-                fontSize: '18px',
-                textAlign: 'left',
-                width: '100%',
-                mb: 0
+                fontFamily: "Assistant, sans-serif",
+                fontSize: "18px",
+                textAlign: "center",
+                width: "100%",
+                mb: 0,
               }}
-            >{plan.title}</Typography>
+            >
+              {plan.title}
+            </Typography>
             <Typography
               sx={{
                 fontWeight: 400,
-                fontFamily: 'Assistant, sans-serif',
-                fontSize: '16px',
+                fontFamily: "Assistant, sans-serif",
+                fontSize: "16px",
                 lineHeight: 1,
-                textAlign: 'left',
-                width: '100%'
+                textAlign: "left",
+                width: "100%",
               }}
-            >{plan.description}</Typography>
+            >
+              {plan.description}
+            </Typography>
             <button className={styles.cta} onClick={() => setOpenPlan(plan)}>
               {plan.cta}
             </button>

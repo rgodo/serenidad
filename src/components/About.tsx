@@ -33,12 +33,12 @@ function TextContent({ content }: { content: typeof aboutContent }) {
       sx={{
         flex: 1,
         maxWidth: { xs: "100%", md: "27rem" },
-        pt: { xs: '2rem', md: 3 },
+        pt: { xs: "2rem", md: 3 },
         mr: { md: 2 },
         ml: { xs: 0, md: 2 },
         px: { xs: 2, md: 0 },
         zIndex: 1,
-        alignSelf: { md: 'center' }
+        alignSelf: { md: "center" },
       }}
     >
       <Typography
@@ -51,7 +51,7 @@ function TextContent({ content }: { content: typeof aboutContent }) {
           fontSize: { xs: "1.75rem", md: "3.125rem" },
           letterSpacing: "-1.2px",
           paddingBottom: 2,
-          borderBottom: "2px solid #E1952D"
+          borderBottom: "2px solid #E1952D",
         }}
       >
         {content.title}
@@ -78,9 +78,8 @@ function TextContent({ content }: { content: typeof aboutContent }) {
               textDecoration: part.textDecoration,
               marginRight: 2,
             }}
-          >
-            {part.text}
-          </span>
+            dangerouslySetInnerHTML={{ __html: part.text }}
+          />
         ))}
       </Typography>
       <Button
@@ -94,7 +93,7 @@ function TextContent({ content }: { content: typeof aboutContent }) {
           fontSize: "0.97rem",
           borderRadius: "4px",
           textTransform: "none",
-          px: '1rem',
+          px: "1rem",
           py: 1.05,
           boxShadow: "none",
           "&:hover": {
@@ -103,12 +102,15 @@ function TextContent({ content }: { content: typeof aboutContent }) {
           },
           mb: 6,
           maxWidth: "100%",
-          display: { xs: 'none', md: "block" },
+          display: { xs: "none", md: "block" },
           mx: { xs: "auto", md: 0 },
         }}
-        onClick={() => { scrollToSection('locations') }}
+        onClick={() => {
+          scrollToSection("locations");
+        }}
       >
-        <strong>Ver aquí</strong> las parroquias presentes en la región de O&#39;Higgins.
+        <strong>Ver aquí</strong> las parroquias presentes en la región de
+        O&#39;Higgins.
       </Button>
     </Box>
   );

@@ -14,7 +14,7 @@ const FeatureBar = () => {
         width: "100%",
         background: "#7B8F45",
         color: "#fff",
-        display: { xs: 'none', md: "flex" },
+        display: { xs: "none", md: "flex" },
         justifyContent: "center",
         alignItems: "center",
         py: { xs: 1, md: 3 },
@@ -40,9 +40,9 @@ const FeatureBar = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                justifyContent: { xs: "flex-start", md: 'center' },
+                justifyContent: { xs: "flex-start", md: "flex-start" },
                 minWidth: { xs: 130, sm: 180 },
-                minHeight: 170
+                minHeight: 170,
               }}
             >
               <Image
@@ -61,7 +61,7 @@ const FeatureBar = () => {
                   fontFamily: "'EB Garamond', serif",
                   whiteSpace: "pre-line",
                   // width: { xs: 180,  },
-                  maxWidth: 195
+                  maxWidth: 195,
                 }}
               >
                 {feature.label}

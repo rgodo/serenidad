@@ -26,9 +26,8 @@
       "fontWeight": 600
     },
     {
-      "text": "llamado del Papa Francisco (2016) ",
-      "fontWeight": 600,
-      "textDecoration": "underline"
+      "text": "<a href='https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20160815_ad-resurgendum-cum-christo_sp.html' target='_blank'>llamado del Papa Francisco (2016)</a> ",
+      "fontWeight": 600
     },
     {
       "text": "de evitar la dispersión de cenizas.\n\nPor ello diseñamos y construimos ",

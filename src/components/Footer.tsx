@@ -4,24 +4,24 @@ import { Box, Link, Typography } from "@mui/material";
 import { scrollToSection } from "./utils/functions/scroll";
 const contactChannel = [
   {
-    icon: '/img/icon-oficina.png',
-    iconSize: { width: '2rem', height: '3rem' },
-    title: 'Oficinas prinpales:',
-    description: "Parroquias de la región de O'Higgins"
+    icon: "/img/icon-oficina.png",
+    iconSize: { width: "2rem", height: "3rem" },
+    title: "Oficinas principales:",
+    description: "Parroquias de la región de O'Higgins",
   },
   {
-    icon: '/img/icon-casa.png',
-    iconSize: { width: '3rem', height: '3rem' },
-    title: 'Casa Matriz:',
-    description: 'Astorga 570, Piso 2, Rancagua'
+    icon: "/img/icon-casa.png",
+    iconSize: { width: "3rem", height: "3rem" },
+    title: "Casa Matriz:",
+    description: "Astorga 570, Piso 2, Rancagua",
   },
   {
-    icon: '/img/icon-phone.png',
-    iconSize: { width: '3rem', height: '2.5rem' },
-    title: 'Atención telefónica 24/7:',
-    description: '+569  5691 8927'
+    icon: "/img/icon-phone.png",
+    iconSize: { width: "3rem", height: "2.5rem" },
+    title: "Atención telefónica 24/7:",
+    description: "+569  5691 8927",
   },
-]
+];
 
 const Footer = () => {
 
