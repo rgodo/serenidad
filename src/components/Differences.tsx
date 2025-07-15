@@ -193,6 +193,7 @@ function Differences() {
               <Box
                 sx={{
                   height: '100%',
+                  width: '100%',
                   textAlign: "center",
                   color: "#fff",
                   backgroundColor: "rgba(0, 0, 0, 0.50)",
@@ -211,6 +212,8 @@ function Differences() {
                     fontFamily: "Assistant, serif",
                     fontSize: "1rem",
                     mx: 3,
+                    maxWidth: { md: '186px' },
+                    justifySelf: 'center'
                   }}
                 >
                   {cell.title}
