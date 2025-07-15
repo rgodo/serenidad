@@ -61,12 +61,7 @@ function renderIcon(icon: string) {
       sx={{
         width: 60,
         height: 60,
-        pt: 5,
-        mb: 5,
-        mx: "auto",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
+        justifySelf: 'center'
       }}
     >
       <img
@@ -85,6 +80,7 @@ type HoneycombProps = {
 
 function Honeycomb({ isMobile, renderCell }: HoneycombProps) {
   const HEX_SIZE = 220;
+  const HEX_SIZE_DESKTOP = 290;
   const honeycombRowsDesktop = differencesData.honeycomb;
   const honeycombRowsMobile = differencesData.honeycombMobile;
   const rows = isMobile ? honeycombRowsMobile : honeycombRowsDesktop;
@@ -93,13 +89,14 @@ function Honeycomb({ isMobile, renderCell }: HoneycombProps) {
     <Box
       sx={{
         flex: 1,
-        minWidth: isMobile ? HEX_SIZE * 2 : HEX_SIZE * 3,
-        maxWidth: isMobile ? HEX_SIZE * 2.4 : HEX_SIZE * 3.4,
+        maxWidth: isMobile ? HEX_SIZE * 2.4 : HEX_SIZE_DESKTOP * 3.4,
         mt: isMobile ? 0 : -1,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         position: "relative",
+        maxHeight: '743px',
+        overflow: { md: 'hidden' }
       }}
     >
       {rows.map((row, i) => (
@@ -109,19 +106,22 @@ function Honeycomb({ isMobile, renderCell }: HoneycombProps) {
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
-            mb: getRowMarginBottom(i, rows, HEX_SIZE),
-            ml: getRowMarginLeft(isMobile, row, i, HEX_SIZE),
-            marginTop: isMobile && i === 0 ? `-${HEX_SIZE/2}px`: 0
+            mb: getRowMarginBottom(i, rows, isMobile ? HEX_SIZE : HEX_SIZE_DESKTOP),
+            ml: getRowMarginLeft(isMobile, row, i, isMobile ? HEX_SIZE : HEX_SIZE_DESKTOP),
+            marginTop: {
+              xs: i === 0 ? `-${isMobile ? HEX_SIZE : HEX_SIZE_DESKTOP / 2}px`: 0,
+              md: i === 0 ? '-80px' :0
+            }
           }}
         >
           {row.map((cell, j) => {
-            const { mt, mr, ml } = getHexOffsets(isMobile, row, j, HEX_SIZE);
+            const { mt, mr, ml } = getHexOffsets(isMobile, row, j, isMobile ? HEX_SIZE : HEX_SIZE_DESKTOP);
             return (
               <Box
                 key={`hex-${i}-${j}`}
                 sx={{
-                  width: HEX_SIZE,
-                  height: HEX_SIZE,
+                  width: isMobile? HEX_SIZE: HEX_SIZE_DESKTOP,
+                  height: isMobile? HEX_SIZE: HEX_SIZE_DESKTOP,
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -159,7 +159,6 @@ function Differences() {
     <Box
       sx={{
         width: "100%",
-        minHeight: "100vh",
         backgroundImage: `url(${backgroundUrl})`,
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
@@ -173,33 +172,36 @@ function Differences() {
     >
       <Box
         sx={{
-          flex: 1.1,
           display: "flex",
           flexDirection: "column",
           justifyContent: isMobile ? "flex-start" : "start",
           minWidth: 350,
           zIndex: 2,
-          alignItems: isMobile ? "center" : "flex-start",
+          alignItems: { xs: "center", md: "end" },
           mt: isMobile ? 10 : -40,
+          mb: { xs: '2rem', md: 0 },
           mx: 4,
         }}
       >
         <DifferencesTitle titleParts={differencesData.title} />
       </Box>
-      <Box sx={{ flex: 1, display: "flex", justifyContent: "center" }}>
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Honeycomb
           isMobile={isMobile}
           renderCell={(cell) =>
             cell && (
               <Box
                 sx={{
+                  height: '100%',
                   textAlign: "center",
                   color: "#fff",
                   backgroundColor: "rgba(0, 0, 0, 0.50)",
                   backdropFilter: "blur(4px)",
-                  height: 220,
                   clipPath:
                     "polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%)",
+                  display: 'grid',
+                  alignContent: 'center'
+
                 }}
               >
                 {renderIcon(cell.icon)}
