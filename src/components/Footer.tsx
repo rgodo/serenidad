@@ -63,6 +63,7 @@ const Footer = () => {
         <Box
           sx={{
             marginX: { sm: "auto" },
+            display: {xs: 'none', md: 'block'}
           }}
         >
           <Typography

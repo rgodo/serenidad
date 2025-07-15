@@ -6,7 +6,8 @@
         "fontWeight": 500,
         "fontSize": "1em",
         "fontFamily": "EB Garamond, serif",
-        "color": "#fff"
+        "color": "#fff",
+        "marginRight": 0
       },
       {
         "text": "®",

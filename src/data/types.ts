@@ -5,6 +5,7 @@ export interface HeadlinePart {
   fontFamily: string;
   color?: string;
   verticalAlign?: string;
+  marginRight?: number;
 }
 
 export interface AboutContent {

@@ -24,7 +24,8 @@ const CommonQuestionList: React.FC<Props> = ({ data }) => {
         fontWeight: 700,
         fontSize: { xs: '1.25rem', md: '1.875rem' },
         lineHeight: 2,
-        color: '#E1952D'
+        color: '#E1952D',
+        display: { xs: 'none', md: 'block' }
       }}
     >
       {data.title}

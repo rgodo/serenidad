@@ -1,42 +1,6 @@
-import { Box, MenuItem, TextField, Typography } from "@mui/material";
-const fields = [
-  {
-    type: 'text',
-    id: 'name',
-    placeholder: 'Escriba aqui su nombre completo',
-    labelText: 'Nombre y Apellido'
-  },
-  {
-    type: 'text',
-    id: 'phone',
-    placeholder: '+569 000000000',
-    labelText: 'Numero de celular'
-  },
-  {
-    type: 'select',
-    id: 'comuna',
-    placeholder: 'Seleccione una comuna',
-    labelText: 'Comuna'
-  },
-  {
-    type: 'email',
-    id: 'email',
-    placeholder: 'Escriba aquí su correo electrónico',
-    labelText: 'Correo electrónico'
-  },
-  {
-    type: 'select',
-    id: 'service',
-    placeholder: 'Servicio que desee saber información',
-    labelText: 'Principal servicio de interés'
-  },
-  {
-    type: 'multiline',
-    id: 'message',
-    placeholder: 'Escriba aqui su mensaje',
-    labelText: 'Mensaje'
-  }
-]
+import { Box, Button, MenuItem, TextField, Typography } from "@mui/material";
+import { gallery } from '../../data/services.json';
+import locations from '../../data/locations.json';
 
 const ContactUsForm = () => {
   return (
@@ -81,37 +45,95 @@ const ContactUsForm = () => {
             >
               {
                 field.type === 'select' && (
-                  <MenuItem value='none' selected={true} sx={{
-                    fontFamily: 'Assistant, sans-serif'
-                  }}>
-                    {field.placeholder}
-                  </MenuItem>
+                  <>
+                    <MenuItem value='none' disabled selected={true} sx={{
+                      fontFamily: 'Assistant, sans-serif'
+                    }}>
+                      {field.placeholder}
+                    </MenuItem>
+                    {
+                      field.options.map((option, idx) => (
+                        <>
+                          <MenuItem key={idx} value={idx} selected={true} sx={{
+                            fontFamily: 'Assistant, sans-serif'
+                          }}>
+                            {option}
+                          </MenuItem>
+                        </>
+                      ))
+                    }
+                  </>
                 )
               }
             </TextField>
-            {/* {
-              (field.type != 'select' && field.type != 'textarea') && (
-                <TextField fullWidth type={field.type} id={field.id} placeholder={field.placeholder}
-                  sx={{
-                    fontFamily: 'Assistant, sans-serif'
-                  }}
-                />
-              )
-            }
-            {
-              field.type === 'select' && (
-                <TextField fullWidth type={field.type} id={field.id} placeholder={field.placeholder}
-                  sx={{
-                    fontFamily: 'Assistant, sans-serif'
-                  }}
-                />
-              )
-            } */}
           </Box>
         ))
       }
+      <Typography
+        sx={{
+          fontFamily: 'Assistant, sans-serif',
+          fontSize: '14px',
+          lineHeight: '18px',
+          mb: '1rem'
+        }}
+      >
+        Nos pondremos en contacto contigo a la brevedad, ofreciéndote orientación, tranquilidad y soluciones integrales.
+      </Typography>
+      <Button
+        fullWidth
+        sx={{
+          textTransform: 'none',
+          fontFamily: 'Assistant, sans-serif',
+          bgcolor: '#768837',
+          color: 'white',
+          py: '0.5rem'
+        }}
+      >
+        Enviar
+      </Button>
     </Box>
   )
 }
 
 export default ContactUsForm;
+
+const fields = [
+  {
+    type: 'text',
+    id: 'name',
+    placeholder: 'Escriba aqui su nombre completo',
+    labelText: 'Nombre y Apellido'
+  },
+  {
+    type: 'text',
+    id: 'phone',
+    placeholder: '+569 000000000',
+    labelText: 'Numero de celular'
+  },
+  {
+    type: 'select',
+    id: 'comuna',
+    placeholder: 'Seleccione una comuna',
+    labelText: 'Comuna',
+    options: locations.map((location) => location.name)
+  },
+  {
+    type: 'email',
+    id: 'email',
+    placeholder: 'Escriba aquí su correo electrónico',
+    labelText: 'Correo electrónico'
+  },
+  {
+    type: 'select',
+    id: 'service',
+    placeholder: 'Servicio que desee saber información',
+    labelText: 'Principal servicio de interés',
+    options: gallery.images.map((item) => item.title)
+  },
+  {
+    type: 'multiline',
+    id: 'message',
+    placeholder: 'Escriba aqui su mensaje',
+    labelText: 'Mensaje'
+  }
+]

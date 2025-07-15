@@ -26,7 +26,7 @@ export const ServicesHero: React.FC<Props> = ({ data, isMobile }) => (
           fontSize: { xs: '1.875rem', md: '2.5rem' },
           fontWeight: 300,
           marginTop: "10px",
-          maxWidth: { xs: '100%', md: "510px" },
+          maxWidth: { xs: '150px', md: "510px" },
           marginBottom: "5px",
           lineHeight: { xs: 1.2, md: 1 },
           paddingBottom: '1rem',
@@ -87,7 +87,8 @@ export const ServicesHero: React.FC<Props> = ({ data, isMobile }) => (
         sx={{
           color: '#8B7669',
           border: '2px solid #8B7669',
-          textTransform: 'none'
+          textTransform: 'none',
+          display: { xs: 'none', md: 'inline-flex' }
         }}
         onClick={() => { scrollToSection('contacto')}}
         className={styles.cta}

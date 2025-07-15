@@ -29,17 +29,28 @@ export default function PanteonSection() {
         {/* Header */}
         <Box
           sx={{
-            background: `url('${header.bgImage}') center/cover no-repeat`,
+            background: `url('${header.bgImage}') left/cover no-repeat`,
             minHeight: isMobile ? 250 : 350,
             display: "flex",
             flexDirection: "column",
-            justifyContent: "flex-end",
             px: { xs: 2, md: '10%'},
             py: isMobile ? 4 : 7,
             color: "#fff",
             position: "relative",
+            aspectRatio: { xs: '9/10', sm: '2/1', md: '4/1' },
           }}
         >
+          <Box
+            sx={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              bgcolor: 'rgba(0, 0, 0, 0.5)',
+              display: { md: 'none' }
+            }}
+          ></Box>
           <Box
             sx={{
               p: isMobile ? 2 : 4,
@@ -49,13 +60,18 @@ export default function PanteonSection() {
               alignItems: isMobile ? "flex-start" : "center",
               justifyContent: "space-between",
               gap: 2,
+              flex: 1,
+              zIndex: 1
             }}
           >
             {/* Texts at the left */}
-            <Box sx={{ flex: 1 }}>
+            <Box sx={{
+              flex: 1,
+              textAlign: {xs: 'center', md: 'left'}
+            }}>
               <Typography
                 variant="caption"
-                sx={{ fontSize: "20px", fontWeight: 700, lineHeight: 1 }}
+                sx={{ fontSize: "16px", fontWeight: 700, lineHeight: 1 }}
               >
                 {header.intro}
               </Typography>
@@ -63,7 +79,7 @@ export default function PanteonSection() {
                 variant={isMobile ? "h5" : "h4"}
                 sx={{
                   fontWeight: 700,
-                  fontSize: isMobile ? "40px" : "50px",
+                  fontSize: { xs: "30px", md: "50px"},
                   maxWidth: '370px'
                 }}
               >
@@ -71,7 +87,7 @@ export default function PanteonSection() {
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ mb: 0, fontSize: "35px", fontWeight: 400 }}
+                sx={{ mb: 0, fontSize: "22px", fontWeight: 400 }}
               >
                 <RichText html={header.description} />
               </Typography>
@@ -84,7 +100,7 @@ export default function PanteonSection() {
                 ml: isMobile ? 0 : 4,
                 display: "flex",
                 alignItems: "center",
-                alignSelf: 'end'
+                alignSelf: 'center'
               }}
             >
               <Button
@@ -100,7 +116,7 @@ export default function PanteonSection() {
                   fontFamily: "Assistant, serif",
                   border: '1px solid white',
                   borderRadius: 0,
-                  fontSize: '1rem'
+                  fontSize: '1rem',
                 }}
                 onClick={() => {
                   scrollToSection("panteonInfo");
@@ -147,7 +163,8 @@ export default function PanteonSection() {
                 mb: 2,
                 pb: '1rem',
                 borderBottom: "2px solid #E1952D",
-                fontSize: "45px",
+                fontSize: "35px",
+                lineHeight: 1
               }}
             >
               {infoSection.title}
@@ -172,6 +189,7 @@ export default function PanteonSection() {
                 textTransform: 'none',
                 border: "1px solid #8B7669",
                 fontFamily: "Assistant, serif",
+                display: { xs: 'none', md: 'inline-flex' }
               }}
             >
               {infoSection.button.text}

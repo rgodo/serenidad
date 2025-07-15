@@ -65,7 +65,7 @@ const CommonQuestions = () => {
           >
             Consultas
           </Typography>
-          <Typography variant="h4" fontWeight={400} lineHeight={'1.2'} textTransform={'uppercase'} fontSize={'2.5rem'} mb={0}
+          <Typography variant="h4" fontWeight={400} lineHeight={'1.1'} textTransform={'uppercase'} fontSize={'2.5rem'} mb={0}
             sx={{
               mb: '0.25rem',
               fontSize: { xs: '2.5rem', md: '3rem' },
@@ -78,7 +78,8 @@ const CommonQuestions = () => {
         </Box>
         <Box
           sx={{
-            alignSelf: { md: 'end' }
+            alignSelf: { md: 'end' },
+            mt: {xs: '3rem', md: '0'}
           }}
         >
           <Button

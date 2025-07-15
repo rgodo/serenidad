@@ -48,7 +48,7 @@ function TextContent({ content }: { content: typeof aboutContent }) {
             "'Perpetua', 'Palatino Linotype', 'Book Antiqua', Palatino, serif",
           mb: 2,
           color: "#383838",
-          fontSize: { xs: "2rem", md: "3.125rem" },
+          fontSize: { xs: "1.75rem", md: "3.125rem" },
           letterSpacing: "-1.2px",
           paddingBottom: 2,
           borderBottom: "2px solid #E1952D"
@@ -103,7 +103,7 @@ function TextContent({ content }: { content: typeof aboutContent }) {
           },
           mb: 6,
           maxWidth: "100%",
-          display: "block",
+          display: { xs: 'none', md: "block" },
           mx: { xs: "auto", md: 0 },
         }}
         onClick={() => { scrollToSection('locations') }}

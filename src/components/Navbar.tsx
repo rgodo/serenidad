@@ -223,6 +223,32 @@ const Navbar = () => {
                 </ListItemButton>
               </ListItem>
             ))}
+            <ListItem>
+              <ListItemButton
+                onClick={() => scrollToSection('contacto')}
+                sx={{
+                  justifyContent: "center",
+                  py: 2,
+                  bgcolor: 'white',
+                  "&:hover": { bgcolor: "#7e8a38", color: 'white' }
+                }}
+              >
+                <ListItemText
+                  primary={'¡Contáctanos Ahora!'}
+                  slotProps={{
+                    primary: {
+                      align: "center",
+                      sx: {
+                        color: "#8b9b42",
+                        fontWeight: 600,
+                        fontSize: 18,
+                        fontFamily: "Assistant, serif",
+                      },
+                    }
+                  }}
+                />
+              </ListItemButton>
+            </ListItem>
           </List>
         </Drawer>
       </Toolbar>

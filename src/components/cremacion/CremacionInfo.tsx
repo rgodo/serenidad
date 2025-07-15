@@ -97,12 +97,16 @@ const CremacionInfo: React.FC<CremacionInfoProps> = ({
         </Box>
         <Box
           sx={{
-            maxWidth: {md: '535px'}
+            maxWidth: {md: '535px'},
+            padding: {xs: '1rem', md: 0}
           }}
         >
           <ServicesGallery data={gallery} isMobile={isMobile} autoplay={true} onSlideChange={(e) => {
             setCurrentData(gallery.images[e.activeIndex])
           }} />
+          <Box sx={{
+            height: { xs: '1rem', md: '0' }
+          }}></Box>
           <div
             style={{
               maxWidth: '100%',

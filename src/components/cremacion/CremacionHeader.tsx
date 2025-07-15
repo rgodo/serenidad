@@ -29,7 +29,7 @@ const CremacionHeader: React.FC<CremacionHeaderProps> = ({
       flexDirection: { xs: "column", sm: 'row' },
       justifyContent: "space-between",
       alignItems: { sm: 'center' },
-      p: { xs: 2, md: 4 },
+      p: { xs: '2rem 4rem', md: 4 },
       color: "#fff",
       position: "relative",
     }}
@@ -61,9 +61,8 @@ const CremacionHeader: React.FC<CremacionHeaderProps> = ({
         sx={{
           background: '#768837',
           color: "white",
-          border: "1px solid white",
-          borderRadius: 0,
-          padding: "1rem"
+          padding: "0.5rem 1rem",
+          textTransform: 'none'
         }}
         onClick={() => { scrollToSection('anforas')}}
       >

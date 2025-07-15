@@ -158,7 +158,7 @@ const Hero = () => {
                       fontFamily: part.fontFamily,
                       color: part.color,
                       verticalAlign: part.verticalAlign ?? "baseline",
-                      marginRight: 6,
+                      marginRight: part.marginRight >= 0 ? part.marginRight: 6,
                       letterSpacing: "0.5px",
                     }}
                   >

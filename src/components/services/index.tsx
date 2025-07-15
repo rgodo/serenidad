@@ -49,24 +49,10 @@ export const Services: React.FC = () => {
           <ServicesGallery data={data.gallery} isMobile={isMobile} autoplay={true} onSlideChange={(e) => {
             setCurrentService(data.gallery.images[e.activeIndex])
           }}>
-            <Box
-              sx={{
-                bgcolor: "#E1952D",
-                textAlign: "center",
-                paddingY: "0.5rem",
-                color: "white",
-              }}
-            >
-              <span
-                style={{
-                  fontWeight: 700,
-                }}
-              >
-                {" "}
-                ¡Ver Planes!{" "}
-              </span>
-            </Box>
           </ServicesGallery>
+          <Box sx={{
+            height: { xs: '1rem', md: '0' }
+          }}></Box>
           <div
             style={{
               maxWidth: "100%",
