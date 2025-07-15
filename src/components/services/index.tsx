@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { getServicesData } from "./../utils/servicesUtil";
 import { ServicesHero } from "./ServicesHero";
 import { ServicesGallery } from "./ServicesGallery";
@@ -11,6 +11,7 @@ import { Box } from "@mui/material";
 export const Services: React.FC = () => {
   const data = getServicesData();
   const isMobile = useIsMobile();
+  const [currentService, setCurrentService] = useState(data.gallery.images[0])
 
   return (
     <section style={{ backgroundImage: "url('bg-sheet.png')" }} id="services">
@@ -23,26 +24,31 @@ export const Services: React.FC = () => {
           alignItems: { md: "center" },
           gridTemplateColumns: { md: "1fr 1fr" },
           gridTemplateAreas: { md: '"second first"' },
+          maxWidth: '1100px',
+          margin: { md: 'auto' }
         }}
       >
         <Box
           sx={{
-            margin: "32px auto",
-            maxWidth: 600,
+            margin: { xs: "32px auto", md: 0 },
+            maxWidth: 430,
             gridArea: { md: "first" },
+            justifySelf: { md: 'self-end' }
           }}
         >
           <ServicesHero data={data.hero} isMobile={isMobile} />
         </Box>
         <Box
           sx={{
-            paddingLeft: "1rem",
-            paddingRight: "1rem",
-            maxWidth: { md: "40rem" },
+            paddingLeft: {xs: "1rem", md: 0 },
+            paddingRight: {xs: "1rem", md: 0 },
+            maxWidth: { md: "530px" },
             gridArea: { md: "second" },
           }}
         >
-          <ServicesGallery data={data.gallery} isMobile={isMobile}>
+          <ServicesGallery data={data.gallery} isMobile={isMobile} autoplay={true} onSlideChange={(e) => {
+            setCurrentService(data.gallery.images[e.activeIndex])
+          }}>
             <Box
               sx={{
                 bgcolor: "#E1952D",
@@ -63,7 +69,6 @@ export const Services: React.FC = () => {
           </ServicesGallery>
           <div
             style={{
-              marginTop: 18,
               maxWidth: "100%",
             }}
           >
@@ -76,7 +81,7 @@ export const Services: React.FC = () => {
                 color: "#484846",
               }}
             >
-              {data.additionals.title}
+              {currentService.title}
             </h4>
             <p
               style={{
@@ -88,7 +93,7 @@ export const Services: React.FC = () => {
                 color: "#484846",
               }}
             >
-              {data.additionals.description}
+              {currentService.description}
             </p>
           </div>
         </Box>

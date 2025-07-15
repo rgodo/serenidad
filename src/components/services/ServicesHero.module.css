@@ -12,13 +12,11 @@
   }
   .cta {
     display: inline-block;
-    margin-top: 18px;
     background: transparent;
     color: #8B7669;
     border: 2px solid #8B7669;
     width: 100%;
     text-align: center;
-    padding: 10px 28px;
     font-weight: 600;
     font-family: "Assistant, serif";
     text-decoration: none;
@@ -27,4 +25,9 @@
     /* .content { padding: 18px 8px; } */
     .hero { padding: 20px 0; }
   }
+
+@media (min-width: 1080px) {
+  .content { padding: 0; }
+  .hero { padding: 0; }
+}
   

@@ -1,5 +1,5 @@
 /* components/services/ServicesPlans.module.css */
-.plans { margin: 42px auto; margin-bottom: 0; max-width: 1050px; }
+.plans { margin: 42px auto; margin-bottom: 0; max-width: 1050px; padding-bottom: 2rem;}
 .grid {
   display: flex;
   gap: 20px;
@@ -17,12 +17,12 @@
   padding: 24px 18px;
   text-align: left;
   align-items: center;
-  max-width: 300px;
+  width: 345px;
   /* Optional: min-width, max-width as before */
 }
 .card h3,
 .card p {
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 .card p {
   flex-grow: 1;
@@ -30,14 +30,14 @@
   display: flex;
   align-items: flex-start;
 }
-.image { max-width: 300px; margin-bottom: 10px; }
+.image { max-width: 300px; margin-bottom: 10px; width: 100%; }
 .title {
   text-align: center;
 }
 /* Button always at the bottom */
 .cta {
-  margin-top: auto;
-  background: #C49B57;
+  margin-top: 1rem;
+  background: #E1952D;
   color: white;
   padding: 10px 22px;
   border: none;
@@ -48,5 +48,5 @@
   /* Keep width consistent */
 }
 @media (max-width: 700px) {
-  .card { width: 100%; }
+  .card { width: 100%; min-width: 100%; }
 }

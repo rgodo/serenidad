@@ -19,7 +19,7 @@
 
 .controlButton {
   background: transparent;
-  border: 2px solid white;
+  border: 0;
   color: white;
   border-radius: 100%;
   aspect-ratio: 1/1;

@@ -23,7 +23,7 @@ export const ServicesHero: React.FC<Props> = ({ data, isMobile }) => (
       <span style={{ color: "#768837", marginBottom: "5px", fontWeight: 700 }}>{data.title}</span>
       <Typography
         sx={{
-          fontSize: { xs: '1.875rem', md: '3rem' },
+          fontSize: { xs: '1.875rem', md: '2.5rem' },
           fontWeight: 300,
           marginTop: "10px",
           maxWidth: { xs: '100%', md: "510px" },
@@ -42,6 +42,7 @@ export const ServicesHero: React.FC<Props> = ({ data, isMobile }) => (
           fontFamily: "Assistant, serif",
           paddingTop: 15,
           marginTop: 5,
+          fontSize: '1rem'
         }}
         dangerouslySetInnerHTML={{ __html: data.description }}
       />
@@ -61,7 +62,7 @@ export const ServicesHero: React.FC<Props> = ({ data, isMobile }) => (
             <img
               src={`/icons/${h.icon}.svg`}
               alt=""
-              style={{ width: 28, minWidth: 28, marginTop: 3 }}
+              style={{ width: 28, height: 28, marginTop: 3 }}
             />
             <div>
               <div style={{ fontWeight: 700, fontSize: 16, lineHeight: 1.25 }}>
@@ -86,6 +87,7 @@ export const ServicesHero: React.FC<Props> = ({ data, isMobile }) => (
         sx={{
           color: '#8B7669',
           border: '2px solid #8B7669',
+          textTransform: 'none'
         }}
         onClick={() => { scrollToSection('contacto')}}
         className={styles.cta}

@@ -3,13 +3,21 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./ServicesGallery.module.css";
 import { GalleryData } from "../../data/types";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Box } from '@mui/material';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
+import EastIcon from '@mui/icons-material/East';
+import WestIcon from '@mui/icons-material/West';
 
-type Props = { data: GalleryData, isMobile?: boolean, children?: React.ReactNode };
+type Props = {
+  data: GalleryData;
+  isMobile?: boolean;
+  children?: React.ReactNode;
+  onSlideChange?: (swiper: SwiperClass) => void;
+  autoplay?: boolean;
+};
 
-export const ServicesGallery: React.FC<Props> = ({ data, isMobile, children }) => {
+export const ServicesGallery: React.FC<Props> = ({ data, children, onSlideChange, autoplay = false }) => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
@@ -32,10 +40,12 @@ export const ServicesGallery: React.FC<Props> = ({ data, isMobile, children }) =
     <Swiper
       slidesPerView={1}
       style={{position: 'relative'}}
-      modules={[Navigation]}
+      modules={[Navigation, Autoplay]}
       onSwiper={(swiper) => {
         swiperRef.current = swiper;
       }}
+      autoplay={autoplay}
+      onSlideChange={onSlideChange || (() => {})}
       autoHeight={false}
     >
       {
@@ -49,8 +59,8 @@ export const ServicesGallery: React.FC<Props> = ({ data, isMobile, children }) =
       }
       {children}
       <Box className={styles.controlContainer}>
-        <button ref={prevRef} className={styles.controlButton} dangerouslySetInnerHTML={{ __html: isMobile ? "&#10094;" : "&#8592;" }}></button>
-        <button ref={nextRef} className={styles.controlButton} dangerouslySetInnerHTML={{ __html: isMobile ? "&#10095;" : "&#8594;" }}></button>
+        <button ref={prevRef} className={styles.controlButton}> <WestIcon /> </button>
+        <button ref={nextRef} className={styles.controlButton}> <EastIcon /> </button>
       </Box>
     </Swiper>
   );

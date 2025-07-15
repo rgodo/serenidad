@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "FUNERARIA 24 HORAS",
-    "subtitle": "SERVICIOS FUNERARIOS INTEGRALES",
+    "subtitle": "SERVICIO FUNERARIO INTEGRAL",
     "description": "En Serenidad® brindamos una atención completa, cercana, profesional y <strong>24 horas  los 365 días del año</strong>, tanto para necesidad inmediata como para <strong>planificación futura</strong>. Enfrentar la partida de un ser querido es un momento difícil, por lo que ofrecemos todos los servicios necesarios <strong>desde un solo lugar –su parroquia más cercana-</strong> simplificando el proceso para que usted y su familia puedan vivir el duelo con mayor tranquilidad.",
     "highlights": [
       {
@@ -24,12 +24,28 @@
   "gallery": {
     "images": [
       {
-        "src": "gallery1.png",
-        "alt": "Flores funerarias"
+        "src": "/img/service-velatorio.png",
+        "alt": "Salas velatorias",
+        "title": "Salas velatorias",
+        "description": "Acogedores espacios habilitados en nuestra red de Parroquias Católicas, proporcionando un ambiente íntimo, tranquilo y cercano para despedir a su ser querido."
       },
       {
-        "src": "gallery2.png",
-        "alt": "Flores funerarias 2"
+        "src": "/img/service-urnas.jpg",
+        "alt": "Urnas",
+        "title": "Urnas",
+        "description": "Diversos estilos, materialidades y valores, adaptados a sus necesidades familiares. Nuestras urnas pueden utilizarse tanto para Cremación como para Sepultura Tradicional."
+      },
+      {
+        "src": "/img/service-traslado.png",
+        "alt": "Traslado",
+        "title": "Traslado",
+        "description": "Modernas carrozas panorámicas con personal capacitado para traslados oportunos y seguros, desde el lugar del fallecimiento hacia las salas velatorias, Crematorio o Cementerio. "
+      },
+      {
+        "src": "/img/service-adicional.jpg",
+        "alt": "Adicionales",
+        "title": "Adicionales",
+        "description": "Según el plan contratado, puede incluirse servicios extras como arreglos florales, cirios, retrato conmemorativo, vehículo de acompañamiento, entre otros."
       }
     ],
     "buttonText": "Ver más"
@@ -43,9 +59,9 @@
       "id": "sereno",
       "title": "Plan Sereno",
       "subtitle": "SERVICIO FUNERARIO",
-      "image": "sereno.png",
-      "gallery": ["coffin1.png", "coffin1-b.png", "coffin1-c.png"],
-      "cta": "Cotizar servicios",
+      "image": "/img/service-ataud-sereno.jpg",
+      "gallery": ["/img/service-ataud-sereno.jpg", "/img/service-ataud-sereno-2.jpg"],
+      "cta": "Ver detalles",
       "urnDescription": "Urna plana, de madera terciado, acabado brillante, manillas tubulares.",
       "urnMeasures": "Alto 0.50, Ancho 0.60 y Largo 1.90, para un peso máximo de 90 Kgs.",
       "description": "Urna plana de madera terciada y servicios esenciales. Incluye sala velatoria, ceremonia religiosa y carroza. Cubierto por la Cuota Mortuoria IPS. Digno, simple y accesible.",
@@ -62,13 +78,13 @@
     },
     {
       "id": "cereno",
-      "title": "Plan Cereno",
+      "title": "Plan Cercano",
       "subtitle": "SERVICIO FUNERARIO",
-      "image": "cereno.png",
-      "gallery": ["coffin1.png", "coffin1-b.png", "coffin1-c.png"],
-      "cta": "Cotizar servicios",
-      "urnDescription": "Urna plana, de madera terciado, acabado brillante, manillas tubulares.",
-      "urnMeasures": "Alto 0.50, Ancho 0.60 y Largo 1.90, para un peso máximo de 90 Kgs.",
+      "image": "/img/service-ataud-cercano.jpg",
+      "gallery": ["/img/service-ataud-cercano.jpg", "/img/service-ataud-cercano-2.jpg"],
+      "cta": "Ver detalles",
+      "urnDescription": "Urna curva de fibromadera, acabado brillante, manillas tubulares.",
+      "urnMeasures": "Alto 0.52, Ancho 0.62 y Largo 1.92, para un peso máximo de 90 Kgs.",
       "description": "Urna curva de fibromadera, ceremonia, traslado, cafetería y detalles litúrgicos. Una opción cercana y cálida para despedidas con sentido.",
       "includes": [
         "Urna según Plan.",
@@ -76,20 +92,22 @@
         "Ministro para oficiar ceremonia religiosa.",
         "Carroza panorámica moderna para traslados.",
         "Libro de condolencias para mensajes y recuerdos familiares.",
-        "Equipamiento completo para velatorio, incluyendo capilla ardiente (eléctrica), porta libro de condolencias.",
-        "Asistencia en trámites legales e inscripción de defunción en el Registro Civil."
+        "Equipamiento completo para velatorio y porta libro de condolencias.",
+        "Asistencia en trámites legales e inscripción de defunción en el Registro Civil.",
+        "Servicio de cafetería para 20 personas.",
+        "Reemplazo de Capilla ardiente (eléctrica) por Cirios de cera natural."
       ],
-      "boldIncludes": [0, 1, 2, 3, 4, 5, 6]
+      "boldIncludes": [0, 1, 2, 3, 4, 5, 6, 7, 8]
     },
     {
       "id": "eterno",
       "title": "Plan Eterno",
       "subtitle": "SERVICIO FUNERARIO",
-      "image": "eterno.png",
-      "gallery": ["coffin1.png", "coffin1-b.png", "coffin1-c.png"],
-      "cta": "Cotizar servicios",
-      "urnDescription": "Urna plana, de madera terciado, acabado brillante, manillas tubulares.",
-      "urnMeasures": "Alto 0.50, Ancho 0.60 y Largo 1.90, para un peso máximo de 90 Kgs.",
+      "image": "/img/service-ataud-eterno.jpg",
+      "gallery": ["/img/service-ataud-eterno.jpg", "/img/service-ataud-eterno-2.jpg", "/img/service-ataud-eterno-3.jpg", "/img/service-ataud-eterno-4.jpg"],
+      "cta": "Ver detalles",
+      "urnDescription": "Urna curva de madera de pino, acabado mate, manillas tubulares.",
+      "urnMeasures": "Alto 0.54, Ancho 0.64 y Largo 1.94, para un peso máximo de 90 Kgs.",
       "description": "Urna curva de madera de pino, arreglo floral, retrato conmemorativo y acompañamiento. Una despedida solemne y completa, con todos los honores.",
       "includes": [
         "Urna según Plan.",
@@ -97,10 +115,15 @@
         "Ministro para oficiar ceremonia religiosa.",
         "Carroza panorámica moderna para traslados.",
         "Libro de condolencias para mensajes y recuerdos familiares.",
-        "Equipamiento completo para velatorio, incluyendo capilla ardiente (eléctrica), porta libro de condolencias.",
-        "Asistencia en trámites legales e inscripción de defunción en el Registro Civil."
+        "Equipamiento completo para velatorio y porta libro de condolencias.",
+        "Asistencia en trámites legales e inscripción de defunción en el Registro Civil.",
+        "Servicio de cafetería para 30 personas.",
+        "Reemplazo de Capilla ardiente (eléctrica) por Cirios de cera natural.",
+        "Un arreglo floral cubre urna.",
+        "Retrato conmemorativo.",
+        "Auto de acompañamiento."
       ],
-      "boldIncludes": [0, 1, 2, 3, 4, 5, 6]
+      "boldIncludes": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9 , 10, 11]
     }
   ]
 }

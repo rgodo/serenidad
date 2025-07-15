@@ -1,6 +1,10 @@
 // components/services/PlanModal.tsx
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./PlanModal.module.css";
+import { scrollToSection } from "../utils/functions/scroll";
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+import { Box } from "@mui/material";
 
 interface PlanModalProps {
   open: boolean;
@@ -42,11 +46,18 @@ export const PlanModal: React.FC<PlanModalProps> = ({
         <div className={isMobile ? styles.bodyMobile : styles.bodyDesktop}>
           {/* Gallery */}
           <div className={styles.galleryWrap}>
-            <img
-              src={plan.gallery[current]}
-              className={styles.galleryImg}
-              alt={plan.title}
-            />
+            <Box sx={{
+              width: "100%",
+              aspectRatio: 5/6,
+              position: 'relative',
+              overflow: 'hidden',
+            }}>
+              <img
+                src={plan.gallery[current]}
+                className={styles.galleryImg}
+                alt={plan.title}
+              />
+            </Box>
             <div className={styles.galleryDots}>
               {plan.gallery.map((_: string, i: number) => (
                 <span
@@ -67,7 +78,7 @@ export const PlanModal: React.FC<PlanModalProps> = ({
                     )
                   }
                 >
-                  &#8592;
+                  <ArrowCircleLeftIcon />
                 </button>
                 <button
                   className={styles.arrow + " " + styles.arrowRight}
@@ -75,7 +86,7 @@ export const PlanModal: React.FC<PlanModalProps> = ({
                     setCurrent((current + 1) % plan.gallery.length)
                   }
                 >
-                  &#8594;
+                  <ArrowCircleRightIcon />
                 </button>
               </>
             )}
@@ -111,7 +122,7 @@ export const PlanModal: React.FC<PlanModalProps> = ({
                 ))}
               </ul>
             </div>
-            <button className={styles.cta}>{plan.cta}</button>
+            <button className={styles.cta} onClick={() => { scrollToSection('contacto'); onClose(); }}>{plan.cta}</button>
           </div>
         </div>
       </div>
