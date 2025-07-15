@@ -64,6 +64,13 @@ const Locations = () => {
             onChange={(e) => {
               updateMap(+e.target.value);
             }}
+            slotProps={{
+              input: {
+                sx: {
+                  fontFamily: "Assistant, sans-serif",
+                },
+              }
+            }}
             sx={{ fontFamily: "Assistant, sans-serif" }}
           >
             <MenuItem
@@ -74,7 +81,7 @@ const Locations = () => {
               Elige la locación deseada
             </MenuItem>
             {locations.map((location, idx) => (
-              <MenuItem value={idx} key={idx}>
+              <MenuItem sx={{ fontFamily: "Assistant, sans-serif" }}  value={idx} key={idx}>
                 {location.name}
               </MenuItem>
             ))}

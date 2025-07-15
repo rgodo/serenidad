@@ -71,10 +71,19 @@ const ContactUsForm = () => {
               sx={{
                 fontFamily: 'Assistant, sans-serif'
               }}
+              slotProps={{
+                input: {
+                  sx: {
+                    fontFamily: "Assistant, sans-serif",
+                  },
+                }
+              }}
             >
               {
                 field.type === 'select' && (
-                  <MenuItem value='none' selected={true}>
+                  <MenuItem value='none' selected={true} sx={{
+                    fontFamily: 'Assistant, sans-serif'
+                  }}>
                     {field.placeholder}
                   </MenuItem>
                 )
