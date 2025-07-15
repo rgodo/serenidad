@@ -120,25 +120,6 @@ const Navbar = () => {
 
         {/* Mobile Hamburger */}
         <Box sx={{ display: { xs: "flex", md: "none" } }}>
-          <Button
-            variant="contained"
-            sx={{
-              bgcolor: CONTACT_BUTTON_COLOR,
-              color: "#fff",
-              fontWeight: 500,
-              fontFamily: "Assistant, serif",
-              textTransform: "none",
-              borderRadius: 0,
-              px: 2,
-              boxShadow: "none",
-              mr: 1,
-              minWidth: "unset",
-              "&:hover": { bgcolor: "#7e8a38" },
-            }}
-            onClick={() => scrollToSection("contacto")}
-          >
-            ¡Contáctanos Ahora!
-          </Button>
           <IconButton
             edge="end"
             color="inherit"

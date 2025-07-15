@@ -2,9 +2,7 @@
 import {
   Box,
   Typography,
-  Button,
-  useMediaQuery,
-  useTheme,
+  Button
 } from "@mui/material";
 import aboutContent from "../data/about.json";
 import {
@@ -35,7 +33,7 @@ function TextContent({ content }: { content: typeof aboutContent }) {
       sx={{
         flex: 1,
         maxWidth: { xs: "100%", md: "27rem" },
-        pt: { xs: 0, md: 3 },
+        pt: { xs: '2rem', md: 3 },
         mr: { md: 2 },
         ml: { xs: 0, md: 2 },
         px: { xs: 2, md: 0 },
@@ -131,7 +129,7 @@ function Honeycomb({ isMobile }: HoneycombProps) {
         minWidth: { xs: HEX_SIZE * 2, md: '1rem' },
         width: '100%',
         mt: isMobile ? 0 : -7,
-        display: "flex",
+        display: { xs: 'none', md: "flex" },
         flexDirection: "column",
         alignItems: { xs: "center", md: 'flex-start'},
         position: "relative",
@@ -183,8 +181,6 @@ function Honeycomb({ isMobile }: HoneycombProps) {
 
 const About = () => {
   const content = aboutContent;
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Box
@@ -209,17 +205,8 @@ const About = () => {
           mx: 'auto'
         }}
       >
-        {isMobile ? (
-          <>
-            <Honeycomb isMobile={isMobile} />
-            <TextContent content={content} />
-          </>
-        ) : (
-          <>
-            <TextContent content={content} />
-            <Honeycomb isMobile={isMobile} />
-          </>
-        )}
+        <TextContent content={content} />
+        <Honeycomb isMobile={false} />
       </Box>
     </Box>
   );
