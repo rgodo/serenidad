@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import { AspectRatio } from "@mui/icons-material";
 
 const hexagonStyles = {
   width: '270px',
@@ -28,7 +27,7 @@ const hexagonHoverStyles = {
   background: "#AF9983",
   color: "#fff",
   boxShadow: "0 6px 24px rgba(0,0,0,0.15)",
-  transform: "rotateY(360deg)",
+  transform: "rotateY(180deg)",
 };
 
 const innerContentStyles = {
@@ -62,17 +61,19 @@ export default function PanteonHexagon({ icon, title, content, index }) {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          transition: "opacity 0.3s",
+          transition: "opacity 0.9s",
         }}
       >
-        <img src={icon} alt={title} style={{ width: 44, marginBottom: 12 }} />
+        <img src={icon} alt={title} style={{ width: 44, height: 44, marginBottom: 12 }} />
         <Typography
           variant="h6"
           sx={{
             fontWeight: 800,
             fontFamily: "Assistant, serif",
             paddingX: "40px",
-            textAlign: 'center'
+            textAlign: 'center',
+            fontSize: '17px',
+            lineHeight: '21px'
           }}
         >
           {title}
@@ -88,10 +89,10 @@ export default function PanteonHexagon({ icon, title, content, index }) {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          transition: "opacity 0.3s",
+          transition: "opacity 0.9s",
         }}
       >
-        <img src={icon} alt={title} style={{ width: 36, marginBottom: 8 }} />
+        <img src={icon} alt={title} style={{ width: 36, height: 36, marginBottom: 8 }} />
         <Typography
           variant="subtitle1"
           sx={{ fontWeight: 700, mb: 1, fontFamily: "Assistant, serif" }}
@@ -103,6 +104,9 @@ export default function PanteonHexagon({ icon, title, content, index }) {
           sx={{
             fontWeight: 400,
             fontFamily: "Assistant, serif",
+            maxWidth: '160px',
+            lineHeight: 1,
+            fontSize: '13px'
           }}
           dangerouslySetInnerHTML={{ __html: content }}
         />

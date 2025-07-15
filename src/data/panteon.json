@@ -12,12 +12,33 @@
   "infoSection": {
     "intro": "PANTEÓN DE CENIZAS",
     "title": "COLUMBARIOS EN PARROQUIAS",
-    "description": "<strong>Espacios sagrados</strong> ubicados en <strong>templos parroquiales o cementerios</strong> de la región de O’Higgins, especialmente diseñados para custodiar con dignidad las ánforas con cenizas de nuestros seres queridos. Son lugares accesibles, cercanos y propicios para la oración y el recuerdo.<br> Inspirados en una tradición que nace en la Antigua Roma, donde los “columbarios” eran utilizados para conservar las cenizas en nichos familiares, en Serenidad® retomamos este legado con un sentido cristiano y comunitario. Esto fortalece el vínculo espiritual con los seres queridos y responde al llamado del Papa Francisco (2016) de evitar la dispersión de cenizas, como se establece en el siguiente link: <a href='/files/reglamento-uso-panteon.pdf' target='_blank'>Documento Ad Resurgendum cum Christo del Vaticano</a>.",
+    "description": "<strong>Espacios sagrados</strong> ubicados en <strong>templos parroquiales o cementerios</strong> de la región de O’Higgins, especialmente diseñados para custodiar con dignidad las ánforas con cenizas de nuestros seres queridos. Son lugares accesibles, cercanos y propicios para la oración y el recuerdo.<br><br> Inspirados en una tradición que nace en la Antigua Roma, donde los “columbarios” eran utilizados para conservar las cenizas en nichos familiares, en Serenidad® retomamos este legado con un sentido cristiano y comunitario. Esto fortalece el vínculo espiritual con los seres queridos y responde al llamado del Papa Francisco (2016) de evitar la dispersión de cenizas, como se establece en el siguiente link: <a href='https://press.vatican.va/content/salastampa/es/bollettino/pubblico/2016/10/25/ceni.pdf' target='_blank'>Documento Ad Resurgendum cum Christo del Vaticano</a>.",
     "button": {
       "text": "Ver Localidades Disponibles",
       "link": "#"
     },
-    "image": "divino-maestro.png"
+    "images": [
+      {
+        "src": "/img/panteon-galeria-1.jpg",
+        "alt": "Imagen Iglesia"
+      },
+      {
+        "src": "/img/panteon-galeria-2.png",
+        "alt": "Imagen Panteon 2 Galeria"
+      },
+      {
+        "src": "/img/cremacion-acceso-cenizas.jpg",
+        "alt": "Imagen Panteon 3 Galeria"
+      },
+      {
+        "src": "/img/panteon-galeria-4.png",
+        "alt": "Imagen Panteon 4 Galeria"
+      },
+      {
+        "src": "/img/panteon-galeria-5.png",
+        "alt": "Imagen Panteon 5 Galeria"
+      }
+    ]
   },
   "hexSection": {
     "title": "Ventajas de nuestros Columbarios",

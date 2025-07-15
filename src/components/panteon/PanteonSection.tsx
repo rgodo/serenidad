@@ -8,6 +8,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import PanteonHexagon from "./PanteonHexagon";
 import content from "../../data/panteon.json";
 import { scrollToSection } from "../utils/functions/scroll";
+import { ServicesGallery } from "../services/ServicesGallery";
 
 function RichText({ html, ...props }) {
   return <span dangerouslySetInnerHTML={{ __html: html }} {...props} />;
@@ -33,7 +34,7 @@ export default function PanteonSection() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "flex-end",
-            px: isMobile ? 2 : 8,
+            px: { xs: 2, md: '10%'},
             py: isMobile ? 4 : 7,
             color: "#fff",
             position: "relative",
@@ -54,16 +55,16 @@ export default function PanteonSection() {
             <Box sx={{ flex: 1 }}>
               <Typography
                 variant="caption"
-                sx={{ fontSize: "20px", fontWeight: 700 }}
+                sx={{ fontSize: "20px", fontWeight: 700, lineHeight: 1 }}
               >
                 {header.intro}
               </Typography>
               <Typography
                 variant={isMobile ? "h5" : "h4"}
                 sx={{
-                  fontWeight: 800,
-                  mb: 2,
+                  fontWeight: 700,
                   fontSize: isMobile ? "40px" : "50px",
+                  maxWidth: '370px'
                 }}
               >
                 {header.title}
@@ -83,19 +84,23 @@ export default function PanteonSection() {
                 ml: isMobile ? 0 : 4,
                 display: "flex",
                 alignItems: "center",
+                alignSelf: 'end'
               }}
             >
               <Button
                 variant="contained"
                 color="primary"
                 sx={{
-                  background: "#background: #768837",
-                  fontWeight: 700,
+                  background: "#768837",
+                  fontWeight: 600,
                   px: 4,
                   py: 1.5,
                   whiteSpace: "nowrap",
                   textTransform: "none",
                   fontFamily: "Assistant, serif",
+                  border: '1px solid white',
+                  borderRadius: 0,
+                  fontSize: '1rem'
                 }}
                 onClick={() => {
                   scrollToSection("panteonInfo");
@@ -112,7 +117,8 @@ export default function PanteonSection() {
           sx={{
             display: "flex",
             flexDirection: isMobile ? "column" : "row",
-            width: "100%",
+            width: { xs: "100%", md: 'fit-content'},
+            mx: {md: 'auto'},
             py: isMobile ? 4 : 8,
             px: isMobile ? 2 : 12,
             gap: isMobile ? 4 : 8,
@@ -124,13 +130,13 @@ export default function PanteonSection() {
           <Box
             sx={{
               flex: 1,
-              maxWidth: isMobile ? "100%" : 460,
+              maxWidth: { xs: "100%", md: 431 },
               pr: isMobile ? 0 : 8,
             }}
           >
             <Typography
               variant="caption"
-              sx={{ color: "#6e8348", letterSpacing: 1, fontSize: "24px" }}
+              sx={{ color: "#6e8348", letterSpacing: 1, fontSize: "20px" }}
             >
               {infoSection.intro}
             </Typography>
@@ -139,8 +145,9 @@ export default function PanteonSection() {
               sx={{
                 fontWeight: 400,
                 mb: 2,
-                borderBottom: "1px solid #E1952D",
-                fontSize: "50px",
+                pb: '1rem',
+                borderBottom: "2px solid #E1952D",
+                fontSize: "45px",
               }}
             >
               {infoSection.title}
@@ -159,7 +166,11 @@ export default function PanteonSection() {
                 fontWeight: 700,
                 px: 4,
                 py: 1.5,
-                border: "1px solid",
+                color: '#8B7669',
+                borderRadius: 0,
+                mt: '1rem',
+                textTransform: 'none',
+                border: "1px solid #8B7669",
                 fontFamily: "Assistant, serif",
               }}
             >
@@ -176,16 +187,10 @@ export default function PanteonSection() {
               alignItems: "center",
               justifyContent: "center",
               mt: isMobile ? 2 : 0,
+              maxWidth: '540px'
             }}
           >
-            <img
-              src={infoSection.image}
-              alt="Columbario"
-              style={{
-                width: isMobile ? "100%" : "420px",
-                objectFit: "cover",
-              }}
-            />
+            <ServicesGallery data={{images: infoSection.images}} autoplay={true} />
           </Box>
         </Box>
 
