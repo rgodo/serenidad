@@ -23,14 +23,11 @@ const CommonQuestions = () => {
         backgroundRepeat: 'no-repeat',
         width: "100%",
         aspectRatio: { xs: '9/10', sm: '2/1', md: '4/1' },
-        display: "flex",
-        flexDirection: { xs: "column", sm: 'row' },
-        justifyContent: "center",
-        alignItems: { sm: 'center' },
         p: { xs: 2, md: 4 },
         color: "#fff",
         position: "relative",
-        mb: '2rem'
+        display: 'grid',
+        alignItems: 'center'
       }}
     >
       <Box
@@ -44,53 +41,61 @@ const CommonQuestions = () => {
           display: { md: 'none'}
         }}
       ></Box>
-      <Box
-        sx={{
-          p: 2,
-          maxWidth: 600,
-          textAlign: { xs: 'left', sm: 'left' },
-          marginX: { xs: 'auto' },
-          marginLeft: { sm: '10%' },
-          zIndex: 2
-        }}
-      >
-        <Typography variant="subtitle1" lineHeight={1.70} mb={0} fontWeight={700} textTransform={'uppercase'}
+      <Box sx={{
+        display: "flex",
+        flexDirection: { xs: "column", sm: 'row' },
+        justifyContent: "space-between",
+        alignItems: { sm: 'center' },
+        maxWidth: '1100px',
+        mx: 'auto',
+        width: '100%'
+      }}>
+        <Box
           sx={{
-            fontSize: { xs: '1.312rem', md: '1.25rem' }
+            maxWidth: 600,
+            textAlign: { xs: 'left', sm: 'left' },
+            // marginLeft: { sm: '10%' },
+            zIndex: 2
           }}
         >
-          Consultas
-        </Typography>
-        <Typography variant="h4" fontWeight={400} lineHeight={'1.25'} textTransform={'uppercase'} fontSize={'2.5rem'} mb={0}
+          <Typography variant="subtitle1" lineHeight={1.70} mb={0} fontWeight={700} textTransform={'uppercase'}
+            sx={{
+              fontSize: { xs: '1.312rem', md: '1.25rem' }
+            }}
+          >
+            Consultas
+          </Typography>
+          <Typography variant="h4" fontWeight={400} lineHeight={'1.2'} textTransform={'uppercase'} fontSize={'2.5rem'} mb={0}
+            sx={{
+              mb: '0.25rem',
+              fontSize: { xs: '2.5rem', md: '3rem' },
+              maxWidth: '290px'
+            }}
+          >
+            Preguntas frecuentes
+          </Typography>
+          <Typography variant="subtitle1" sx={{ fontSize: { xs: '1rem' }, lineHeight: 1.5, fontFamily: 'Assistant' }}>Si no encuentra respuesta a su inquietud, utilice la opción de <strong>“Contáctanos Ahora”</strong>.</Typography>
+        </Box>
+        <Box
           sx={{
-            mb: '0.5rem',
-            fontSize: { xs: '2.5rem', md: '3.25rem' }
+            alignSelf: { md: 'end' }
           }}
         >
-          Preguntas frecuentes
-        </Typography>
-        <Typography variant="subtitle1" sx={{ fontSize: { xs: '1rem' }, lineHeight: 1.5, fontFamily: 'Assistant' }}>Si no encuentra respuesta a su inquietud, utilice la opción de <strong>“Contáctanos Ahora”</strong>.</Typography>
-      </Box>
-      <Box
-        sx={{
-          pl: 2,
-          pt: '1rem'
-        }}
-      >
-        <Button
-          sx={{
-            background: '#768837',
-            color: "white",
-            borderRadius: 0,
-            padding: "0.5rem 1rem",
-            fontFamily: 'Assistant, sans-serif',
-            textTransform: 'none',
-            fontSize: '0.875rem'
-          }}
-          onClick={() => { scrollToSection('contacto')}}
-        >
-          ¡Contáctanos Ahora!
-        </Button>
+          <Button
+            sx={{
+              background: '#768837',
+              color: "white",
+              borderRadius: 0,
+              padding: "0.5rem 1rem",
+              fontFamily: 'Assistant, sans-serif',
+              textTransform: 'none',
+              fontSize: '0.875rem'
+            }}
+            onClick={() => { scrollToSection('contacto') }}
+          >
+            ¡Contáctanos Ahora!
+          </Button>
+        </Box>
       </Box>
     </Box>
 
