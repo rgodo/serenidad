@@ -13,6 +13,7 @@ interface CarouselItem {
   image: string;
   title: string;
   description: string;
+  planStandar: boolean;
 }
 
 interface CremacionCarouselProps {
@@ -60,80 +61,113 @@ const CremacionCarousel: React.FC<CremacionCarouselProps> = ({
       >
         {title}
       </Typography>
-      <Swiper
-        spaceBetween={24}
-        slidesPerView={4}
-        pagination={{ clickable: true }}
-        modules={[Navigation, Pagination]}
-        onSwiper={(swiper) => {
-          swiperRef.current = swiper;
-        }}
-        style={{ maxWidth: 950, margin: "0 auto", marginBottom: 24 }}
-        breakpoints={{
-          0: { slidesPerView: 1 },
-          600: { slidesPerView: 2 },
-          900: { slidesPerView: 3 },
-          1200: { slidesPerView: 4 },
-        }}
-      >
-        {items.map((item, idx) => (
-          <SwiperSlide key={idx}>
-            <Box
-              sx={{
-                height: "100%",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "flex-start",
-                p: 2,
-                // minHeight: 420,
-              }}
-            >
+      <Box sx={{ px: '30px', position: 'relative'}}>
+        <Swiper
+          spaceBetween={24}
+          slidesPerView={4}
+          pagination={{ clickable: true }}
+          modules={[Navigation, Pagination]}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+          style={{ maxWidth: 1080, margin: "0 auto", marginBottom: 24 }}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            600: { slidesPerView: 2 },
+            900: { slidesPerView: 3 },
+            1200: { slidesPerView: 4 },
+          }}
+        >
+          {items.map((item, idx) => (
+            <SwiperSlide key={idx}>
               <Box
                 sx={{
-                  mb: 2,
+                  width: '%',
+                  height: "100%",
                   display: "flex",
+                  flexDirection: "column",
                   alignItems: "center",
-                  justifyContent: "center",
-                  width: 160,
-                  height: 160,
+                  justifyContent: "flex-start",
+                  p: 2,
+                  Width: '252px'
+                  // minHeight: 420,
                 }}
               >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  style={{
-                    width: 160,
-                    height: 160,
-                    objectFit: "cover",
+                <Box sx={{
+                  position: 'relative',
+                  width: '100%'
+                }}>
+                  <Box
+                    sx={{
+                      mb: 2,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      width: "100%",
+                      maxWidth: '130px',
+                      margin: '0 auto'
+                    }}
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </Box>
+                  {item.planStandar && <Box sx={{
+                    bgcolor: '#E1952D',
+                    textAlign: 'center',
+                    bottom: 0,
+                    left: 0,
+                    width: '100%',
+                    position: 'absolute',
+                    py: '0.5rem'
+                  }}>
+                    <Typography
+                      sx={{
+                        fontWeight: 700,
+                        fontSize: "14px",
+                        fontFamily: "Assistant, serif",
+                        color: 'white'
+                      }}
+                    >
+                      Incluida en plan Éstandar*
+                    </Typography>
+                  </Box>}
+                </Box>
+                <Typography
+                  fontWeight={700}
+                  mb={0}
+                  sx={{
+                    minHeight: 48,
+                    textAlign: "left",
+                    fontSize: "20px",
+                    fontFamily: "Assistant, serif",
+                    color: '#3C3C3C',
+                    mt: {xs: '1rem', md: '0.5rem'}
                   }}
+                >
+                  {item.title}
+                </Typography>
+                <Typography
+                  color="text.secondary"
+                  sx={{
+                    fontWeight: '400',
+                    textAlign: "left",
+                    flex: 1,
+                    fontSize: "12px",
+                    fontFamily: "Assistant, serif",
+                  }}
+                  dangerouslySetInnerHTML={{ __html: item.description }}
                 />
               </Box>
-              <Typography
-                fontWeight={700}
-                mb={0}
-                sx={{
-                  minHeight: 48,
-                  textAlign: "center",
-                  fontSize: "1.25rem",
-                  fontFamily: "Assistant, serif",
-                }}
-              >
-                {item.title}
-              </Typography>
-              <Typography
-                color="text.secondary"
-                sx={{
-                  textAlign: "center",
-                  flex: 1,
-                  fontSize: "0.75rem",
-                  fontFamily: "Assistant, serif",
-                }}
-                dangerouslySetInnerHTML={{ __html: item.description }}
-              />
-            </Box>
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          ))}
+        </Swiper>
         <Box className={styles.controlContainer}>
           <button ref={prevRef} className={styles.controlButton}>
             &#10094;
@@ -142,7 +176,8 @@ const CremacionCarousel: React.FC<CremacionCarouselProps> = ({
             &#10095;
           </button>
         </Box>
-      </Swiper>
+      </Box>
+
       <Box>
         <Button
           sx={{

@@ -47,6 +47,7 @@ export const ServicesGallery: React.FC<Props> = ({ data, children, onSlideChange
       autoplay={autoplay}
       onSlideChange={onSlideChange || (() => {})}
       autoHeight={false}
+      resizeObserver={false}
     >
       {
         data.images.map( ({src, alt}, idx) => (

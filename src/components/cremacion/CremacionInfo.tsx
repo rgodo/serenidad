@@ -1,28 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
-  Typography,
-  // Button,
-  // List,
-  // ListItem,
-  // ListItemIcon,
-  // ListItemText
+  Typography
 } from "@mui/material";
 import { GalleryData } from "../../data/types";
 import styles from "./CremacionInfo.module.css";
-// import CircleIcon from "@mui/icons-material/Circle";
-// import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-// import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { ServicesGallery } from "../services/ServicesGallery";
 import { scrollToSection } from "../utils/functions/scroll";
-
-// interface GalleryItem {
-//   image: string;
-//   title: string;
-//   description: string;
-// }
 interface CremacionInfoProps {
   intro: string;
   sectionTitle: string;
@@ -42,6 +28,8 @@ const CremacionInfo: React.FC<CremacionInfoProps> = ({
   gallery,
   isMobile
 }) => {
+  const [currentData, setCurrentData] = useState(gallery.images[0]);
+
   return (
     <section>
       <Box
@@ -51,7 +39,9 @@ const CremacionInfo: React.FC<CremacionInfoProps> = ({
           position: 'relative',
           display: { md: 'grid' },
           alignItems: { md: 'center' },
-          gridTemplateColumns: { md: '1fr 1fr'}
+          gridTemplateColumns: { md: '1fr 1fr'},
+          maxWidth: {md: '1071px'},
+          mx: { md: 'auto' }
         }}
       >
         <Box>
@@ -59,8 +49,8 @@ const CremacionInfo: React.FC<CremacionInfoProps> = ({
             <span style={{ color: "#768837", marginBottom: "5px", fontWeight: 700 }}>{intro}</span>
             <Typography
               sx={{
-                fontSize: {xs: '1.875rem', md: '3rem'},
-                fontWeight: 300,
+                fontSize: {xs: '1.875rem', md: '2.5rem'},
+                fontWeight: 400,
                 marginTop: "10px",
                 maxWidth: { xs: '100%', md: "510px" },
                 marginBottom: "5px",
@@ -68,7 +58,7 @@ const CremacionInfo: React.FC<CremacionInfoProps> = ({
                 paddingBottom: '1rem',
                 borderBottom: "solid",
                 borderColor: "#E1952D",
-                borderWidth: 0.8,
+                borderWidth: "2px",
               }}
             >
               {sectionTitle}
@@ -107,23 +97,39 @@ const CremacionInfo: React.FC<CremacionInfoProps> = ({
         </Box>
         <Box
           sx={{
-            paddingLeft: '1rem',
-            paddingRight: '1rem',
-            maxWidth: {md: '40rem'}
+            maxWidth: {md: '535px'}
           }}
         >
-          <ServicesGallery data={gallery} isMobile={isMobile} />
+          <ServicesGallery data={gallery} isMobile={isMobile} autoplay={true} onSlideChange={(e) => {
+            setCurrentData(gallery.images[e.activeIndex])
+          }} />
           <div
             style={{
-              marginTop: 18,
               maxWidth: '100%',
             }}
           >
-            <h4 style={{ fontFamily: "Assistant, serif", marginBottom: '0.5rem', marginTop: 0, fontWeight: 700, color: '#484846' }}>
-              Acceso al Panteón de Cenizas
+            <h4
+              style={{
+                fontFamily: "Assistant, serif",
+                marginBottom: "0.5rem",
+                marginTop: 0,
+                fontWeight: 700,
+                color: "#484846",
+              }}
+            >
+              {currentData.title}
             </h4>
-            <p style={{ fontFamily: "Assistant, serif", marginTop: 0, fontWeight: 600, lineHeight: 1.1, fontSize: "0.98rem", color: '#484846' }}>
-              Según el plan contratado, puede incluirse servicios extras como arreglos florales, cirios, retrato conmemorativo, vehículo de acompañamiento, entre otros.
+            <p
+              style={{
+                fontFamily: "Assistant, serif",
+                marginTop: 0,
+                fontWeight: 600,
+                lineHeight: 1.1,
+                fontSize: "0.98rem",
+                color: "#484846",
+              }}
+            >
+              {currentData.description}
             </p>
           </div>
         </Box>

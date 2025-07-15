@@ -22,16 +22,22 @@
     "gallery": {
       "images": [
         {
-          "src": "gallery1-cenizas.png",
-          "alt": "Urnas ecológicas",
-          "title": "Urnas ecológicas",
-          "description": "Opciones biodegradables para un homenaje sustentable."
+          "src": "/img/cremacion-vinculo.jpg",
+          "alt": "Imagen Vínculo que Trasciende",
+          "title": "Vínculo que Trasciende",
+          "description": "La cremación es una alternativa ecológica, aceptada por la Iglesia cuando se resguardan las cenizas en un lugar sagrado."
         },
         {
-          "src": "gallery2-cenizas.png",
-          "alt": "Urnas de cerámica",
-          "title": "Urnas de cerámica",
-          "description": "Diseños elegantes y tradicionales."
+          "src": "/img/cremacion-acceso-cenizas.jpg",
+          "alt": "Imagen Acceso al panteon de cenizas",
+          "title": "Acceso al panteon de cenizas",
+          "description": "Espacios de oración ubicados dentro del recinto parroquial, para custodiar el ánfora con cenizas, que invitan a la reflexión y el encuentro."
+        },
+        {
+          "src": "/img/cremacion-option.jpg",
+          "alt": "Imagen Opción conveniente",
+          "title": "Opción conveniente",
+          "description": "A diferencia de lo que muchos creen, la cremación es una alternativa más accesible, sin grandes construcciones o espacio en tierra."
         }
       ]
     }
@@ -40,24 +46,34 @@
     "title": "Ánforas para Mejorar Plan",
     "items": [
       {
-        "image": "carousel-ashes1.png",
+        "image": "/img/anfora-combarbalita.jpg",
         "title": "Ánfora Artesanal en Combarbalita",
-        "description": "<strong style='font-size:1rem;'>Memoria eterna en piedra chilena.</strong></br> Elaborada cuidadosamente a mano en piedra Combarbalita, cada pieza es única, reflejando la belleza natural y tradicional chilena para perpetuar la memoria de quienes más amas."
+        "description": "<strong style='font-size:14px;'>Memoria eterna en piedra chilena.</strong></br> Elaborada cuidadosamente a mano en piedra Combarbalita, cada pieza es única, reflejando la belleza natural y tradicional chilena para perpetuar la memoria de quienes más amas.",
+        "planStandar": false
       },
       {
-        "image": "carousel-ashes2.png",
+        "image": "/img/anfora-paz.jpg",
         "title": "Ánfora Espíritu de Paz",
-        "description": "<strong style='font-size:1rem;'>Serenidad y esperanza.</strong></br> Diseño sobrio en tono oscuro decorado con una paloma blanca, símbolo universal de paz y tranquilidad espiritual."
+        "description": "<strong style='font-size:14px;'>Serenidad y esperanza.</strong></br> Diseño sobrio en tono oscuro decorado con una paloma blanca, símbolo universal de paz y tranquilidad espiritual.",
+        "planStandar": true
       },
       {
-        "image": "carousel-ashes3.png",
+        "image": "/img/anfora-cobre.jpg",
         "title": "Ánfora Clásica de Cobre",
-        "description": "<strong style='font-size:1rem;'>Tradición chilena en cobre.</strong></br> Urna fabricada en cobre con acabado brillante, elegante y duradera, representando solemnidad y respeto para honrar y preservar la memoria del ser querido."
+        "description": "<strong style='font-size:14px;'>Tradición chilena en cobre.</strong></br> Urna fabricada en cobre con acabado brillante, elegante y duradera, representando solemnidad y respeto para honrar y preservar la memoria del ser querido.",
+        "planStandar": false
       },
       {
-        "image": "carousel-ashes4.png",
+        "image": "/img/anfora-mosaico.jpg",
         "title": "Ánfora Mosaico Celeste",
-        "description": "<strong style='font-size:1rem;'>Armonía y delicadeza.</strong></br> Diseño moderno de textura suave con delicados detalles en <strong>mosaico multicolor</strong>, transmitiendo serenidad y un homenaje contemporáneo."
+        "description": "<strong style='font-size:14px;'>Armonía y delicadeza.</strong></br> Diseño moderno de textura suave con delicados detalles en <strong>mosaico multicolor</strong>, transmitiendo serenidad y un homenaje contemporáneo.",
+        "planStandar": false
+      },
+      {
+        "image": "/img/anfora-plata.jpg",
+        "title": "Ánfora Tradición Plateada",
+        "description": "<strong style='font-size:14px;'>Sobriedad y calidez.</strong></br> Modelo clásico plateado con finos detalles en <strong>bronce</strong>, ideal para honrar con elegancia y dignidad la memoria del ser querido.",
+        "planStandar": false
       }
     ],
     "buttonText": "¡Contáctanos Ahora!"
