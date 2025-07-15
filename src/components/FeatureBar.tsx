@@ -5,7 +5,7 @@ import Image from "next/image";
 import features from "../data/features.json";
 import React from "react";
 
-const ARROW_SIZE_DESKTOP = { width: 36, height: 20 };
+// const ARROW_SIZE_DESKTOP = { width: 36, height: 20 };
 const ARROW_SIZE_MOBILE = { width: 24, height: 24 };
 
 const FeatureBar = () => {
@@ -46,15 +46,9 @@ const FeatureBar = () => {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
-                  justifyContent: "flex-start",
+                  justifyContent: { xs: "flex-start", md: 'center'},
                   minWidth: { xs: 130, sm: 180 },
-                  minHeight: 170,
-                  px:
-                    idx === 0
-                      ? { xs: 4, sm: 6, md: 8 }
-                      : idx === features.length - 1
-                      ? { xs: 4, sm: 6, md: 8 }
-                      : 2,
+                  minHeight: 170
                 }}
               >
                 <Image
@@ -72,8 +66,8 @@ const FeatureBar = () => {
                     textAlign: "center",
                     fontFamily: "'EB Garamond', serif",
                     whiteSpace: "pre-line",
-                    width: 180,
-                    maxWidth: 180,
+                    // width: { xs: 180,  },
+                    maxWidth: 195
                   }}
                 >
                   {feature.label}

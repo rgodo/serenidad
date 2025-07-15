@@ -15,7 +15,7 @@ import {
 } from "./utils/honeycombUtils";
 import { scrollToSection } from "./utils/functions/scroll";
 
-const HEX_SIZE_DESKTOP = 220;
+const HEX_SIZE_DESKTOP = 290;
 const HEX_SIZE_MOBILE = 220;
 
 const honeycombRowsDesktop = [
@@ -34,12 +34,13 @@ function TextContent({ content }: { content: typeof aboutContent }) {
     <Box
       sx={{
         flex: 1,
-        maxWidth: { xs: "100%", md: "100%" },
+        maxWidth: { xs: "100%", md: "27rem" },
         pt: { xs: 0, md: 3 },
         mr: { md: 2 },
         ml: { xs: 0, md: 2 },
         px: { xs: 2, md: 0 },
         zIndex: 1,
+        alignSelf: { md: 'center' }
       }}
     >
       <Typography
@@ -49,7 +50,7 @@ function TextContent({ content }: { content: typeof aboutContent }) {
             "'Perpetua', 'Palatino Linotype', 'Book Antiqua', Palatino, serif",
           mb: 2,
           color: "#383838",
-          fontSize: { xs: "2rem", md: "2.3rem" },
+          fontSize: { xs: "2rem", md: "3.125rem" },
           letterSpacing: "-1.2px",
           paddingBottom: 2,
           borderBottom: "2px solid #E1952D"
@@ -61,7 +62,7 @@ function TextContent({ content }: { content: typeof aboutContent }) {
         sx={{
           color: "#494949",
           mb: 3,
-          fontSize: { xs: "1.07rem", md: "1.13rem" },
+          fontSize: { xs: "1.07rem", md: "1rem" },
           lineHeight: 1.3,
           whiteSpace: "pre-line",
           pl: { xs: 0, md: 0 },
@@ -89,13 +90,13 @@ function TextContent({ content }: { content: typeof aboutContent }) {
         sx={{
           borderColor: "#8B7669",
           color: "#8B7669",
-          background: "#fff",
+          background: "transparent",
           fontWeight: 400,
           fontFamily: "'Assistant', Arial, sans-serif",
           fontSize: "0.97rem",
           borderRadius: "4px",
           textTransform: "none",
-          px: 3.5,
+          px: '1rem',
           py: 1.05,
           boxShadow: "none",
           "&:hover": {
@@ -109,7 +110,7 @@ function TextContent({ content }: { content: typeof aboutContent }) {
         }}
         onClick={() => { scrollToSection('locations') }}
       >
-        <strong>Ver aqui</strong> las parroquias presentes en la región de O&#39;Higgins.
+        <strong>Ver aquí</strong> las parroquias presentes en la región de O&#39;Higgins.
       </Button>
     </Box>
   );
@@ -127,15 +128,17 @@ function Honeycomb({ isMobile }: HoneycombProps) {
     <Box
       sx={{
         flex: 1,
-        minWidth: isMobile ? HEX_SIZE * 2 : HEX_SIZE * 3,
+        minWidth: { xs: HEX_SIZE * 2, md: '1rem' },
         width: '100%',
         mt: isMobile ? 0 : -7,
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
+        alignItems: { xs: "center", md: 'flex-start'},
         position: "relative",
         mb: 4,
         bgcolor: isMobile? 'white' : 'transparent',
+        maxWidth: { md: '27rem' },
+        maxHeight: { md: '57rem' },
       }}
     >
       {rows.map((row, i) => (
@@ -185,32 +188,39 @@ const About = () => {
 
   return (
     <Box
-      id="about"
       sx={{
-        display: "flex",
-        flexDirection: { xs: "column", md: "row" },
-        alignItems: { xs: "center", md: "flex-start" },
-        justifyContent: "center",
-        py: { xs: 0, md: 3 },
-        px: { xs: 0, md: 3 },
         background: "#efefef",
-        gap: { xs: 0, md: 0 },
-        minHeight: { md: 540 },
-        position: "relative",
-        overflow: "hidden",
       }}
     >
-      {isMobile ? (
-        <>
-          <Honeycomb isMobile={isMobile} />
-          <TextContent content={content} />
-        </>
-      ) : (
-        <>
-          <TextContent content={content} />
-          <Honeycomb isMobile={isMobile} />
-        </>
-      )}
+      <Box
+        id="about"
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          alignItems: { xs: "center", md: "flex-start" },
+          justifyContent: "center",
+          py: { xs: 0, md: 3 },
+          px: { xs: 0, md: 3 },
+          gap: { xs: 0, md: '7rem' },
+          minHeight: { md: 540 },
+          position: "relative",
+          overflow: "hidden",
+          maxWidth: 1200,
+          mx: 'auto'
+        }}
+      >
+        {isMobile ? (
+          <>
+            <Honeycomb isMobile={isMobile} />
+            <TextContent content={content} />
+          </>
+        ) : (
+          <>
+            <TextContent content={content} />
+            <Honeycomb isMobile={isMobile} />
+          </>
+        )}
+      </Box>
     </Box>
   );
 };

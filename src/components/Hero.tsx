@@ -108,7 +108,7 @@ const Hero = () => {
           flexDirection: "column",
           justifyContent: "center",
           mx: { xs: 2, md: 0 },
-          ml: { md: 15 },
+          ml: { md: '16%' },
           mt: { xs: 0, md: 0 },
           mb: { xs: 0, md: 0 },
           maxWidth: {
@@ -145,7 +145,8 @@ const Hero = () => {
                     sm: "2.6rem",
                     md: "3rem",
                   },
-                  mb: lineIdx === 0 ? { xs: 0.5, md: 1 } : 0,
+                  lineHeight: {md: 1},
+                  
                 }}
               >
                 {line.map((part, i) => (
@@ -177,8 +178,8 @@ const Hero = () => {
             fontSize: { xs: "0.96rem", sm: "1.08rem", md: "1.16rem" },
             color: "#fff",
             maxWidth: { xs: 350, sm: 450, md: 500 },
-            mt: { xs: 2, md: 2.5 },
-            lineHeight: 1.35,
+            mt: { xs: 2, md: '0' },
+            lineHeight: 1.25,
             textShadow: "0 2px 8px rgba(0,0,0,0.35)",
           }}
         >
