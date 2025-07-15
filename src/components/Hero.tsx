@@ -108,13 +108,13 @@ const Hero = () => {
           flexDirection: "column",
           justifyContent: "center",
           mx: { xs: 2, md: 0 },
-          ml: { md: 18 },
+          ml: { md: 15 },
           mt: { xs: 0, md: 0 },
           mb: { xs: 0, md: 0 },
           maxWidth: {
             xs: 400,
             sm: 550,
-            md: CONTENT_MAX_WIDTH,
+            md: CONTENT_MAX_WIDTH
           },
           px: 0,
           py: 0,
@@ -173,11 +173,11 @@ const Hero = () => {
           variant="body1"
           sx={{
             fontWeight: 400,
-            fontFamily: "'Assistant', serif",
-            fontSize: { xs: "0.96rem", sm: "1.08rem", md: "18px" },
+            fontFamily: "'Assistant', Arial, sans-serif",
+            fontSize: { xs: "0.96rem", sm: "1.08rem", md: "1.16rem" },
             color: "#fff",
             maxWidth: { xs: 350, sm: 450, md: 500 },
-            mt: { xs: 1, md: 1 },
+            mt: { xs: 2, md: 2.5 },
             lineHeight: 1.35,
             textShadow: "0 2px 8px rgba(0,0,0,0.35)",
           }}

@@ -36,8 +36,8 @@ function TextContent({ content }: { content: typeof aboutContent }) {
         flex: 1,
         maxWidth: { xs: "100%", md: "100%" },
         pt: { xs: 0, md: 3 },
-        mr: { md: 8 },
-        ml: { xs: 0, md: 15 },
+        mr: { md: 2 },
+        ml: { xs: 0, md: 2 },
         px: { xs: 2, md: 0 },
         zIndex: 1,
       }}
@@ -52,7 +52,7 @@ function TextContent({ content }: { content: typeof aboutContent }) {
           fontSize: { xs: "2rem", md: "2.3rem" },
           letterSpacing: "-1.2px",
           paddingBottom: 2,
-          borderBottom: "2px solid #E1952D",
+          borderBottom: "2px solid #E1952D"
         }}
       >
         {content.title}
@@ -73,7 +73,7 @@ function TextContent({ content }: { content: typeof aboutContent }) {
             style={{
               fontWeight: part.fontWeight || 400,
               color: part.color || "#494949",
-              fontFamily: part.fontFamily || "'Assistant', serif",
+              fontFamily: part.fontFamily || "'Assistant', Arial, sans-serif",
               verticalAlign: part.verticalAlign,
               fontSize: part.fontSize,
               textDecoration: part.textDecoration,
@@ -107,12 +107,9 @@ function TextContent({ content }: { content: typeof aboutContent }) {
           display: "block",
           mx: { xs: "auto", md: 0 },
         }}
-        onClick={() => {
-          scrollToSection("locations");
-        }}
+        onClick={() => { scrollToSection('locations') }}
       >
-        <strong>Ver aqui</strong> las parroquias presentes en la región de
-        O&#39;Higgins.
+        <strong>Ver aqui</strong> las parroquias presentes en la región de O&#39;Higgins.
       </Button>
     </Box>
   );

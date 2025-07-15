@@ -48,7 +48,7 @@ const FeatureBar = () => {
                   alignItems: "center",
                   justifyContent: "flex-start",
                   minWidth: { xs: 130, sm: 180 },
-                  minHeight: 140,
+                  minHeight: 170,
                   px:
                     idx === 0
                       ? { xs: 4, sm: 6, md: 8 }

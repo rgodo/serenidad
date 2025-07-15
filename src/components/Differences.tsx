@@ -31,14 +31,13 @@ function DifferencesTitle({
       sx={{
         color: "#fff",
         fontWeight: 400,
-        fontSize: "50px",
+        fontSize: "2.5rem",
         mb: 2,
         lineHeight: 1.15,
         letterSpacing: "0.02em",
-        maxWidth: 450,
+        maxWidth: 320,
         position: "relative",
         zIndex: 2,
-        marginLeft: 11,
       }}
     >
       {titleParts.map((part, i) =>
