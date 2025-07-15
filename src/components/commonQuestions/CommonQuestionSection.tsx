@@ -3,7 +3,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import React from "react";
 type Question = {
   title: string;
-  answer: string;
+  answer: { type: string, value: string | string[] }[];
 }
 
 type SectioData = {
@@ -66,7 +66,23 @@ const CommonQuestionList: React.FC<Props> = ({ data }) => {
             color: '#616161'
           }}
         >
-          {question.answer}
+          {
+            question.answer.map( (answer, idx) => (<>
+              {
+                answer.type === 'text' && <p key={idx}>{answer.value}</p>
+              }
+              {
+                answer.type === 'bullets' && 
+                <Box component={'ul'} key={idx}>
+                  {
+                    (answer.value as string[]).map( (item, idxItem) => <>
+                      <Box component={'li'} key={`li-${idxItem}`}>{item}</Box>
+                    </>)
+                  }
+                </Box>
+              }
+            </>) )
+          }
         </AccordionDetails>
       </Accordion>
     ))}
