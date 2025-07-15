@@ -4,19 +4,19 @@ import { Box, Link, Typography } from "@mui/material";
 import { scrollToSection } from "./utils/functions/scroll";
 const contactChannel = [
   {
-    icon: 'footer-location-map.svg',
+    icon: '/img/icon-oficina.png',
     iconSize: { width: '2rem', height: '3rem' },
-    title: 'Oficionas prinpales:',
+    title: 'Oficinas prinpales:',
     description: "Parroquias de la región de O'Higgins"
   },
   {
-    icon: 'footer-house.svg',
+    icon: '/img/icon-casa.png',
     iconSize: { width: '3rem', height: '3rem' },
     title: 'Casa Matriz:',
     description: 'Astorga 570, Piso 2, Rancagua'
   },
   {
-    icon: 'footer-phone.svg',
+    icon: '/img/icon-phone.png',
     iconSize: { width: '3rem', height: '2.5rem' },
     title: 'Atención telefónica 24/7:',
     description: '+569  5691 8927'
@@ -38,6 +38,7 @@ const Footer = () => {
             md: "repeat(3, 1fr)",
           },
           gap: "2rem",
+          bgcolor: '#efefef'
         }}
       >
         <Box
@@ -82,7 +83,9 @@ const Footer = () => {
               color: "#484846",
               fontWeight: 600,
               marginBottom: "1.5rem",
+              cursor: 'pointer'
             }}
+            onClick={() => scrollToSection('services')}
           >
             Funeraria 24 horas
           </Typography>
@@ -92,7 +95,9 @@ const Footer = () => {
               color: "#484846",
               fontWeight: 600,
               marginBottom: "1.5rem",
+              cursor: 'pointer'
             }}
+            onClick={() => scrollToSection('cremation')}
           >
             Cremación
           </Typography>
@@ -101,7 +106,9 @@ const Footer = () => {
               fontFamily: "Assistant, serif",
               color: "#484846",
               fontWeight: 600,
+              cursor: 'pointer'
             }}
+            onClick={() => scrollToSection('mausoleum')}
           >
             Panteón de Cenizas
           </Typography>
@@ -136,15 +143,16 @@ const Footer = () => {
             >
               <Box sx={{ width: "3rem", textAlign: "center" }}>
                 <img
-                  src={`/icons/${channel.icon}`}
+                  src={`${channel.icon}`}
                   alt={channel.title}
                   style={{
                     width: channel.iconSize.width,
                     height: channel.iconSize.height,
+                    filter: 'grayscale(1) invert(1)'
                   }}
                 />
               </Box>
-              <Box>
+              <Box sx={{ color: '#484846'}}>
                 <Typography sx={{ fontFamily: "Assistant, serif" }}>
                   {channel.title}
                 </Typography>

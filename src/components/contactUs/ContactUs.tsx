@@ -17,7 +17,7 @@ const ContactUs = () => {
       <Box
         sx={{
           color: "#616161",
-          maxWidth: { md: "30rem" },
+          maxWidth: { md: "550px" },
           justifySelf: { md: "right" },
         }}
       >
@@ -35,10 +35,11 @@ const ContactUs = () => {
         <Typography
           sx={{
             fontFamily: "Perpetua, serif",
-            fontSize: { xs: "2.5rem", md: "2.625rem" },
+            fontSize: { xs: "2.5rem", md: "2.5rem" },
             fontWeight: "700",
             textTransform: "uppercase",
             lineHeight: "1",
+            maxWidth: '360px',
             mb: { xs: "1rem", md: "1.5rem" },
           }}
         >
@@ -47,7 +48,7 @@ const ContactUs = () => {
         <Typography
           sx={{
             fontFamily: "Assistant, serif",
-            fontSize: { xs: "0.875rem", md: "1rem" },
+            fontSize: { xs: "0.875rem", md: "16.8px" },
             fontWeight: "400",
             lineHeight: "1",
             mb: { xs: "0.75rem", md: "3rem" },

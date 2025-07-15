@@ -44,7 +44,7 @@ const ContactUsForm = () => {
       sx={{
         bgcolor: 'white',
         padding: '1rem 2rem',
-        maxWidth: { md: '30rem' }
+        maxWidth: { md: '540px' }
       }}
     >
       {
