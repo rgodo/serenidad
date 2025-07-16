@@ -27,7 +27,7 @@ const hexagonHoverStyles = {
   background: "#AF9983",
   color: "#fff",
   boxShadow: "0 6px 24px rgba(0,0,0,0.15)",
-  transform: "rotateY(180deg)",
+  transform: "rotateY(360deg)",
 };
 
 const innerContentStyles = {
@@ -44,8 +44,8 @@ export default function PanteonHexagon({ icon, title, content, index }) {
       sx={{
         ...hexagonStyles,
         ...(hover ? hexagonHoverStyles : {}),
-        transition: "all 0.4s cubic-bezier(.79,.14,.15,.86)",
-        marginTop: { xs: '0', md: index % 2 !== 0 ? "250px" : "0" },
+        transition: "all 0.9s cubic-bezier(.79,.14,.15,.86)",
+        marginTop: { xs: "0", md: index % 2 !== 0 ? "250px" : "0" },
         marginLeft: { md: index !== 0 ? "-5rem" : "0" },
       }}
       onMouseEnter={() => setHover(true)}
@@ -64,16 +64,20 @@ export default function PanteonHexagon({ icon, title, content, index }) {
           transition: "opacity 0.9s",
         }}
       >
-        <img src={icon} alt={title} style={{ width: 44, height: 44, marginBottom: 12 }} />
+        <img
+          src={icon}
+          alt={title}
+          style={{ width: 44, height: 44, marginBottom: 12 }}
+        />
         <Typography
           variant="h6"
           sx={{
             fontWeight: 800,
             fontFamily: "Assistant, serif",
             paddingX: "40px",
-            textAlign: 'center',
-            fontSize: '17px',
-            lineHeight: '21px'
+            textAlign: "center",
+            fontSize: "17px",
+            lineHeight: "21px",
           }}
         >
           {title}
@@ -92,7 +96,11 @@ export default function PanteonHexagon({ icon, title, content, index }) {
           transition: "opacity 0.9s",
         }}
       >
-        <img src={icon} alt={title} style={{ width: 36, height: 36, marginBottom: 8 }} />
+        <img
+          src={icon}
+          alt={title}
+          style={{ width: 36, height: 36, marginBottom: 8 }}
+        />
         <Typography
           variant="subtitle1"
           sx={{ fontWeight: 700, mb: 1, fontFamily: "Assistant, serif" }}
@@ -104,9 +112,9 @@ export default function PanteonHexagon({ icon, title, content, index }) {
           sx={{
             fontWeight: 400,
             fontFamily: "Assistant, serif",
-            maxWidth: '160px',
+            maxWidth: "160px",
             lineHeight: 1,
-            fontSize: '13px'
+            fontSize: "13px",
           }}
           dangerouslySetInnerHTML={{ __html: content }}
         />

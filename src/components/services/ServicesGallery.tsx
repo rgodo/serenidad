@@ -39,7 +39,7 @@ export const ServicesGallery: React.FC<Props> = ({ data, children, onSlideChange
   return (
     <Swiper
       slidesPerView={1}
-      style={{position: 'relative'}}
+      style={{ position: "relative" }}
       modules={[Navigation, Autoplay]}
       onSwiper={(swiper) => {
         swiperRef.current = swiper;
@@ -49,19 +49,28 @@ export const ServicesGallery: React.FC<Props> = ({ data, children, onSlideChange
       autoHeight={false}
       resizeObserver={false}
     >
-      {
-        data.images.map( ({src, alt}, idx) => (
-          <SwiperSlide key={idx}>
-            <Box sx={{ width: "100%", aspectRatio: '1/1'}}>
-              <img src={src} alt={alt} className={styles.imgSwiper} />
-            </Box>
-          </SwiperSlide>
-        ))
-      }
+      {data.images.map(({ src, alt }, idx) => (
+        <SwiperSlide key={idx}>
+          <Box sx={{ width: "100%", aspectRatio: "1/1" }}>
+            <img
+              src={src}
+              alt={alt}
+              className={styles.imgSwiper}
+              width={"100%"}
+            />
+          </Box>
+        </SwiperSlide>
+      ))}
       {children}
       <Box className={styles.controlContainer}>
-        <button ref={prevRef} className={styles.controlButton}> <WestIcon /> </button>
-        <button ref={nextRef} className={styles.controlButton}> <EastIcon /> </button>
+        <button ref={prevRef} className={styles.controlButton}>
+          {" "}
+          <WestIcon />{" "}
+        </button>
+        <button ref={nextRef} className={styles.controlButton}>
+          {" "}
+          <EastIcon />{" "}
+        </button>
       </Box>
     </Swiper>
   );
