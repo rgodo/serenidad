@@ -203,19 +203,22 @@ export default function PanteonSection() {
           <Box
             sx={{
               flex: 1,
-              width: "100%",
+              width: isMobile ? "100%" : "auto",
               minHeight: 280,
+              minWidth: 320,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               mt: isMobile ? 2 : 0,
-              maxWidth: "540px",
+              maxWidth: "430px",
+              position: "relative",
             }}
           >
             <ServicesGallery
+              key={isMobile ? "mobile" : "desktop"}
               data={{ images: infoSection.images }}
-              isMobile={isMobile}
               autoplay={true}
+              isMobile={isMobile}
             />
           </Box>
         </Box>

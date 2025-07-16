@@ -47,17 +47,11 @@ export const ServicesGallery: React.FC<Props> = ({ data, children, onSlideChange
       autoplay={autoplay}
       onSlideChange={onSlideChange || (() => {})}
       autoHeight={false}
-      resizeObserver={false}
     >
       {data.images.map(({ src, alt }, idx) => (
         <SwiperSlide key={idx}>
-          <Box sx={{ width: "100%", aspectRatio: "1/1" }}>
-            <img
-              src={src}
-              alt={alt}
-              className={styles.imgSwiper}
-              width={"100%"}
-            />
+          <Box sx={{ width: "100%", aspectRatio: "1/1", minWidth: "320px" }}>
+            <img src={src} alt={alt} className={styles.imgSwiper} />
           </Box>
         </SwiperSlide>
       ))}
