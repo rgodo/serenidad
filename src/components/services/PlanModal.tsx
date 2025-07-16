@@ -46,12 +46,14 @@ export const PlanModal: React.FC<PlanModalProps> = ({
         <div className={isMobile ? styles.bodyMobile : styles.bodyDesktop}>
           {/* Gallery */}
           <div className={styles.galleryWrap}>
-            <Box sx={{
-              width: "100%",
-              aspectRatio: 5/6,
-              position: 'relative',
-              overflow: 'hidden',
-            }}>
+            <Box
+              sx={{
+                width: "100%",
+                aspectRatio: 5 / 6,
+                position: "relative",
+                overflow: "hidden",
+              }}
+            >
               <img
                 src={plan.gallery[current]}
                 className={styles.galleryImg}
@@ -122,7 +124,15 @@ export const PlanModal: React.FC<PlanModalProps> = ({
                 ))}
               </ul>
             </div>
-            <button className={styles.cta} onClick={() => { scrollToSection('contacto'); onClose(); }}>{plan.cta}</button>
+            <button
+              className={styles.cta}
+              onClick={() => {
+                scrollToSection("contacto");
+                onClose();
+              }}
+            >
+              ¡Contáctenos Ahora!
+            </button>
           </div>
         </div>
       </div>

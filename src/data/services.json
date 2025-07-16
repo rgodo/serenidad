@@ -48,7 +48,7 @@
         "description": "Según el plan contratado, puede incluirse servicios extras como arreglos florales, cirios, retrato conmemorativo, vehículo de acompañamiento, entre otros."
       }
     ],
-    "buttonText": "Ver más"
+    "buttonText": "¡Contáctenos Ahora!"
   },
   "additionals": {
     "title": "Adicionales",
@@ -64,7 +64,7 @@
         "/img/service-ataud-sereno.jpg",
         "/img/service-ataud-sereno-2.jpg"
       ],
-      "cta": "Contáctanos ahora",
+      "cta": "Ver más",
       "urnDescription": "Urna plana, de madera terciado, acabado brillante, manillas tubulares.",
       "urnMeasures": "Alto 0.50, Ancho 0.60 y Largo 1.90, para un peso máximo de 90 Kgs.",
       "description": "Urna plana de madera terciada y servicios esenciales. Incluye sala velatoria, ceremonia religiosa y carroza. Cubierto por la Cuota Mortuoria IPS. Digno, simple y accesible.",
@@ -88,7 +88,7 @@
         "/img/service-ataud-cercano.jpg",
         "/img/service-ataud-cercano-2.jpg"
       ],
-      "cta": "Contáctanos ahora",
+      "cta": "Ver más",
       "urnDescription": "Urna curva de fibromadera, acabado brillante, manillas tubulares.",
       "urnMeasures": "Alto 0.52, Ancho 0.62 y Largo 1.92, para un peso máximo de 90 Kgs.",
       "description": "Urna curva de fibromadera, ceremonia, traslado, cafetería y detalles litúrgicos. Una opción cercana y cálida para despedidas con sentido.",
@@ -116,7 +116,7 @@
         "/img/service-ataud-eterno-3.jpg",
         "/img/service-ataud-eterno-4.jpg"
       ],
-      "cta": "Contáctanos ahora",
+      "cta": "Ver más",
       "urnDescription": "Urna curva de madera de pino, acabado mate, manillas tubulares.",
       "urnMeasures": "Alto 0.54, Ancho 0.64 y Largo 1.94, para un peso máximo de 90 Kgs.",
       "description": "Urna curva de madera de pino, arreglo floral, retrato conmemorativo y acompañamiento. Una despedida solemne y completa, con todos los honores.",

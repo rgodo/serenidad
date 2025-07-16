@@ -53,7 +53,7 @@ const Hero = () => {
           loop
           muted
           playsInline
-          poster="/hero-fallback.jpg"
+          poster="/hero-fallback.png"
           sx={{
             position: "absolute",
             top: 0,
@@ -64,13 +64,13 @@ const Hero = () => {
             zIndex: 1,
           }}
         >
-          <source src="/hero-bg.mov" type="video/mp4" />
+          <source src="/hero-bg.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </Box>
       ) : (
         <Box
           component="img"
-          src="/hero-fallback.jpg"
+          src="/hero-fallback.png"
           alt="Serenidad background"
           sx={{
             position: "absolute",
@@ -108,13 +108,13 @@ const Hero = () => {
           flexDirection: "column",
           justifyContent: "center",
           mx: { xs: 2, md: 0 },
-          ml: { md: '16%' },
+          ml: { md: "16%" },
           mt: { xs: 0, md: 0 },
           mb: { xs: 0, md: 0 },
           maxWidth: {
             xs: 400,
             sm: 550,
-            md: CONTENT_MAX_WIDTH
+            md: CONTENT_MAX_WIDTH,
           },
           px: 0,
           py: 0,
@@ -145,8 +145,7 @@ const Hero = () => {
                     sm: "2.6rem",
                     md: "3rem",
                   },
-                  lineHeight: {md: 1},
-                  
+                  lineHeight: { md: 1 },
                 }}
               >
                 {line.map((part, i) => (
@@ -158,7 +157,7 @@ const Hero = () => {
                       fontFamily: part.fontFamily,
                       color: part.color,
                       verticalAlign: part.verticalAlign ?? "baseline",
-                      marginRight: part.marginRight >= 0 ? part.marginRight: 6,
+                      marginRight: part.marginRight >= 0 ? part.marginRight : 6,
                       letterSpacing: "0.5px",
                     }}
                   >
@@ -178,7 +177,7 @@ const Hero = () => {
             fontSize: { xs: "0.96rem", sm: "1.08rem", md: "1.16rem" },
             color: "#fff",
             maxWidth: { xs: 350, sm: 450, md: 500 },
-            mt: { xs: 2, md: '0' },
+            mt: { xs: 2, md: "0" },
             lineHeight: 1.25,
             textShadow: "0 2px 8px rgba(0,0,0,0.35)",
           }}
